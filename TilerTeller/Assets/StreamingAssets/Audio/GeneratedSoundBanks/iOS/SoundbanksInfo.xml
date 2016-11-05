@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="iOS" BasePlatform="iOS" SchemaVersion="11" SoundbankVersion="118">
+	<RootPaths>
+		<ProjectRoot>/Users/AaronHome/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/TilerTeller/TilerTeller/TilerTellerWwise/</ProjectRoot>
+		<SourceFilesRoot>/Users/AaronHome/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/TilerTeller/TilerTeller/TilerTellerWwise/.cache/iOS/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/AaronHome/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/TilerTeller/TilerTeller/Assets/StreamingAssets/Audio/GeneratedSoundBanks/iOS/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/AaronHome/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/TilerTeller/TilerTeller/TilerTellerWwise/GeneratedSoundBanks/iOS/</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="235192679" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\TilerTeller_Soundbank</ObjectPath>
+			<ShortName>TilerTeller_Soundbank</ShortName>
+			<Path>TilerTeller_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3109713601" Name="EV_GUI_ButtonClick" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\GUI\EV_GUI_ButtonClick"/>
+				<Event Id="2149010682" Name="EV_Selection_Music_Start" ObjectPath="\Events\Default Work Unit\Music (MX)\Intro\EV_Selection_Music_Start"/>
+				<Event Id="3371765266" Name="EV_Selection_Music_Stop" ObjectPath="\Events\Default Work Unit\Music (MX)\Intro\EV_Selection_Music_Stop"/>
+				<Event Id="2440383747" Name="EV_Story1_Aus_AMB_Start" ObjectPath="\Events\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Aus_AMB_Start"/>
+				<Event Id="404589697" Name="EV_Story1_Aus_AMB_Stop" ObjectPath="\Events\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Aus_AMB_Stop"/>
+				<Event Id="167455096" Name="EV_Story1_Aus_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\Story 1\EV_Story1_Aus_DLG_Start"/>
+				<Event Id="1263081860" Name="EV_Story1_Aus_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\Story 1\EV_Story1_Aus_DLG_Stop"/>
+				<Event Id="2105567173" Name="EV_Story1_Hint_AMB_Start" ObjectPath="\Events\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Hint_AMB_Start"/>
+				<Event Id="4146453607" Name="EV_Story1_Hint_AMB_Stop" ObjectPath="\Events\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Hint_AMB_Stop"/>
+				<Event Id="3080744912" Name="EV_Story1_Hint_YardDoor" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 1\EV_Story1_Hint_YardDoor"/>
+				<Event Id="1240332567" Name="EV_Story1_Ice_AMB_Start" ObjectPath="\Events\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Ice_AMB_Start"/>
+				<Event Id="2124964093" Name="EV_Story1_Ice_AMB_Stop" ObjectPath="\Events\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Ice_AMB_Stop"/>
+				<Event Id="2647901833" Name="EV_Story1_Opening_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\Story 1\EV_Story1_Opening_DLG_Start"/>
+				<Event Id="1698732323" Name="EV_Story1_Opening_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\Story 1\EV_Story1_Opening_DLG_Stop"/>
+				<Event Id="2607328371" Name="EV_Story1_Opening_Music_Start" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 1\EV_Story1_Opening_Music_Start"/>
+				<Event Id="861277617" Name="EV_Story1_Opening_Music_Stop" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 1\EV_Story1_Opening_Music_Stop"/>
+				<Event Id="2158891736" Name="EV_Story1_Sahara_AMB_Start" ObjectPath="\Events\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Sahara_AMB_Start"/>
+				<Event Id="757796452" Name="EV_Story1_Sahara_AMB_Stop" ObjectPath="\Events\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Sahara_AMB_Stop"/>
+				<Event Id="1845310600" Name="EV_Story2_Firefly_LevelComplete" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Firefly_LevelComplete"/>
+				<Event Id="937719993" Name="EV_Story2_Firefly_MoonLightUp" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Firefly_MoonLightUp"/>
+				<Event Id="3486779827" Name="EV_Story2_Firefly_Music_Start" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Firefly_Music_Start"/>
+				<Event Id="1446957297" Name="EV_Story2_Firefly_Music_Stop" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Firefly_Music_Stop"/>
+				<Event Id="343313736" Name="EV_Story2_Firefly_Release" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Firefly_Release"/>
+				<Event Id="193624520" Name="EV_Story2_Opening_Music_Start" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Opening_Music_Start"/>
+				<Event Id="3921523732" Name="EV_Story2_Opening_Music_Stop" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Opening_Music_Stop"/>
+				<Event Id="175901804" Name="EV_Story2_Rabbit_Correct" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_Correct"/>
+				<Event Id="1790590448" Name="EV_Story2_Rabbit_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\Story 2\EV_Story2_Rabbit_DLG_Start"/>
+				<Event Id="3783935324" Name="EV_Story2_Rabbit_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\Story 2\EV_Story2_Rabbit_DLG_Stop"/>
+				<Event Id="1517039550" Name="EV_Story2_Rabbit_LightFlicker" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_LightFlicker"/>
+				<Event Id="1741920882" Name="EV_Story2_Rabbit_Music_Start" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Rabbit_Music_Start"/>
+				<Event Id="967831466" Name="EV_Story2_Rabbit_Music_Stop" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Rabbit_Music_Stop"/>
+				<Event Id="3858242" Name="EV_Story2_Rabbit_Squeeze" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_Squeeze"/>
+				<Event Id="3419626217" Name="EV_Story2_Rabbit_Wrong" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_Wrong"/>
+				<Event Id="1372191702" Name="EV_Title_Music_Start" ObjectPath="\Events\Default Work Unit\Music (MX)\Intro\EV_Title_Music_Start"/>
+				<Event Id="47862742" Name="EV_Title_Music_Stop" ObjectPath="\Events\Default Work Unit\Music (MX)\Intro\EV_Title_Music_Stop"/>
+				<Event Id="2526705288" Name="EV_Tutorial_Music_Start" ObjectPath="\Events\Default Work Unit\Music (MX)\Intro\EV_Tutorial_Music_Start"/>
+				<Event Id="4004580052" Name="EV_Tutorial_Music_Stop" ObjectPath="\Events\Default Work Unit\Music (MX)\Intro\EV_Tutorial_Music_Stop"/>
+				<Event Id="2358626099" Name="EV_Tutorial_Whoof" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Intro\EV_Tutorial_Whoof"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="59199648" Language="SFX">
+					<ShortName>Birdv2.wav</ShortName>
+					<Path>SFX/Birdv2_40F9DE44.wem</Path>
+				</File>
+				<File Id="83705368" Language="SFX">
+					<ShortName>Tutorialwhoof.wav</ShortName>
+					<Path>SFX/Tutorialwhoof_BD8333EB.wem</Path>
+				</File>
+				<File Id="113159009" Language="SFX">
+					<ShortName>SFX_Rabbit_Wrong_TEMP.wav</ShortName>
+					<Path>SFX/SFX_Rabbit_Wrong_TEMP_BD8333EB.wem</Path>
+				</File>
+				<File Id="160288976" Language="SFX">
+					<ShortName>Story1_AusWithKoala.wav</ShortName>
+					<Path>SFX/Story1_AusWithKoala_40F9DE44.wem</Path>
+				</File>
+				<File Id="183291983" Language="SFX">
+					<ShortName>StarryNightv2.wav</ShortName>
+					<Path>SFX/StarryNightv2_019844EE.wem</Path>
+				</File>
+				<File Id="188131204" Language="SFX">
+					<ShortName>MX_Rabbit_IPv1.wav</ShortName>
+					<Path>SFX/MX_Rabbit_IPv1_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="249352192" Language="SFX">
+					<ShortName>MX_Firefly_LevelComplete_v1.wav</ShortName>
+					<Path>SFX/MX_Firefly_LevelComplete_v1_019844EE.wem</Path>
+				</File>
+				<File Id="267545500" Language="SFX">
+					<ShortName>narration_PageAustralia.wav</ShortName>
+					<Path>SFX/narration_PageAustralia_40F9DE44.wem</Path>
+				</File>
+				<File Id="269145492" Language="SFX">
+					<ShortName>OpenYardDoor.wav</ShortName>
+					<Path>SFX/OpenYardDoor_BD8333EB.wem</Path>
+				</File>
+				<File Id="308199626" Language="SFX">
+					<ShortName>Story1_Ice.wav</ShortName>
+					<Path>SFX/Story1_Ice_40F9DE44.wem</Path>
+				</File>
+				<File Id="333199856" Language="SFX">
+					<ShortName>SFX_Firefly_MoonLightUp.wav</ShortName>
+					<Path>SFX/SFX_Firefly_MoonLightUp_BD8333EB.wem</Path>
+				</File>
+				<File Id="410933390" Language="SFX">
+					<ShortName>narration_Story1Start.wav</ShortName>
+					<Path>SFX/narration_Story1Start_40F9DE44.wem</Path>
+				</File>
+				<File Id="537012552" Language="SFX">
+					<ShortName>SFX_Rabbit_Correct_TEMP.wav</ShortName>
+					<Path>SFX/SFX_Rabbit_Correct_TEMP_BD8333EB.wem</Path>
+				</File>
+				<File Id="646284223" Language="SFX">
+					<ShortName>Title_bgm.wav</ShortName>
+					<Path>SFX/Title_bgm_019844EE.wem</Path>
+				</File>
+				<File Id="654161795" Language="SFX">
+					<ShortName>SFX_Rabbit_Squeeze_TEMP.wav</ShortName>
+					<Path>SFX/SFX_Rabbit_Squeeze_TEMP_BD8333EB.wem</Path>
+				</File>
+				<File Id="725276048" Language="SFX">
+					<ShortName>ButtonClick.wav</ShortName>
+					<Path>SFX/ButtonClick_BD8333EB.wem</Path>
+				</File>
+				<File Id="731264569" Language="SFX">
+					<ShortName>SelectionBG.wav</ShortName>
+					<Path>SFX/SelectionBG_019844EE.wem</Path>
+				</File>
+				<File Id="761245173" Language="SFX">
+					<ShortName>Story1_Start.wav</ShortName>
+					<Path>SFX/Story1_Start_019844EE.wem</Path>
+				</File>
+				<File Id="804311581" Language="SFX">
+					<ShortName>Story1_SaharaWater.wav</ShortName>
+					<Path>SFX/Story1_SaharaWater_40F9DE44.wem</Path>
+				</File>
+				<File Id="840779500" Language="SFX">
+					<ShortName>SFX_Firefly_Release_TEMP.wav</ShortName>
+					<Path>SFX/SFX_Firefly_Release_TEMP_BD8333EB.wem</Path>
+				</File>
+				<File Id="863220673" Language="SFX">
+					<ShortName>Story2_Start_TEMP.wav</ShortName>
+					<Path>SFX/Story2_Start_TEMP_019844EE.wem</Path>
+				</File>
+				<File Id="874789274" Language="SFX">
+					<ShortName>TutorialBG2.wav</ShortName>
+					<Path>SFX/TutorialBG2_019844EE.wem</Path>
+				</File>
+				<File Id="1015307716" Language="SFX">
+					<ShortName>Rabbit_LightFlicker.wav</ShortName>
+					<Path>SFX/Rabbit_LightFlicker_BD8333EB.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

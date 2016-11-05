@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A4772D6C-C9D8-48FB-87C6-969167A7B073}" SchemaVersion="72">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{A4772D6C-C9D8-48FB-87C6-969167A7B073}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Start_BirdCall" ID="{86AECD90-A03D-4ED3-A1CC-03131444F130}">
+					<ChildrenList>
+						<Action Name="Play" ID="{4F50845F-8619-4AB5-8183-2B8ED0BA8952}" ShortID="212349488" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="6"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{3EBD434E-22CF-416D-B0B6-EA01D3337822}" Global="false">
+									<ObjectRef Name="Bird" ID="{000CB2A6-F7A0-4849-A36C-0231FFA8C7BE}" WorkUnitID="{A75CB8F1-4E9F-4C3A-9CBA-BDABA0611ED8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_BirdCall" ID="{0C614054-F936-4D12-90ED-85D7A4D925FA}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{5D7F60E6-4CEE-4D27-9AEB-19D89F98528E}" ShortID="346874677" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{7205B85D-A1BA-41C4-8F12-1B6B1B545A60}" Global="false">
+									<ObjectRef Name="Bird" ID="{000CB2A6-F7A0-4849-A36C-0231FFA8C7BE}" WorkUnitID="{A75CB8F1-4E9F-4C3A-9CBA-BDABA0611ED8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Start_TitleMusic" ID="{80D44F43-C06C-49B5-B06B-68309BD34124}">
+					<ChildrenList>
+						<Action Name="Play" ID="{0C79B6CD-917E-4146-B29B-C3EDA6E5702E}" ShortID="156856570" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5DE91F0B-D444-4DB4-8131-7C7D1A52C748}" Global="false">
+									<ObjectRef Name="TitleMusic" ID="{8DBFC833-0AC8-4FD3-8D83-D1097821DDB2}" WorkUnitID="{32028E19-E257-4C4C-A1DF-AACD58D33016}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_TitleMusic" ID="{4F9F6E7A-49F5-4C15-B91F-E030E6018F5B}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{E0C7A3F7-28FF-4A33-B9C3-80CEF6094207}" ShortID="814407758" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{59BE9553-8C17-455A-B6BF-0B681B32EB4D}" Global="false">
+									<ObjectRef Name="TitleMusic" ID="{8DBFC833-0AC8-4FD3-8D83-D1097821DDB2}" WorkUnitID="{32028E19-E257-4C4C-A1DF-AACD58D33016}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ButtonClick" ID="{0AB9A396-13E5-4FFA-A725-ABF17891D585}">
+					<ChildrenList>
+						<Action Name="Play" ID="{58B0A6B4-A8AD-4FA7-A3E0-5A211394A967}" ShortID="507773529" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{AB95DEF8-3633-4D4F-87D5-BF0084F16FCB}" Global="false">
+									<ObjectRef Name="ButtonClick" ID="{804318D2-BE05-407E-BD2C-1D9CF1455D79}" WorkUnitID="{A75CB8F1-4E9F-4C3A-9CBA-BDABA0611ED8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

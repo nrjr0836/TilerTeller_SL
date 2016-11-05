@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 5d71918abbd234815a6a3e1326744b94
+timeCreated: 1476757998
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: S2_P3_star4b
+    21300002: S2_P3_star4
+    21300004: S2_P3_star1
+    21300006: S2_P3_star1b
+    21300008: S2_P3_fireflyb
+    21300010: S2_P3_firefly
+    21300012: S2_P3_star3
+    21300014: S2_P3_star3b
+    21300016: S2_P3_star2
+    21300018: S2_P3_eggy
+    21300020: S2_P3_star2b
+    21300022: S2_P3_lifting
+    21300024: S2_P3_star4b
+    21300026: S2_P3_star4
+    21300028: S2_P3_star1
+    21300030: S2_P3_star2b
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: S2_P3_star4b
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 791
+        width: 577
+        height: 577
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P3_star4
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 791
+        width: 577
+        height: 577
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P3_star1
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 1160
+        width: 207
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P3_star1b
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 1160
+        width: 207
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P3_fireflyb
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 1225
+        width: 110
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P3_firefly
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 1198
+        width: 117
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P3_star3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 449
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P3_star3b
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 288
+        width: 449
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P3_star2
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 730
+        width: 349
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P3_lifting
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 22
+        width: 544
+        height: 710
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P3_star2b
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 730
+        width: 349
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P3_eggy
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 177
+        width: 533
+        height: 499
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

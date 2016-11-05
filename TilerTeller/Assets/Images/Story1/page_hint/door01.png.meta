@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 2c01aacc26f3e40a087ddb1fcfb57eea
+timeCreated: 1475187461
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: door01_0
+    21300002: door01_1
+    21300004: door01_2
+    21300006: door01_3
+    21300008: door01_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: door01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 249
+        height: 300
+      alignment: 9
+      pivot: {x: 0.99924606, y: 0.49619833}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: door01_1
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 389
+        width: 222
+        height: 310
+      alignment: 9
+      pivot: {x: 0.9931803, y: 0.4999998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: door01_2
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 381
+        width: 198
+        height: 318
+      alignment: 9
+      pivot: {x: 1.0011196, y: 0.4964135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: door01_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 157
+        height: 328
+      alignment: 9
+      pivot: {x: 0.9939657, y: 0.4999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: door01_4
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 0
+        width: 81
+        height: 327
+      alignment: 9
+      pivot: {x: 1.0068797, y: 0.4999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

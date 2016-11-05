@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	764474359	Start_BirdCall			\Default Work Unit\Start_BirdCall	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	746546074	Bird	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Bird_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bird		28095040
+

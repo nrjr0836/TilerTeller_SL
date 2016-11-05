@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BDE785CF-2F3E-4E70-8428-A2348AFCB518}" SchemaVersion="72">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{BDE785CF-2F3E-4E70-8428-A2348AFCB518}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="TilerTeller_Soundbank" ID="{91F5B215-4C15-4612-903A-A1CF8BBA9752}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Start_TitleMusic" ID="{80D44F43-C06C-49B5-B06B-68309BD34124}" WorkUnitID="{A4772D6C-C9D8-48FB-87C6-969167A7B073}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_TitleMusic" ID="{4F9F6E7A-49F5-4C15-B91F-E030E6018F5B}" WorkUnitID="{A4772D6C-C9D8-48FB-87C6-969167A7B073}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_BirdCall" ID="{0C614054-F936-4D12-90ED-85D7A4D925FA}" WorkUnitID="{A4772D6C-C9D8-48FB-87C6-969167A7B073}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Start_BirdCall" ID="{86AECD90-A03D-4ED3-A1CC-03131444F130}" WorkUnitID="{A4772D6C-C9D8-48FB-87C6-969167A7B073}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ButtonClick" ID="{0AB9A396-13E5-4FFA-A725-ABF17891D585}" WorkUnitID="{A4772D6C-C9D8-48FB-87C6-969167A7B073}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

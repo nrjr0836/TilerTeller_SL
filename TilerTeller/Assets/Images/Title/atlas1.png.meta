@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: 7ba93e31b32384a87923f6431a78be8f
+timeCreated: 1474654509
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Letter_t1
+    21300002: Letter_i1
+    21300004: Letter_l1
+    21300006: Letter_e1
+    21300008: Letter_r1
+    21300010: Letter_t2
+    21300012: Letter_e2
+    21300014: Letter_l2
+    21300016: Letter_l3
+    21300018: Letter_e3
+    21300020: Letter_r2
+    21300022: hand1
+    21300024: hand2
+    21300026: book
+    21300028: eggy_top
+    21300030: tiles
+    21300032: Start_button
+    21300034: start_button_clicked
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Letter_t1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1190
+        width: 156
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Letter_i1
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1190
+        width: 98
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Letter_l1
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1190
+        width: 134
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Letter_e1
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1189
+        width: 168
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Letter_r1
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1191
+        width: 177
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Letter_t2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 937
+        width: 156
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Letter_e2
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 936
+        width: 168
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Letter_l2
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 937
+        width: 134
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Letter_l3
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 946
+        width: 134
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Letter_e3
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 936
+        width: 168
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Letter_r2
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 937
+        width: 177
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hand1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 755
+        width: 55
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: hand2
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 758
+        width: 53
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: book
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 719
+        width: 268
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: eggy_top
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 676
+        width: 387
+        height: 243
+      alignment: 9
+      pivot: {x: 0.49270222, y: 0.46272153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tiles
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 32
+        width: 1684
+        height: 611
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Start_button
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 1214
+        width: 518
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 6}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: start_button_clicked
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1035
+        width: 518
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

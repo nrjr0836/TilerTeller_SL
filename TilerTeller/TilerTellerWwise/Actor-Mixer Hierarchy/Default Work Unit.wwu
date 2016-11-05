@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A75CB8F1-4E9F-4C3A-9CBA-BDABA0611ED8}" SchemaVersion="72">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{A75CB8F1-4E9F-4C3A-9CBA-BDABA0611ED8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="SFX" ID="{9E62B8DF-B1BA-4A96-BC9C-19AD3785A0B0}" ShortID="711637639">
+					<ChildrenList>
+						<Sound Name="Bird" ID="{000CB2A6-F7A0-4849-A36C-0231FFA8C7BE}" ShortID="181352178" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>56</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{15843B5B-4601-4B3D-A35E-D408BFF5D0AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0D6E8AC3-2970-4CD4-9476-159A26C81C4F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bird" ID="{A3E5B3BD-8B69-4444-B7BA-744F9CA003C8}" ShortID="746546074">
+									<Language>SFX</Language>
+									<AudioFile>Bird.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bird" ID="{A3E5B3BD-8B69-4444-B7BA-744F9CA003C8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ButtonClick" ID="{804318D2-BE05-407E-BD2C-1D9CF1455D79}" ShortID="19096876" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{15843B5B-4601-4B3D-A35E-D408BFF5D0AA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0D6E8AC3-2970-4CD4-9476-159A26C81C4F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ButtonClick" ID="{577E547B-6899-4817-9066-CCCF352A81FE}" ShortID="725276048">
+									<Language>SFX</Language>
+									<AudioFile>ButtonClick.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ButtonClick" ID="{577E547B-6899-4817-9066-CCCF352A81FE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

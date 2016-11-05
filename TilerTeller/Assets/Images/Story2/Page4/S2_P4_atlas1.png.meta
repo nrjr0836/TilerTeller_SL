@@ -1,0 +1,269 @@
+fileFormatVersion: 2
+guid: a62f8c32b74244bda99cd48a4583ee5f
+timeCreated: 1478237821
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: S2_P4_tube
+    21300002: S2_P4_atlas1_1
+    21300004: S2_P4_atlas1_2
+    21300006: S2_P4_atlas1_3
+    21300008: S2_P4_atlas1_4
+    21300010: S2_P4_atlas1_5
+    21300012: S2_P4_atlas1_6
+    21300014: S2_P4_atlas1_7
+    21300016: S2_P4_redLight
+    21300018: S2_P4_atlas1_9
+    21300020: S2_P4_desk
+    21300022: S2_P4_yellowLight
+    21300024: S2_P4_greenLight
+    21300026: S2_P4_medicine
+    21300028: S2_P4_carrots
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: S2_P4_tube
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 988
+        width: 1920
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_atlas1_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 702
+        width: 200
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_atlas1_2
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 702
+        width: 201
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_atlas1_3
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 702
+        width: 201
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_atlas1_4
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 702
+        width: 201
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_atlas1_5
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 702
+        width: 201
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_atlas1_6
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 702
+        width: 201
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_atlas1_7
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 702
+        width: 104
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_redLight
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 427
+        width: 213
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_atlas1_9
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1
+        width: 690
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_desk
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 141
+        width: 497
+        height: 458
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_yellowLight
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 427
+        width: 213
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_greenLight
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 198
+        width: 213
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_medicine
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 139
+        width: 80
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_carrots
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 705
+        width: 1884
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

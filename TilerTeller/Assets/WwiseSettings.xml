@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WwiseSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WwiseProjectPath>../TilerTellerWwise/TilerTellerWwise.wproj</WwiseProjectPath>
+  <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+  <CreateWwiseGlobal>true</CreateWwiseGlobal>
+  <CreateWwiseListener>true</CreateWwiseListener>
+  <OldProject>false</OldProject>
+  <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2016.1.3.5878/Wwise.app</WwiseInstallationPathMac>
+</WwiseSettings>

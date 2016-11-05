@@ -1,0 +1,65 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3858242	EV_Story2_Rabbit_Squeeze			\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_Squeeze	
+	47862742	EV_Title_Music_Stop			\Default Work Unit\Music (MX)\Intro\EV_Title_Music_Stop	
+	167455096	EV_Story1_Aus_DLG_Start			\Default Work Unit\Dialogue (DLG)\Story 1\EV_Story1_Aus_DLG_Start	
+	175901804	EV_Story2_Rabbit_Correct			\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_Correct	
+	193624520	EV_Story2_Opening_Music_Start			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Opening_Music_Start	
+	343313736	EV_Story2_Firefly_Release			\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Firefly_Release	
+	404589697	EV_Story1_Aus_AMB_Stop			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Aus_AMB_Stop	Make sure that all ambient STOP events are global in scope.
+	757796452	EV_Story1_Sahara_AMB_Stop			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Sahara_AMB_Stop	Make sure that all ambient STOP events are global in scope.
+	861277617	EV_Story1_Opening_Music_Stop			\Default Work Unit\Music (MX)\Story 1\EV_Story1_Opening_Music_Stop	
+	937719993	EV_Story2_Firefly_MoonLightUp			\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Firefly_MoonLightUp	
+	967831466	EV_Story2_Rabbit_Music_Stop			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Rabbit_Music_Stop	
+	1240332567	EV_Story1_Ice_AMB_Start			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Ice_AMB_Start	
+	1263081860	EV_Story1_Aus_DLG_Stop			\Default Work Unit\Dialogue (DLG)\Story 1\EV_Story1_Aus_DLG_Stop	Make sure STOP Events are Global in Scope.
+	1372191702	EV_Title_Music_Start			\Default Work Unit\Music (MX)\Intro\EV_Title_Music_Start	
+	1446957297	EV_Story2_Firefly_Music_Stop			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Firefly_Music_Stop	
+	1517039550	EV_Story2_Rabbit_LightFlicker			\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_LightFlicker	
+	1698732323	EV_Story1_Opening_DLG_Stop			\Default Work Unit\Dialogue (DLG)\Story 1\EV_Story1_Opening_DLG_Stop	
+	1741920882	EV_Story2_Rabbit_Music_Start			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Rabbit_Music_Start	
+	1790590448	EV_Story2_Rabbit_DLG_Start			\Default Work Unit\Dialogue (DLG)\Story 2\EV_Story2_Rabbit_DLG_Start	
+	1845310600	EV_Story2_Firefly_LevelComplete			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Firefly_LevelComplete	
+	2105567173	EV_Story1_Hint_AMB_Start			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Hint_AMB_Start	
+	2124964093	EV_Story1_Ice_AMB_Stop			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Ice_AMB_Stop	Make sure that all ambient STOP events are global in scope. 
+	2149010682	EV_Selection_Music_Start			\Default Work Unit\Music (MX)\Intro\EV_Selection_Music_Start	
+	2158891736	EV_Story1_Sahara_AMB_Start			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Sahara_AMB_Start	
+	2358626099	EV_Tutorial_Whoof			\Default Work Unit\Sound Effects (SFX)\Intro\EV_Tutorial_Whoof	
+	2440383747	EV_Story1_Aus_AMB_Start			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Aus_AMB_Start	Make sure that all ambient STOP events are global in scope 
+	2526705288	EV_Tutorial_Music_Start			\Default Work Unit\Music (MX)\Intro\EV_Tutorial_Music_Start	
+	2607328371	EV_Story1_Opening_Music_Start			\Default Work Unit\Music (MX)\Story 1\EV_Story1_Opening_Music_Start	
+	2647901833	EV_Story1_Opening_DLG_Start			\Default Work Unit\Dialogue (DLG)\Story 1\EV_Story1_Opening_DLG_Start	
+	3080744912	EV_Story1_Hint_YardDoor			\Default Work Unit\Sound Effects (SFX)\Story 1\EV_Story1_Hint_YardDoor	
+	3109713601	EV_GUI_ButtonClick			\Default Work Unit\Sound Effects (SFX)\GUI\EV_GUI_ButtonClick	
+	3371765266	EV_Selection_Music_Stop			\Default Work Unit\Music (MX)\Intro\EV_Selection_Music_Stop	
+	3419626217	EV_Story2_Rabbit_Wrong			\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_Wrong	
+	3486779827	EV_Story2_Firefly_Music_Start			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Firefly_Music_Start	
+	3783935324	EV_Story2_Rabbit_DLG_Stop			\Default Work Unit\Dialogue (DLG)\Story 2\EV_Story2_Rabbit_DLG_Stop	Make sure STOP Events are Global in Scope.
+	3921523732	EV_Story2_Opening_Music_Stop			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Opening_Music_Stop	
+	4004580052	EV_Tutorial_Music_Stop			\Default Work Unit\Music (MX)\Intro\EV_Tutorial_Music_Stop	
+	4146453607	EV_Story1_Hint_AMB_Stop			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Hint_AMB_Stop	Make sure that all ambient STOP events are global in scope. 
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	59199648	AMB_Story1Hint_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Birdv2_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Story 1\AMB_Hint_Container\AMB_Story1Hint_TEMP		2497747
+	83705368	SFX_Tutorial_Whoof_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Tutorialwhoof_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Intro\SFX_Tutorial_Whoof_Container\SFX_Tutorial_Whoof_TEMP		32952
+	113159009	SFX_Rabbit_Wrong_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\SFX_Rabbit_Wrong_TEMP_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 2\SFX_Rabbit_Wrong_Container\SFX_Rabbit_Wrong_TEMP		95580
+	160288976	AMB_Aus_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Story1_AusWithKoala_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Story 1\AMB_Aus_Container\AMB_Aus_TEMP		2083519
+	183291983	MX_Firefly_IPv2	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\StarryNightv2_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Firefly_Container\MX_Firefly_IPv2\MX_Firefly_IPv2		1178872
+	188131204	MX_Rabbit_IPv1	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\MX_Rabbit_IPv1_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Rabbit_Container\MX_Rabbit_IPv1\MX_Rabbit_IPv1		2688064
+	249352192	MX_Firefly_LevelComplete_v1	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\MX_Firefly_LevelComplete_v1_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Firefly_LevelComplete_Container\MX_Firefly_LevelComplete_v1\MX_Firefly_LevelComplete_v1		55402
+	267545500	DLG_Aus_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\narration_PageAustralia_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Story 1\DLG_Aus_Container\DLG_Aus_TEMP		129418
+	269145492	SFX_Story1Hint_YardDoor_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\OpenYardDoor_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 1\SFX_Story1Hint_YardDoor_Container\SFX_Story1Hint_YardDoor_TEMP		474028
+	308199626	AMB_Ice_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Story1_Ice_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Story 1\AMB_Ice_Container\AMB_Ice_TEMP		1738632
+	333199856	SFX_Firefly_MoonLightUp_IPv1	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\SFX_Firefly_MoonLightUp_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 2\SFX_Firefly_MoonLightUp_Container\SFX_Firefly_MoonLightUp_IPv1		114748
+	410933390	DLG_Story1Opening_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\narration_Story1Start_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Story 1\DLG_Story1Opening_Container\DLG_Story1Opening_TEMP		203162
+	537012552	SFX_Rabbit_Correct_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\SFX_Rabbit_Correct_TEMP_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 2\SFX_Rabbit_Correct_Container\SFX_Rabbit_Correct_TEMP		75300
+	646284223	Title_bgm	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Title_bgm_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_TitleMusic_Container\MX_TitleMusic\Title_bgm		2851552
+	654161795	SFX_Rabbit_Squeeze_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\SFX_Rabbit_Squeeze_TEMP_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 2\SFX_Rabbit_Squeeze_Container\SFX_Rabbit_Squeeze_TEMP		35684
+	725276048	SFX_GUI_ButtonClick_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\ButtonClick_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\GUI\SFX_GUI_ButtonClick_Container\SFX_GUI_ButtonClick_TEMP		9784
+	731264569	SelectionBG	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\SelectionBG_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Selection_Container\MX_Selection_TEMP\SelectionBG		2175779
+	761245173	Story1_Start	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Story1_Start_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Story1Opening_Container\MX_Story1Opening\Story1_Start		3337702
+	804311581	AMB_Sahara_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Story1_SaharaWater_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Story 1\AMB_Sahara_Container\AMB_Sahara_TEMP		1787199
+	840779500	SFX_Firefly_Release_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\SFX_Firefly_Release_TEMP_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 2\SFX_Firefly_Release_Container\SFX_Firefly_Release_TEMP		329600
+	863220673	Story2_Start_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Story2_Start_TEMP_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Story2Opening_Container\MX_Story2Opening_TEMP\Story2_Start_TEMP		814454
+	874789274	TutorialBG2	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\TutorialBG2_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Tutorial_Container\MX_Tutorial_v1\TutorialBG2		1013523
+	1015307716	SFX_Rabbit_LightFlicker_TEMP	Y:\Documents\TilerTeller\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Rabbit_LightFlicker_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 2\SFX_Rabbit_LightFlicker_Container\SFX_Rabbit_LightFlicker_TEMP		322488
+
