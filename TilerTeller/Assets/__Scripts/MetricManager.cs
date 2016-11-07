@@ -59,4 +59,9 @@ public class MetricManager : MonoBehaviour {
 		_levelAndTimeMetric.Add(new LevelAndTime(LevelName, TimeInLevel));
 	}
 
+	public string getContent(){
+		GenerateMetricsString ();
+		return createText;
+	}
+
 }

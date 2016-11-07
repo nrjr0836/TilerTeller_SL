@@ -12,8 +12,8 @@ public class BunnyManager : MonoBehaviour {
 	public int totalBunnyNum = 25;
 	public float timeInterval = 2;
 
-
 	public bool start = false;
+	public bool leave = false;
 
 	public Text[] instructions;
 	public Image nextIcon;
@@ -45,7 +45,7 @@ public class BunnyManager : MonoBehaviour {
 				instructions [0].DOFade (0, 1.5f);
 				instructions [1].DOFade (0, 0);
 				instructions [1].DOFade (1, 1.5f).SetDelay (2f);
-
+				nextIcon.DOFade (1, 0.5f).SetDelay (6f);
 			}
 			if (value == State.Start) {
 				nextIcon.DOFade (0, 1f);
@@ -92,7 +92,7 @@ public class BunnyManager : MonoBehaviour {
 		if (count >= totalBunnyNum) {
 			state = State.End;
 		}
-
+			
 		Debug.Log (count);
 
 	}

@@ -14,6 +14,7 @@ public class StarLighter : MonoBehaviour {
 	public SoundManager sound;
 
 	public bool start;
+	public bool leave = false;
 
 
 	private  int[] buttonCounter = { 0, 0, 0, 0 };
@@ -41,6 +42,7 @@ public class StarLighter : MonoBehaviour {
 				instructions [0].DOFade (0, 1.5f);
 				instructions [1].DOFade (0, 0);
 				instructions [1].DOFade (1, 1.5f).SetDelay (2f);
+				nextIcon.DOFade (1, 0.5f).SetDelay (6f);
 				gameObject.GetComponent<Animator>().SetTrigger("P3start");
 
 			}
@@ -118,6 +120,8 @@ public class StarLighter : MonoBehaviour {
 			}
 
 		}
+
+
 
 //		Debug.Log(buttonCounter[0]+","+buttonCounter[1]+","+buttonCounter[2]+","+buttonCounter[3]);
 	}

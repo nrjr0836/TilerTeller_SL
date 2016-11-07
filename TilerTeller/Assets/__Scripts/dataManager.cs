@@ -11,15 +11,15 @@ public class dataManager : MonoBehaviour {
 
 	private int puzzleSolved = 0;
 
-	int[] buttonCounter = { 0, 0, 0, 0, 0 };
-	int[] buttonState = { 0, 0, 0, 0, 0 }; // 0,1,2,3 for star scene, 4 for bunny scene
-	int[] lastButtonState = { 0, 0, 0, 0, 0}; // 0,1,2,3 for star scene, 4 for bunny scene
+	int[] buttonCounter = { 0, 0, 0, 0 };
+	int[] buttonState = { 0, 0, 0, 0, 0,0,0,0,0 }; // 0,1,2,3 for star scene, 4 for bunny scene, 5,6,7,8 for panda scene
+	int[] lastButtonState = { 0, 0, 0, 0, 0,0,0,0,0}; // 0,1,2,3 for star scene, 4 for bunny scene
 
 
 	bool bunnyIsPressed = false;
 	string s;
 
-
+	int pandaPressed = -1;
 
 	void Update () {
 		
@@ -34,15 +34,17 @@ public class dataManager : MonoBehaviour {
 				if (values.Length >= 6) {
 
 					/* 0,1,2,3 are for star scene */
-					for (int i = 0; i < 5; i++) {
+					for (int i = 0; i < 9; i++) {
 					
 						buttonState [i] = int.Parse (values [i + 1]);
 						if (buttonState [i] != lastButtonState [i]) {
 							if (buttonState [i] == 1) {
 								if (i < 4) {
 									buttonCounter [i]++;
-								} else {
+								} else if (i == 4) {
 									bunnyIsPressed = true;
+								} else {
+									pandaPressed = i-4;
 								}
 							}
 						}
@@ -89,5 +91,8 @@ public class dataManager : MonoBehaviour {
 	}
 	public void setBunnyIsPressed(){
 		bunnyIsPressed = false;
+	}
+	public int getPandaPressed(){
+		return pandaPressed;
 	}
 }
