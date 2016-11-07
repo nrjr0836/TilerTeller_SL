@@ -1,9 +1,12 @@
 fileFormatVersion: 2
-guid: aebc828b8433d474f93aef5de0d78848
-timeCreated: 1478496507
+guid: 295e0d060aa3f4dddbaca6d85afe501f
+timeCreated: 1478514632
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: perm_0
+    21300002: perm_1
+    21300004: perm_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,7 +30,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -38,7 +41,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,7 +54,46 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: perm_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 668
+        width: 515
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: perm_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 12
+        width: 211
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: perm_2
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 0
+        width: 30
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
