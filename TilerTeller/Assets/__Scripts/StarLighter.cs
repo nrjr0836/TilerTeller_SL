@@ -112,12 +112,7 @@ public class StarLighter : MonoBehaviour {
 					break;
 				}
 			}
-
-
-//			StartCoroutine (lightUp ());
-
-
-	
+				
 			if (stars [0].isCompleted && stars [1].isCompleted && stars [2].isCompleted && stars [3].isCompleted ) {
 				state = State.Completed;
 			}
@@ -126,24 +121,7 @@ public class StarLighter : MonoBehaviour {
 
 //		Debug.Log(buttonCounter[0]+","+buttonCounter[1]+","+buttonCounter[2]+","+buttonCounter[3]);
 	}
-
-
-//	IEnumerator lightUp(){
-//		for (int i = 0; i < 4; i++) {
-//			if (stars [i] != null) {
-//				stars [i].lightFirfly (buttonCounter [i]);
-//			}
-//		}
-//
-//		yield return new WaitForSeconds (5f);
-//		Debug.Log ("Hello");
-//
-//		for (int i = 0; i < 4; i++) {
-//			if (stars [i] != null) {
-//				stars [i].lightStar (buttonCounter [i]);
-//			}
-//		}
-//	}
+		
 
 	IEnumerator lightUp( int star, int num){
 		stars [star].lightFirfly (num);
