@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class BunnyManager : MonoBehaviour {
 
@@ -7,38 +9,108 @@ public class BunnyManager : MonoBehaviour {
 	public GameObject whiteBunnyRed;
 	public GameObject brownBunny;
 	public float duration;
-
+	public int totalBunnyNum = 25;
 	public float timeInterval = 2;
+
 
 	public bool start = false;
 
-	private bool isfirstTime = true;
+	public Text[] instructions;
+	public Image nextIcon;
+
+	private int count = 0;
+	private SoundManager sound;
+
+	public enum State
+	{
+		InstructionOne = 0,
+		InstructionTwo = 1, 
+		Start = 2,
+		End = 3,
+	}
+
+
+	private State m_state = State.InstructionOne;
+	public State state
+	{
+		get{ return m_state;}
+		set{
+
+			if (value == State.InstructionOne) {
+				instructions [0].DOFade (1, 1.5f).SetDelay(1f);
+				nextIcon.DOFade (1, 0.5f).SetDelay (6f);
+			}
+			if (value == State.InstructionTwo) {
+				nextIcon.DOFade (0, 1f);
+				instructions [0].DOFade (0, 1.5f);
+				instructions [1].DOFade (0, 0);
+				instructions [1].DOFade (1, 1.5f).SetDelay (2f);
+
+			}
+			if (value == State.Start) {
+				nextIcon.DOFade (0, 1f);
+				instructions [1].DOFade (0, 1.5f);
+				instructions [2].DOFade (0, 0);
+				instructions [2].DOFade (1, 1.5f).SetDelay (2f);
+
+				GameObject.Find ("S2_P4_light").GetComponent<Animator> ().SetTrigger ("light");
+				sound.PlaySound ("EV_Story2_Rabbit_Music_Start");
+				StartCoroutine (m_Spawn ());
+			}
+			if (value == State.End) {
+				Debug.Log ("end");
+			}
+
+			m_state = value;
+
+		}
+
+	}
+
+
+
+
+	void Awake(){
+		for (int i = 0; i < 3; i++) {
+			instructions [i].DOFade (0, 0);
+		}
+		sound = GameObject.Find ("SoundManager").GetComponent<SoundManager> ();
+
+	}
+
 
 
 	void Update(){
 		if (start) {
-			StartCoroutine (m_Spawn ());
+			state = State.InstructionOne;
 			start = false;
 		}
+
+		if (Input.GetMouseButtonDown (0)&&(int)m_state<2) {
+			state++;
+		}
+		if (count >= totalBunnyNum) {
+			state = State.End;
+		}
+
+		Debug.Log (count);
+
 	}
 	
 
 
+
 	IEnumerator m_Spawn(){
-		int i = 0;
-//		if (isfirstTime) {
-//			yield return new WaitForSeconds (12);
-//			isfirstTime = false;
-//		}
-		yield return new WaitForSeconds(15);
-		while (true) {
+		
+		while (count<totalBunnyNum) {
 			if (timeInterval > 4) {
-				timeInterval = timeInterval - 0.1f * i;
+				timeInterval = timeInterval - 0.1f * count;
 			}
 			yield return new WaitForSeconds (timeInterval);
 
-			SpawnBunny ( duration - i*0.1f);
-			i++;
+			SpawnBunny ( duration - count*0.1f);
+
+			count++;
 		}
 	}
 
@@ -61,10 +133,7 @@ public class BunnyManager : MonoBehaviour {
 			whiteBunnyRedClone.transform.parent = gameObject.transform;
 			whiteBunnyRedClone.GetComponent<BunnyMov> ().duration = duration;
 		}
-
-//		yield return new WaitForSeconds (timeInterval);
-
-	
+			
 	}
 
 }	

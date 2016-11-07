@@ -17,9 +17,7 @@ public class S2PageManager : MonoBehaviour {
 	private GameObject nextBtn;
 	private GameObject homeBtn_1;
 
-
-	private bool isCreated = false;
-	private bool isBunnySpawn = false;
+	private bool[] isStarted = { false, false, false };
 
 
 	void Start () {
@@ -63,15 +61,20 @@ public class S2PageManager : MonoBehaviour {
 			nextBtn.SetActive (false);
 		}
 
-		if (currentPage == 3 && !isBunnySpawn ) {
-			GameObject.Find ("Page4").GetComponent<BunnyManager> ().start = true;
-			isBunnySpawn = true;
+		if (currentPage == 2 && !isStarted[0]) {
+			GameObject.Find ("Page3").GetComponent<StarLighter> ().start = true;
+			isStarted [0] = true;
 		}
 
-		if (currentPage == 4 && !isCreated) {
+		if (currentPage == 3 && !isStarted[1] ) {
+			GameObject.Find ("Page4").GetComponent<BunnyManager> ().start = true;
+			isStarted [1] = true;
+		}
+
+		if (currentPage == 4 && !isStarted[2]) {
 			notebook.GetComponent<CanvasGroup> ().DOFade (1, 0);
 			notebook.createPandas ();
-			isCreated = true;
+			isStarted [2] = true;
 		}
 
 
@@ -87,11 +90,11 @@ public class S2PageManager : MonoBehaviour {
 
 	public void turnLastPage(){
 		sound.StopPlaying ();
-		if (currentPage == 4 && isCreated) {
+		if (currentPage == 4 && isStarted[2]) {
 			notebook.destroyPandas ();
-			isCreated = false;
+			isStarted[2] = false;
 		}
-		gameObject.GetComponent<AudioSource> ().Play ();
+		sound.PlaySound ("EV_Story2_Opening_Music_Start");
 		if (currentPage > 1) {
 			if (GameObject.Find ("BluetoothManager") != null) {
 				bluetoothManager.Instance.ble.sendBluetooth("1");
@@ -116,7 +119,7 @@ public class S2PageManager : MonoBehaviour {
 			sound.PlaySound ("EV_Story2_Firefly_Music_Start");
 			break;
 		case 3:
-			sound.PlaySound ("EV_Story2_Rabbit_Music_Start");
+//			sound.PlaySound ("EV_Story2_Rabbit_Music_Start");
 			break;
 		case 4:
 			sound.PlaySound ("");
