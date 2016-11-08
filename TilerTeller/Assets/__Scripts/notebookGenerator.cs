@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class notebookGenerator : MonoBehaviour {
 
 
-	int[] pandaOrder = { 0,1,2,3};
+	int[] pandaOrder = { 0,1,2,3}; // 0:Red, 1:Blue, 2:Yellow, 3:Green
 
 	public GameObject[] pandas;
 	private GameObject[] pandasCreated = new GameObject[4];
@@ -30,10 +30,10 @@ public class notebookGenerator : MonoBehaviour {
 	}
 
 	public void popupPandas(){
-		pandasCreated [0].GetComponent<RectTransform> ().DOScale (0.68f, 0.5f);
-		pandasCreated [1].GetComponent<RectTransform> ().DOScale (0.68f, 0.5f).SetDelay(0.8f);
-		pandasCreated [2].GetComponent<RectTransform> ().DOScale (0.68f, 0.5f).SetDelay(1.6f);
-		pandasCreated [3].GetComponent<RectTransform> ().DOScale (0.68f, 0.5f).SetDelay(2.4f);
+		pandasCreated [0].GetComponent<RectTransform> ().DOScale (0.68f, 0.5f).SetDelay(0.8f);
+		pandasCreated [1].GetComponent<RectTransform> ().DOScale (0.68f, 0.5f).SetDelay(1.6f);
+		pandasCreated [2].GetComponent<RectTransform> ().DOScale (0.68f, 0.5f).SetDelay(2.4f);
+		pandasCreated [3].GetComponent<RectTransform> ().DOScale (0.68f, 0.5f).SetDelay(3.2f);
 	}
 
 
@@ -58,6 +58,9 @@ public class notebookGenerator : MonoBehaviour {
 		}
 	}
 
+	public int[] getPandaOrder(){
+		return pandaOrder;
+	}
 
 
 }

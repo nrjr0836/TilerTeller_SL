@@ -17,9 +17,9 @@ public class S2PageManager : MonoBehaviour {
 	private GameObject nextBtn;
 	private GameObject homeBtn_1;
 
+	private bool[] isStarted = { false, false, false };
 
-	private bool isCreated = false;
-	private bool isBunnySpawn = false;
+	private float last_start_time;
 
 
 	void Start () {
@@ -31,7 +31,7 @@ public class S2PageManager : MonoBehaviour {
 		bookLength = pages.Length;
 		currentPage = 0;
 
-
+		last_start_time = Time.time;
 	}
 
 
@@ -63,15 +63,19 @@ public class S2PageManager : MonoBehaviour {
 			nextBtn.SetActive (false);
 		}
 
-		if (currentPage == 3 && !isBunnySpawn ) {
-			GameObject.Find ("Page4").GetComponent<BunnyManager> ().start = true;
-			isBunnySpawn = true;
+		if (currentPage == 2 && !isStarted[0]) {
+			GameObject.Find ("Page3").GetComponent<StarLighter> ().start = true;
+			isStarted [0] = true;
 		}
 
-		if (currentPage == 4 && !isCreated) {
-			notebook.GetComponent<CanvasGroup> ().DOFade (1, 0);
-			notebook.createPandas ();
-			isCreated = true;
+		if (currentPage == 3 && !isStarted[1] ) {
+			GameObject.Find ("Page4").GetComponent<BunnyManager> ().start = true;
+			isStarted [1] = true;
+		}
+
+		if (currentPage == 4 && !isStarted[2]) {
+			GameObject.Find ("Page5").GetComponent<PandaManager> ().start = true;
+			isStarted [2] = true;
 		}
 
 
@@ -79,6 +83,12 @@ public class S2PageManager : MonoBehaviour {
 
 
 	public void turnNextPage(){
+		string levelName = "Story2-Page" + currentPage;
+		if (GameObject.Find ("MetricManager") != null) {
+			MetricManager.Instance.AddToLevelAndTimeMetric (levelName, (Time.time - last_start_time));
+		}
+		last_start_time = Time.time;
+
 		gameObject.GetComponent<AudioSource> ().Play ();
 
 		currentPage++;
@@ -86,12 +96,29 @@ public class S2PageManager : MonoBehaviour {
 	}
 
 	public void turnLastPage(){
-		sound.StopPlaying ();
-		if (currentPage == 4 && isCreated) {
-			notebook.destroyPandas ();
-			isCreated = false;
+		
+		string levelName = "Story2-Page" + currentPage;
+		if (GameObject.Find ("MetricManager") != null) {
+			MetricManager.Instance.AddToLevelAndTimeMetric (levelName, (Time.time - last_start_time));
 		}
-		gameObject.GetComponent<AudioSource> ().Play ();
+
+		last_start_time = Time.time;
+
+		sound.StopPlaying ();
+		if (currentPage == 4 && isStarted[2]) {
+			notebook.destroyPandas ();
+			isStarted[2] = false;
+		}
+		if (currentPage == 3 && isStarted [1]) {
+			GameObject.Find ("Page4").GetComponent<BunnyManager> ().leave = true;
+			isStarted [1] = false;
+		}
+		if (currentPage == 2 && isStarted [0]) {
+			GameObject.Find ("Page3").GetComponent<StarLighter> ().leave = true;
+			isStarted [0] = false;
+		}
+
+		sound.PlaySound ("EV_Story2_Opening_Music_Start");
 		if (currentPage > 1) {
 			if (GameObject.Find ("BluetoothManager") != null) {
 				bluetoothManager.Instance.ble.sendBluetooth("1");
@@ -104,6 +131,12 @@ public class S2PageManager : MonoBehaviour {
 	}
 
 	public void showJobDetail(int jobNum){
+
+		string levelName = "Story2-Page" + currentPage;
+		if (GameObject.Find ("MetricManager") != null) {
+			MetricManager.Instance.AddToLevelAndTimeMetric (levelName, (Time.time - last_start_time));
+		}
+
 //		ble.sendBluetooth (jobNum.ToString());
 		if (GameObject.Find ("BluetoothManager") != null) {
 			bluetoothManager.Instance.ble.sendBluetooth(jobNum.ToString());
@@ -119,8 +152,19 @@ public class S2PageManager : MonoBehaviour {
 			sound.PlaySound ("EV_Story2_Rabbit_Music_Start");
 			break;
 		case 4:
-			sound.PlaySound ("");
+			sound.PlaySound ("EV_Tutorial_Music_Start");
 			break;
 		}
+		last_start_time = Time.time;
 	}
+
+	public void logTime(){
+		string levelName = "Story2-Page0";
+		if (GameObject.Find ("MetricManager") != null) {
+			MetricManager.Instance.AddToLevelAndTimeMetric (levelName, (Time.time - last_start_time));
+		}
+
+	}
+
+
 }

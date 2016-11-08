@@ -66,7 +66,7 @@ public class BunnyMov : MonoBehaviour {
 	}
 
 
-	
+	bool soundPlayed = false;
 
 	void Update () {
 
@@ -84,37 +84,35 @@ public class BunnyMov : MonoBehaviour {
 
 			if (GameObject.Find("BluetoothManager")!=null && bluetoothManager.Instance.datamanager.getBunnyIsPressed () == true) {
 
-					medicine.GetComponent<Animator> ().SetTrigger ("start");
-					eggy.GetComponent<Animator> ().SetTrigger ("drop");
-					sound.PlaySound ("EV_Story2_Rabbit_Squeeze");
+
 					isClicked = true;
 					if (isRed) {
-						sound.PlaySound ("EV_Story2_Rabbit_Correct");
-						StartCoroutine (LightControl (1));
-						bunnyBlackEye.SetActive (true);
+						
+					StartCoroutine (isRedClicked());
+	
 					} else {
-						sound.PlaySound ("EV_Story2_Rabbit_Wrong");
-						StartCoroutine (LightControl (2));
-						bunnyCry.SetActive (true);
+					StartCoroutine (isWhiteClicked ());
 					}
 					bluetoothManager.Instance.datamanager.setBunnyIsPressed ();
 				}
 			 else if (Input.GetMouseButtonDown (0)) {
 					
-					medicine.GetComponent<Animator> ().SetTrigger ("start");
-					eggy.GetComponent<Animator> ().SetTrigger ("drop");
-					sound.PlaySound ("EV_Story2_Rabbit_Squeeze");
+//					medicine.GetComponent<Animator> ().SetTrigger ("start");
+//					eggy.GetComponent<Animator> ().SetTrigger ("drop");
+//					sound.PlaySound ("EV_Story2_Rabbit_Squeeze");
 
 					isClicked = true;
 
 					if (isRed) {
-						sound.PlaySound ("EV_Story2_Rabbit_Correct");
-						StartCoroutine (LightControl (1));
-						bunnyBlackEye.SetActive (true);
+//						sound.PlaySound ("EV_Story2_Rabbit_Correct");
+//						StartCoroutine (LightControl (1));
+//						bunnyBlackEye.SetActive (true);
+						StartCoroutine (isRedClicked());
 					} else {
-						sound.PlaySound ("EV_Story2_Rabbit_Wrong");
-						StartCoroutine (LightControl (2));
-						bunnyCry.SetActive (true);
+//						sound.PlaySound ("EV_Story2_Rabbit_Wrong");
+//						StartCoroutine (LightControl (2));
+//						bunnyCry.SetActive (true);
+						StartCoroutine (isWhiteClicked ());
 					}
 
 
@@ -122,10 +120,14 @@ public class BunnyMov : MonoBehaviour {
 				}
 
 		}
+			
 
 		if (transform.position.x < -2.2 && isRed && !isClicked) {
 			bunnyCry.SetActive (true);
-			sound.PlaySound ("EV_Story2_Rabbit_Wrong");
+			if (!soundPlayed) {
+				sound.PlaySound ("EV_Story2_Rabbit_Wrong");
+				soundPlayed = true;
+			}
 		}
 
 		if (transform.position.x < -8.5f) {
@@ -142,5 +144,36 @@ public class BunnyMov : MonoBehaviour {
 		Light.GetComponent<SpriteRenderer> ().sprite = lights[0];
 	}
 
+	IEnumerator isRedClicked( ){
+
+		if (lights[1] != null) {
+			Light.GetComponent<SpriteRenderer> ().sprite = lights[1]; }
+		eggy.GetComponent<Animator> ().SetTrigger ("drop");
+
+		yield return new WaitForSeconds (0.5f);
+		Light.GetComponent<SpriteRenderer> ().sprite = lights[0];
+		medicine.GetComponent<Animator> ().SetTrigger ("start");
+		sound.PlaySound ("EV_Story2_Rabbit_Squeeze");
+
+		yield return new WaitForSeconds (1f);
+		sound.PlaySound ("EV_Story2_Rabbit_Correct");
+		bunnyBlackEye.SetActive (true);
+	}
+
+	IEnumerator isWhiteClicked( ){
+
+		if (lights[2] != null) {
+			Light.GetComponent<SpriteRenderer> ().sprite = lights[2]; }
+		eggy.GetComponent<Animator> ().SetTrigger ("drop");
+
+		yield return new WaitForSeconds (0.5f);
+		Light.GetComponent<SpriteRenderer> ().sprite = lights[0];
+		medicine.GetComponent<Animator> ().SetTrigger ("start");
+		sound.PlaySound ("EV_Story2_Rabbit_Squeeze");
+
+		yield return new WaitForSeconds (1f);
+		sound.PlaySound ("EV_Story2_Rabbit_Wrong");
+		bunnyCry.SetActive (true);
+	}
 
 }

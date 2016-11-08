@@ -11,15 +11,15 @@ public class dataManager : MonoBehaviour {
 
 	private int puzzleSolved = 0;
 
-	int[] buttonCounter = { 0, 0, 0, 0, 0 };
-	int[] buttonState = { 0, 0, 0, 0, 0 }; // 0,1,2,3 for star scene, 4 for bunny scene
-	int[] lastButtonState = { 0, 0, 0, 0, 0}; // 0,1,2,3 for star scene, 4 for bunny scene
+	int[] buttonCounter = { 0, 0, 0, 0 };
+	int[] buttonState = { 0, 0, 0, 0, 0,0,0,0,0 }; // 0,1,2,3 for star scene, 4 for bunny scene, 5,6,7,8 for panda scene
+	int[] lastButtonState = { 0, 0, 0, 0, 0,0,0,0,0}; // 0,1,2,3 for star scene, 4 for bunny scene
 
 
 	bool bunnyIsPressed = false;
 	string s;
 
-
+	int pandaPressed = -1;
 
 	void Update () {
 		
@@ -34,15 +34,17 @@ public class dataManager : MonoBehaviour {
 				if (values.Length >= 6) {
 
 					/* 0,1,2,3 are for star scene */
-					for (int i = 0; i < 5; i++) {
+					for (int i = 0; i < 9; i++) {
 					
 						buttonState [i] = int.Parse (values [i + 1]);
 						if (buttonState [i] != lastButtonState [i]) {
 							if (buttonState [i] == 1) {
 								if (i < 4) {
 									buttonCounter [i]++;
-								} else {
+								} else if (i == 4) {
 									bunnyIsPressed = true;
+								} else {
+									pandaPressed = i-5;
 								}
 							}
 						}
@@ -61,11 +63,11 @@ public class dataManager : MonoBehaviour {
 						valueNum [i] = int.Parse (values [i + 1]);
 					}
 				
-					if (valueNum [0] < 5 && valueNum [1] < 5 && valueNum [2] < 5 && valueNum [3] < 5) {
-						puzzleSolved = 3;
-					} else if (valueNum [4] < 5 && valueNum [5] < 5 && valueNum [6] < 5 && valueNum [7] < 5) {
+					if (valueNum [0] < 12 && valueNum [1] < 12 && valueNum [2] < 12 && valueNum [3] < 12) {
 						puzzleSolved = 1;
-					} else if (valueNum [8] < 5 && valueNum [9] < 5 && valueNum [10] < 5 && valueNum [11] < 5) {
+					} else if (valueNum [4] < 12 && valueNum [5] < 12 && valueNum [6] < 12 && valueNum [7] < 12) {
+						puzzleSolved = 3;
+					} else if (valueNum [8] < 12 && valueNum [9] < 12 && valueNum [10] < 12 && valueNum [11] < 12) {
 						puzzleSolved = 2;
 					} else
 						puzzleSolved = 0;
@@ -89,5 +91,11 @@ public class dataManager : MonoBehaviour {
 	}
 	public void setBunnyIsPressed(){
 		bunnyIsPressed = false;
+	}
+	public int getPandaPressed(){
+		return pandaPressed;
+	}
+	public void setPandaPressed(){
+		pandaPressed = -1;
 	}
 }

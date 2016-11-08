@@ -15,8 +15,6 @@ public class pageManager : MonoBehaviour {
 	public Animator hintDoor;
 
 
-//	public MetricManager metric;
-
 
 	private int bookLength;  //total number of pages
 	private int pageCount;  //How many pages have been read
@@ -36,8 +34,8 @@ public class pageManager : MonoBehaviour {
 	private int pagetogo;
 
 	private bool startAnim;
+	private bool doorSoundPlayed = false;
 
-	private AudioSource[] hintSound;
 
 	private float last_start_time;
 
@@ -63,10 +61,11 @@ public class pageManager : MonoBehaviour {
 
 		startAnim = false;
 
-		hintSound = hintPage.GetComponents<AudioSource> ();
-
 		last_start_time = Time.time;
 
+		if (GameObject.Find ("BluetoothManager") != null) {
+			bluetoothManager.Instance.ble.sendBluetooth("0");
+		}
 
 
 	}
@@ -114,8 +113,9 @@ public class pageManager : MonoBehaviour {
 				pagetogo = puzzleNum;
 				startAnim = true;	
 				hintDoor.SetTrigger ("Open");
-				if (!hintSound[0].isPlaying) {
-					hintSound[0].Play ();
+				if (!doorSoundPlayed) {
+					sound.PlaySound ("EV_Story1_Hint_YardDoor");
+					doorSoundPlayed = true;
 				}
 			
 			}
@@ -129,6 +129,7 @@ public class pageManager : MonoBehaviour {
 				if (hintDoor.GetCurrentAnimatorStateInfo (0).IsName ("Finished")) {
 
 					startAnim = false;
+					doorSoundPlayed = false;
 					gotoPage (pagetogo);
 					hintDoor.SetTrigger ("Close");
 
@@ -185,7 +186,6 @@ public class pageManager : MonoBehaviour {
 			pageRead [bookLength - 1] = currentPage;
 
 			sound.PlaySound ("EV_Story1_Opening_Music_Start");
-			sound.PlaySound ("EV_Story1_Opening_DLG_Start");
 
 		} else if (pageRead [pageCount + 1] != 0) {
 			currentPage = pageRead [pageCount + 1];
@@ -266,7 +266,6 @@ public class pageManager : MonoBehaviour {
 		
 		if (hintPage != null) {
 			hintPage.SetActive (true);
-			hintSound [1].Play ();
 			Debug.Log ("next page");
 			isWaiting = true;
 		}
@@ -302,4 +301,11 @@ public class pageManager : MonoBehaviour {
 		}
 	}
 
+	public void logTime(){
+		string levelName = "Story1-Page" + currentPage;
+		if (GameObject.Find ("MetricManager") != null) {
+			MetricManager.Instance.AddToLevelAndTimeMetric (levelName, (Time.time - last_start_time));
+		}
+
+	}
 }

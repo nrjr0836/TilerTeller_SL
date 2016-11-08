@@ -138,11 +138,9 @@ public class CameraControl : MonoBehaviour {
 		
 		if (Input.GetMouseButtonDown(0) ) {
 			if (((int)m_state) < 5) {
-//				audio [0].Play ();
 				AkSoundEngine.PostEvent (wwiseEvent[0],gameObject);
 			}
 			if (((int)m_state) > 4 && ((int)m_state) < 7) {
-//				audio [1].Play ();
 				AkSoundEngine.PostEvent (wwiseEvent[1],gameObject);
 			}
 			string levelName = "Tutorial-Dialogue" + state;
@@ -151,8 +149,6 @@ public class CameraControl : MonoBehaviour {
 			state++;
 			
 		}
-//		if (cubeAnim.GetCurrentAnimatorStateInfo (0).IsName ("Finished")) {
-//			continueBtn.SetActive (true);
-//		}
+
 	}
 }

@@ -1310,6 +1310,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
       value: EV_Story1Opening_Stop
       objectReference: {fileID: 0}
+    - target: {fileID: 224000011693039750, guid: aec631a82919844659c5fe25de690a91,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012888101894, guid: aec631a82919844659c5fe25de690a91,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aec631a82919844659c5fe25de690a91, type: 2}
   m_IsPrefabParent: 0
@@ -1479,8 +1489,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 189303668}
-  m_LocalRotation: {x: 0.000000035735948, y: -0.000000022344993, z: -0.024765428,
-    w: -0.9996933}
+  m_LocalRotation: {x: 0.000000035735955, y: -0.000000022344976, z: -0.024764951,
+    w: -0.99969333}
   m_LocalPosition: {x: 0.00000029052867, y: 1, z: 1.16097665e-14}
   m_LocalScale: {x: 0.75964755, y: 0.7596475, z: 0.75964755}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1952,8 +1962,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 262828034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.39040193}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 662478095}
@@ -1961,8 +1971,8 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -361, y: -265}
-  m_SizeDelta: {x: 50, y: 40}
+  m_AnchoredPosition: {x: -361, y: -254}
+  m_SizeDelta: {x: 166, y: 188}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &262828036
 MonoBehaviour:
@@ -1981,7 +1991,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1990,7 +2000,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: d97b8ae4e34204dd883d4097fe36587f,
+      type: 3}
     m_PressedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -2025,6 +2036,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1423124942}
+        m_MethodName: PlaySound
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: EV_GUI_ButtonClick
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1142444676}
+        m_MethodName: logTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &262828037
@@ -2046,8 +2079,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 54c3b327881ae44089d612fce40dedc5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3169,18 +3202,18 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 386055742}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.01745245, w: 0.99984777}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.48000008}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2}
   m_Children:
   - {fileID: 1362278062}
   m_Father: {fileID: 179904908}
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 358, y: -265}
-  m_SizeDelta: {x: 50, y: 40}
+  m_AnchoredPosition: {x: 358, y: -254}
+  m_SizeDelta: {x: 166, y: 188}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &386055744
 MonoBehaviour:
@@ -3199,7 +3232,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3208,7 +3241,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: d97b8ae4e34204dd883d4097fe36587f,
+      type: 3}
     m_PressedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -3243,6 +3277,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1423124942}
+        m_MethodName: PlaySound
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: EV_GUI_ButtonClick
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1142444676}
+        m_MethodName: logTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &386055745
@@ -3264,8 +3320,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 54c3b327881ae44089d612fce40dedc5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4058,7 +4114,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 508010923}
-  m_LocalRotation: {x: -0.000000060166826, y: 0.000000032353796, z: 0.74317974, w: -0.6690919}
+  m_LocalRotation: {x: -0.00000006016683, y: 0.000000032353768, z: 0.74317944, w: -0.66909224}
   m_LocalPosition: {x: 0.00000026971844, y: 1.000001, z: 0}
   m_LocalScale: {x: 1.5954015, y: 1.5954016, z: 1.5954018}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4939,7 +4995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &662478095
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7164,7 +7220,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1046621348}
-  m_LocalRotation: {x: -0.000000042146844, y: -0.000000021073431, z: -0.6982148, w: 0.7158883}
+  m_LocalRotation: {x: -0.00000004214685, y: -0.00000002107342, z: -0.6982148, w: 0.7158884}
   m_LocalPosition: {x: 0.000000016998891, y: 1.0000001, z: 0}
   m_LocalScale: {x: 1.6593105, y: 1.6593106, z: 1.6593108}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8713,7 +8769,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1362278062
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10556,7 +10612,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: "Sometimes, the yard arrives at Antarctica, and Round won\u2019t know what
+  m_Text: "Sometimes, the yard arrives at Antarctica, and Robin won\u2019t know what
     to do. He can only seal the door shut, and wait.\n"
 --- !u!222 &1570933510
 CanvasRenderer:
@@ -10631,7 +10687,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: 'Sometimes, the yard arrives at the Sahara desert. Round will quickly hang
+  m_Text: 'Sometimes, the yard arrives at the Sahara desert. Robin will quickly hang
     a curtain over the yard to shield it from the sun. He will take a watering can
     from his house and water the plants again and again.
 
@@ -10812,7 +10868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1630284793
 Transform:
   m_ObjectHideFlags: 0
@@ -12916,7 +12972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1997331703
 Transform:
   m_ObjectHideFlags: 0
@@ -13525,7 +13581,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: 'But no matter how extreme, hot or cold, Round is never too worried about
+  m_Text: 'But no matter how extreme, hot or cold, Robin is never too worried about
     his yard.
 
 
