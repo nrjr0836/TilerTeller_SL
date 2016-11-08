@@ -149,10 +149,10 @@ public class S2PageManager : MonoBehaviour {
 			sound.PlaySound ("EV_Story2_Firefly_Music_Start");
 			break;
 		case 3:
-//			sound.PlaySound ("EV_Story2_Rabbit_Music_Start");
+			sound.PlaySound ("EV_Story2_Rabbit_Music_Start");
 			break;
 		case 4:
-			sound.PlaySound ("");
+			sound.PlaySound ("EV_Tutorial_Music_Start");
 			break;
 		}
 		last_start_time = Time.time;

@@ -44,7 +44,7 @@ public class dataManager : MonoBehaviour {
 								} else if (i == 4) {
 									bunnyIsPressed = true;
 								} else {
-									pandaPressed = i-4;
+									pandaPressed = i-5;
 								}
 							}
 						}
@@ -63,11 +63,11 @@ public class dataManager : MonoBehaviour {
 						valueNum [i] = int.Parse (values [i + 1]);
 					}
 				
-					if (valueNum [0] < 5 && valueNum [1] < 5 && valueNum [2] < 5 && valueNum [3] < 5) {
-						puzzleSolved = 3;
-					} else if (valueNum [4] < 5 && valueNum [5] < 5 && valueNum [6] < 5 && valueNum [7] < 5) {
+					if (valueNum [0] < 12 && valueNum [1] < 12 && valueNum [2] < 12 && valueNum [3] < 12) {
 						puzzleSolved = 1;
-					} else if (valueNum [8] < 5 && valueNum [9] < 5 && valueNum [10] < 5 && valueNum [11] < 5) {
+					} else if (valueNum [4] < 12 && valueNum [5] < 12 && valueNum [6] < 12 && valueNum [7] < 12) {
+						puzzleSolved = 3;
+					} else if (valueNum [8] < 12 && valueNum [9] < 12 && valueNum [10] < 12 && valueNum [11] < 12) {
 						puzzleSolved = 2;
 					} else
 						puzzleSolved = 0;
@@ -94,5 +94,8 @@ public class dataManager : MonoBehaviour {
 	}
 	public int getPandaPressed(){
 		return pandaPressed;
+	}
+	public void setPandaPressed(){
+		pandaPressed = -1;
 	}
 }

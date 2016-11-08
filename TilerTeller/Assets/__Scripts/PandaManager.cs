@@ -35,11 +35,13 @@ public class PandaManager : MonoBehaviour {
 		set{
 
 			if (value == State.InstructionOne) {
+				instructions [1].DOFade (0, 0);
 				instructions [0].DOFade (1, 1.5f).SetDelay (0.5f);
 				nextIcon.DOFade (1, 0.5f).SetDelay (6f);
 			}
 
 			if (value == State.Notebook) {
+				sound.PlaySound ("EV_GUI_ButtonClick");
 				count = 0;
 				nextIcon.DOFade (0, 0);
 				instructions [0].DOFade (0, 0);
@@ -85,43 +87,55 @@ public class PandaManager : MonoBehaviour {
 			if (GameObject.Find ("BluetoothManager") != null) {
 				int pandaNum;
 				pandaNum = bluetoothManager.Instance.datamanager.getPandaPressed ();
-				switch (pandaNum) {
-				case 0: //red
-					if (pandaOrder [count] == 0) {
-						gameObject.GetComponent<Animator> ().SetTrigger ("red");
-						count++;
-					}else {
-						notebook.destroyPandas ();
-						state = State.Notebook;
-					}
+				Debug.Log (pandaNum);
+				if (pandaNum != -1) {
+					switch (pandaNum) {
+					case 0: //red
+						if (pandaOrder [count] == 0) {
+							sound.PlaySound ("EV_Story2_Rabbit_Correct");
+							gameObject.GetComponent<Animator> ().SetTrigger ("red");
+							count++;
+						} else {
+							sound.PlaySound ("EV_Story2_Rabbit_Wrong");
+							notebook.destroyPandas ();
+							state = State.Notebook;
+						}
 						break;
-				case 1: //yellow
-					if (pandaOrder [count] == 2) {
-						gameObject.GetComponent<Animator> ().SetTrigger ("yellow");
-						count++;
-					}else {
-						notebook.destroyPandas ();
-						state = State.Notebook;
+					case 1: //yellow
+						if (pandaOrder [count] == 2) {
+							sound.PlaySound ("EV_Story2_Rabbit_Correct");
+							gameObject.GetComponent<Animator> ().SetTrigger ("yellow");
+							count++;
+						} else {
+							sound.PlaySound ("EV_Story2_Rabbit_Wrong");
+							notebook.destroyPandas ();
+							state = State.Notebook;
+						}
+						break;
+					case 2: //blue
+						if (pandaOrder [count] == 1) {
+							sound.PlaySound ("EV_Story2_Rabbit_Correct");
+							gameObject.GetComponent<Animator> ().SetTrigger ("blue");
+							count++;
+						} else {
+							sound.PlaySound ("EV_Story2_Rabbit_Wrong");
+							notebook.destroyPandas ();
+							state = State.Notebook;
+						}
+						break;
+					case 3:
+						if (pandaOrder [count] == 3) {
+							sound.PlaySound ("EV_Story2_Rabbit_Correct");
+							gameObject.GetComponent<Animator> ().SetTrigger ("green");
+							count++;
+						} else {
+							sound.PlaySound ("EV_Story2_Rabbit_Wrong");
+							notebook.destroyPandas ();
+							state = State.Notebook;
+						}
+						break;
 					}
-					break;
-				case 2: //blue
-					if (pandaOrder [count] == 1) {
-						gameObject.GetComponent<Animator> ().SetTrigger ("blue");
-						count++;
-					}else {
-						notebook.destroyPandas ();
-						state = State.Notebook;
-					}
-					break;
-				case 3:
-					if (pandaOrder [count] == 3) {
-						gameObject.GetComponent<Animator> ().SetTrigger ("green");
-						count++;
-					} else {
-						notebook.destroyPandas ();
-						state = State.Notebook;
-					}
-					break;
+					bluetoothManager.Instance.datamanager.setPandaPressed ();
 				}
 			}
 
@@ -166,7 +180,6 @@ public class PandaManager : MonoBehaviour {
 			if (count == 4) {
 				state = State.End;
 			}
-			Debug.Log (count);
 
 		}
 

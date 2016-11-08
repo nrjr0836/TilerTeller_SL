@@ -37,24 +37,26 @@ public class BunnyManager : MonoBehaviour {
 		set{
 
 			if (value == State.InstructionOne) {
-				instructions [0].DOFade (1, 1.5f).SetDelay(1f);
-				nextIcon.DOFade (1, 0.5f).SetDelay (6f);
+				instructions [0].DOFade (1, 1f).SetDelay(1f);
+				nextIcon.DOFade (1, 0.5f).SetDelay (5f);
 			}
 			if (value == State.InstructionTwo) {
+				sound.PlaySound ("EV_GUI_ButtonClick");
 				nextIcon.DOFade (0, 1f);
-				instructions [0].DOFade (0, 1.5f);
+				instructions [0].DOFade (0, 1f);
 				instructions [1].DOFade (0, 0);
-				instructions [1].DOFade (1, 1.5f).SetDelay (2f);
-				nextIcon.DOFade (1, 0.5f).SetDelay (6f);
+				instructions [1].DOFade (1, 1f).SetDelay (1.5f);
+				nextIcon.DOFade (1, 0.5f).SetDelay (5f);
 			}
 			if (value == State.Start) {
+				sound.PlaySound ("EV_GUI_ButtonClick");
 				nextIcon.DOFade (0, 1f);
-				instructions [1].DOFade (0, 1.5f);
+				instructions [1].DOFade (0, 1f);
 				instructions [2].DOFade (0, 0);
-				instructions [2].DOFade (1, 1.5f).SetDelay (2f);
+				instructions [2].DOFade (1, 1f).SetDelay (1.5f);
 
 				GameObject.Find ("S2_P4_light").GetComponent<Animator> ().SetTrigger ("light");
-				sound.PlaySound ("EV_Story2_Rabbit_Music_Start");
+
 				StartCoroutine (m_Spawn ());
 			}
 			if (value == State.End) {

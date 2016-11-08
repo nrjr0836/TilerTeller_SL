@@ -34,23 +34,25 @@ public class StarLighter : MonoBehaviour {
 		set{
 
 			if (value == State.InstructionOne) {
-				instructions [0].DOFade (1, 1.5f).SetDelay(1f);
-				nextIcon.DOFade (1, 0.5f).SetDelay (6f);
+				instructions [0].DOFade (1, 1f).SetDelay(1f);
+				nextIcon.DOFade (1, 0.5f).SetDelay (5f);
 			}
 			if (value == State.InstructionTwo) {
+				sound.PlaySound ("EV_GUI_ButtonClick");
 				nextIcon.DOFade (0, 1f);
-				instructions [0].DOFade (0, 1.5f);
+				instructions [0].DOFade (0, 1f);
 				instructions [1].DOFade (0, 0);
-				instructions [1].DOFade (1, 1.5f).SetDelay (2f);
-				nextIcon.DOFade (1, 0.5f).SetDelay (6f);
+				instructions [1].DOFade (1, 1f).SetDelay (1.5f);
+				nextIcon.DOFade (1, 0.5f).SetDelay (5f);
 				gameObject.GetComponent<Animator>().SetTrigger("P3start");
 
 			}
 			if (value == State.Start) {
+				sound.PlaySound ("EV_GUI_ButtonClick");
 				nextIcon.DOFade (0, 1f);
-				instructions [1].DOFade (0, 1.5f);
+				instructions [1].DOFade (0, 1f);
 				instructions [2].DOFade (0, 0);
-				instructions [2].DOFade (1, 1.5f).SetDelay (2f);
+				instructions [2].DOFade (1, 1f).SetDelay (1.5f);
 
 			}
 			if (value == State.Completed) {
@@ -129,7 +131,7 @@ public class StarLighter : MonoBehaviour {
 
 	IEnumerator lightUp( int star, int num){
 		stars [star].lightFirfly (num);
-		yield return new WaitForSeconds (3.5f);
+		yield return new WaitForSeconds (3f);
 		stars [star].lightStar (num);
 	}
 

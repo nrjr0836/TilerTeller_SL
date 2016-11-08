@@ -63,6 +63,9 @@ public class pageManager : MonoBehaviour {
 
 		last_start_time = Time.time;
 
+		if (GameObject.Find ("BluetoothManager") != null) {
+			bluetoothManager.Instance.ble.sendBluetooth("0");
+		}
 
 
 	}
