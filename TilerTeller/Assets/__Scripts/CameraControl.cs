@@ -150,5 +150,11 @@ public class CameraControl : MonoBehaviour {
 			
 		}
 
+		if (state == State.Cube) {
+			if (GameObject.Find ("BluetoothManager") != null) {
+				bluetoothManager.Instance.datamanager.setThreshold();
+			}
+		}
+
 	}
 }

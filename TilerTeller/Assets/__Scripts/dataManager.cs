@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using System.Linq;
 
 
 public class dataManager : MonoBehaviour {
@@ -18,8 +19,11 @@ public class dataManager : MonoBehaviour {
 
 	bool bunnyIsPressed = false;
 	string s;
-
 	int pandaPressed = -1;
+
+
+	int[] valueNum = new int[15];
+	int threshold = 0;
 
 	void Update () {
 		
@@ -57,29 +61,46 @@ public class dataManager : MonoBehaviour {
 
 			if (values [0] == "S1") {
 
-				int[] valueNum = new int[15];
+			
 				if (values.Length >= 13) {
 					for (int i = 0; i < 12; i++) {
 						valueNum [i] = int.Parse (values [i + 1]);
 					}
 				
-					if (valueNum [0] < 12 && valueNum [1] < 12 && valueNum [2] < 12 && valueNum [3] < 12) {
-						puzzleSolved = 1;
-					} else if (valueNum [4] < 12 && valueNum [5] < 12 && valueNum [6] < 12 && valueNum [7] < 12) {
+					if ((valueNum [0]-threshold) < 5 && (valueNum [1]-threshold) < 5 && (valueNum [2]-threshold) < 5 && (valueNum [3]-threshold) < 5) {
 						puzzleSolved = 3;
-					} else if (valueNum [8] < 12 && valueNum [9] < 12 && valueNum [10] < 12 && valueNum [11] < 12) {
+					} else if ((valueNum [4]-threshold) < 5 && (valueNum [5]-threshold) < 5 && (valueNum [6]-threshold) < 5 && (valueNum [7]-threshold) < 5) {
+						puzzleSolved = 1;
+					} else if ((valueNum [8]-threshold) < 5 && (valueNum [9]-threshold) < 5 && (valueNum [10]-threshold) < 5 && valueNum [11] < 5) {
 						puzzleSolved = 2;
 					} else
 						puzzleSolved = 0;
-
 				}
 			}
 
 		}
 	}
 
+	public int setThreshold(){
+		float[] average = new float[3];
+		average[0] = (valueNum [0] + valueNum [1] + valueNum [2] + valueNum [3]) / 4f;
+		average[1] = (valueNum [4] + valueNum [5] + valueNum [6] + valueNum [7]) / 4f;
+		average[2] = (valueNum [8] + valueNum [8] + valueNum [10] + valueNum [11]) / 4f;
+
+		int minAverage = (int)average.Min ();
+		if (minAverage < threshold) {
+			threshold = minAverage;
+		}
+	}
+
 	public int[] getButtonCounter(){
 		return buttonCounter;
+	}
+
+	public void setButtonCounter(){
+		for (int i = 0; i < 4; i++) {
+			buttonCounter [i] = 0;
+		}
 	}
 
 	public int getPuzzleNum(){
