@@ -36,7 +36,7 @@ public class BunnyMov : MonoBehaviour {
 		Light = GameObject.Find ("Light");
 		eggy = GameObject.Find ("S2_P4_eggy");
 	
-		openEyePos = (float)(1.5 - Random.Range (0, 1f));
+		openEyePos = (float)(1.5 - Random.Range (0, 0.5f));
 
 		if (isRed) {
 			bunnyOpenEye = transform.GetChild (2).gameObject;
@@ -150,7 +150,6 @@ public class BunnyMov : MonoBehaviour {
 			Light.GetComponent<SpriteRenderer> ().sprite = lights[1]; }
 		eggy.GetComponent<Animator> ().SetTrigger ("drop");
 
-		yield return new WaitForSeconds (0.5f);
 		Light.GetComponent<SpriteRenderer> ().sprite = lights[0];
 		medicine.GetComponent<Animator> ().SetTrigger ("start");
 		sound.PlaySound ("EV_Story2_Rabbit_Squeeze");

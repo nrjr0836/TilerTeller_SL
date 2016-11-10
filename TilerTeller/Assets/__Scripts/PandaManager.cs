@@ -25,7 +25,11 @@ public class PandaManager : MonoBehaviour {
 		InstructionOne =0,
 		Notebook = 1,
 		Start = 2,
-		End = 3,
+		PandaOne = 3,
+		PandaTwo = 4, 
+		PandaThree = 5,
+		PandaFour = 6,
+		End = 7,
 	}
 
 	private State m_state = State.InstructionOne;
@@ -36,7 +40,7 @@ public class PandaManager : MonoBehaviour {
 
 			if (value == State.InstructionOne) {
 				instructions [1].DOFade (0, 0);
-				instructions [0].DOFade (1, 1.5f).SetDelay (0.5f);
+				instructions [0].DOFade (1, 1f).SetDelay (0.5f);
 				nextIcon.DOFade (1, 0.5f).SetDelay (6f);
 			}
 
@@ -50,12 +54,13 @@ public class PandaManager : MonoBehaviour {
 				notebook.createPandas ();
 			}
 
-			if (value == State.Start) {
+			if (value == State.PandaOne) {
 				pandaOrder = (int[])notebook.getPandaOrder ().Clone();
 				Debug.Log (pandaOrder[0]+" "+pandaOrder[1]+" "+pandaOrder[2]+" "+pandaOrder[3]+" ");
+				nextIcon.DOFade (0, 0);
 				instructions [1].DOFade (0, 0);
-				instructions [1].DOFade (1, 1.5f).SetDelay (2f);
-
+				instructions [1].DOFade (1, 1f).SetDelay (2f);
+				state++;
 			}
 			if (value == State.End) {
 				

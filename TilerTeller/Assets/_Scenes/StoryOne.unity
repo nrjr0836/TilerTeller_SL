@@ -2116,7 +2116,7 @@ GameObject:
   - 222: {fileID: 265155639}
   - 114: {fileID: 265155638}
   m_Layer: 5
-  m_Name: Text
+  m_Name: HintText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7842,6 +7842,7 @@ MonoBehaviour:
   - {fileID: 1997331702}
   hintPage: {fileID: 2093838112}
   hintDoor: {fileID: 942003729}
+  hintText: {fileID: 265155638}
 --- !u!4 &1142444677
 Transform:
   m_ObjectHideFlags: 0
@@ -7865,7 +7866,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9cbb0e2cffbe143549a1b5179b51df5e, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -12972,7 +12973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1997331703
 Transform:
   m_ObjectHideFlags: 0

@@ -35,6 +35,8 @@ public class pageManager : MonoBehaviour {
 
 	private bool startAnim;
 	private bool doorSoundPlayed = false;
+	public Text hintText;
+	private int hintPageCount = 0;
 
 
 	private float last_start_time;
@@ -222,6 +224,7 @@ public class pageManager : MonoBehaviour {
 				isWaiting = false;
 				sound.PlaySound ("EV_Story1_Opening_Music_Start");
 				sound.PlaySound ("EV_Story1_Opening_DLG_Start");
+				hintPageCount--;
 				pageCount--;
 			} else {
 				return;
@@ -258,7 +261,10 @@ public class pageManager : MonoBehaviour {
 	}
 
 	void showHintPage(){
-
+		hintPageCount++;
+		if (hintPageCount > 1) {
+			hintText.text = "aaaaaa you can reuse those wooden blocks!";
+		}
 
 		if (GameObject.Find ("BluetoothManager") != null) {
 			bluetoothManager.Instance.ble.sendBluetooth("0");

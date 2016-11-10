@@ -48,6 +48,9 @@ public class StarLighter : MonoBehaviour {
 
 			}
 			if (value == State.Start) {
+				if (GameObject.Find ("BluetoothManager") != null) {
+					bluetoothManager.Instance.datamanager.setButtonCounter ();
+				}
 				sound.PlaySound ("EV_GUI_ButtonClick");
 				nextIcon.DOFade (0, 1f);
 				instructions [1].DOFade (0, 1f);
