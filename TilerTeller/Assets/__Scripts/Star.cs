@@ -56,9 +56,16 @@ public class Star : MonoBehaviour {
 			for (int i = 1; i < num + 1; i++) {
 				if (fireflys [i] != null) {
 					SpriteRenderer myfirefly = (SpriteRenderer)fireflys [i];
+				if (starNum == 4) {
+					myfirefly.DOFade (1, 1).SetDelay (2.5f);
+				} else if (starNum == 1) {
 					myfirefly.DOFade (1, 1).SetDelay (2f);
 				}
+				else{
+				myfirefly.DOFade (1, 1).SetDelay (1f);
+				}
 			}
+		}
 	}
 
 	public void lightStar(int num){
