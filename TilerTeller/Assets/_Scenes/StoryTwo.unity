@@ -524,7 +524,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 75048296}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -3857,7 +3857,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.47, y: 1.1001151, z: -0.6561971}
   m_LocalScale: {x: 0.71428573, y: 0.71428573, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_Children: []
   m_Father: {fileID: 1982515516}
   m_RootOrder: 0
@@ -7062,7 +7062,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.026960678, w: 0.99963653}
   m_LocalPosition: {x: 1.3499886, y: 0.36427087, z: -0.6561971}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -7.7145715}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -7.864082}
   m_Children: []
   m_Father: {fileID: 1982515516}
   m_RootOrder: 1

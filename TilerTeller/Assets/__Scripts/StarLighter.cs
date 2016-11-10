@@ -34,8 +34,8 @@ public class StarLighter : MonoBehaviour {
 		set{
 
 			if (value == State.InstructionOne) {
-				instructions [0].DOFade (1, 1f).SetDelay(1f);
-				nextIcon.DOFade (1, 0.5f).SetDelay (5f);
+				instructions [0].DOFade (1, 1f).SetDelay(0.5f);
+				nextIcon.DOFade (1, 0.5f).SetDelay (1f);
 			}
 			if (value == State.InstructionTwo) {
 				sound.PlaySound ("EV_GUI_ButtonClick");
@@ -43,7 +43,7 @@ public class StarLighter : MonoBehaviour {
 				instructions [0].DOFade (0, 1f);
 				instructions [1].DOFade (0, 0);
 				instructions [1].DOFade (1, 1f).SetDelay (1.5f);
-				nextIcon.DOFade (1, 0.5f).SetDelay (5f);
+				nextIcon.DOFade (1, 0.5f).SetDelay (2f);
 				gameObject.GetComponent<Animator>().SetTrigger("P3start");
 
 			}
@@ -110,11 +110,15 @@ public class StarLighter : MonoBehaviour {
 
 			for (int i = 0; i < 4; i++) {
 				if (buttonCounter [i] != lastButtonCounter [i]) {
-					sound.PlaySound ("EV_Story2_Firefly_Release");
-					Eggy.SetTrigger ("release");
-					stars [i].transform.DOScale (0.85f, 0.2f);
-					stars [i].transform.DOScale (0.75f, 0.2f).SetDelay (0.2f);
-					StartCoroutine (lightUp (i,buttonCounter[i]));
+					if (!stars [i].isCompleted) {
+						sound.PlaySound ("EV_Story2_Firefly_Release");
+						Eggy.SetTrigger ("release" + i);
+						stars [i].transform.DOScale (0.85f, 0.2f);
+						stars [i].transform.DOScale (0.75f, 0.2f).SetDelay (0.2f);
+						StartCoroutine (lightUp (i, buttonCounter [i]));
+					} else {
+						Eggy.SetTrigger ("releasenone");
+					}
 					lastButtonCounter [i] = buttonCounter [i];
 					break;
 				}
@@ -134,7 +138,7 @@ public class StarLighter : MonoBehaviour {
 
 	IEnumerator lightUp( int star, int num){
 		stars [star].lightFirfly (num);
-		yield return new WaitForSeconds (3f);
+		yield return new WaitForSeconds (2f);
 		stars [star].lightStar (num);
 	}
 
