@@ -67,11 +67,11 @@ public class dataManager : MonoBehaviour {
 						valueNum [i] = int.Parse (values [i + 1]);
 					}
 				
-					if ((valueNum [0]-threshold) < 5 && (valueNum [1]-threshold) < 5 && (valueNum [2]-threshold) < 5 && (valueNum [3]-threshold) < 5) {
+					if ((valueNum [0]-threshold) < 3 && (valueNum [1]-threshold) < 3 && (valueNum [2]-threshold) < 3 && (valueNum [3]-threshold) < 3) {
 						puzzleSolved = 3;
-					} else if ((valueNum [4]-threshold) < 5 && (valueNum [5]-threshold) < 5 && (valueNum [6]-threshold) < 5 && (valueNum [7]-threshold) < 5) {
+					} else if ((valueNum [4]-threshold) < 3 && (valueNum [5]-threshold) < 3 && (valueNum [6]-threshold) < 3 && (valueNum [7]-threshold) < 3) {
 						puzzleSolved = 1;
-					} else if ((valueNum [8]-threshold) < 5 && (valueNum [9]-threshold) < 5 && (valueNum [10]-threshold) < 5 && valueNum [11] < 5) {
+					} else if ((valueNum [8]-threshold) < 3 && (valueNum [9]-threshold) < 3 && (valueNum [10]-threshold) < 3 && valueNum [11] < 3) {
 						puzzleSolved = 2;
 					} else
 						puzzleSolved = 0;
@@ -81,13 +81,13 @@ public class dataManager : MonoBehaviour {
 		}
 	}
 
-	public int setThreshold(){
+	public void setThreshold(){
 		float[] average = new float[3];
 		average[0] = (valueNum [0] + valueNum [1] + valueNum [2] + valueNum [3]) / 4f;
 		average[1] = (valueNum [4] + valueNum [5] + valueNum [6] + valueNum [7]) / 4f;
 		average[2] = (valueNum [8] + valueNum [8] + valueNum [10] + valueNum [11]) / 4f;
 
-		int minAverage = (int)average.Min ();
+		int minAverage = (int)average.Max ();
 		if (minAverage < threshold) {
 			threshold = minAverage;
 		}

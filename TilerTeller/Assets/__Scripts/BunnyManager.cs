@@ -38,7 +38,7 @@ public class BunnyManager : MonoBehaviour {
 
 			if (value == State.InstructionOne) {
 				instructions [0].DOFade (1, 1f).SetDelay(1f);
-				nextIcon.DOFade (1, 0.5f).SetDelay (5f);
+				nextIcon.DOFade (1, 0.5f).SetDelay (2f);
 			}
 			if (value == State.InstructionTwo) {
 				sound.PlaySound ("EV_GUI_ButtonClick");
@@ -46,7 +46,7 @@ public class BunnyManager : MonoBehaviour {
 				instructions [0].DOFade (0, 1f);
 				instructions [1].DOFade (0, 0);
 				instructions [1].DOFade (1, 1f).SetDelay (1.5f);
-				nextIcon.DOFade (1, 0.5f).SetDelay (5f);
+				nextIcon.DOFade (1, 0.5f).SetDelay (2f);
 			}
 			if (value == State.Start) {
 				sound.PlaySound ("EV_GUI_ButtonClick");
