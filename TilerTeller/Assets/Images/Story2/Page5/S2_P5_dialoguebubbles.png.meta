@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: eee67ac6a109b402fb9098ab589432fd
+timeCreated: 1478771131
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: S2_P5_dialogue_blueP
+    21300002: S2_P5_dialogue_redP
+    21300004: S2_P5_dialogue_yellowP
+    21300006: S2_P5_dialogue_greenP
+    21300008: S2_P5_dialogue_redE
+    21300010: S2_P5_dialogue_greenE
+    21300012: S2_P5_dialogue_yellowE
+    21300014: S2_P5_dialogue_blueE
+    21300016: S2_P5_dialogue_redP2
+    21300018: S2_P5_dialogue_greenP2
+    21300020: S2_P5_dialogue_yellowP2
+    21300022: S2_P5_dialogue_blueP2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: S2_P5_dialogue_blueP
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 613
+        width: 432
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_dialogue_redP
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 609
+        width: 433
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_dialogue_yellowP
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 590
+        width: 473
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_dialogue_greenP
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 589
+        width: 445
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_dialogue_redE
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 315
+        width: 346
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_dialogue_greenE
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 319
+        width: 347
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_dialogue_yellowE
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 311
+        width: 347
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_dialogue_blueE
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 296
+        width: 347
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_dialogue_redP2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 14
+        width: 347
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_dialogue_greenP2
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 15
+        width: 346
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_dialogue_yellowP2
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 0
+        width: 346
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_dialogue_blueP2
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 0
+        width: 348
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
