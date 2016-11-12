@@ -9,7 +9,7 @@ public class BunnyManager : MonoBehaviour {
 	public GameObject whiteBunnyRed;
 	public GameObject brownBunny;
 	public float duration;
-	public int totalBunnyNum = 25;
+	public int totalBunnyNum = 5;
 	public float timeInterval = 2;
 
 	public bool start = false;
@@ -20,6 +20,7 @@ public class BunnyManager : MonoBehaviour {
 
 	private int count = 0;
 	private SoundManager sound;
+	private GameObject lastBunny;
 
 	public enum State
 	{
@@ -60,7 +61,13 @@ public class BunnyManager : MonoBehaviour {
 				StartCoroutine (m_Spawn ());
 			}
 			if (value == State.End) {
-				Debug.Log ("end");
+				if (lastBunny.transform.position.x < -8f) {
+					gameObject.GetComponent<Animator> ().SetTrigger ("end");
+					GameObject.Find ("S2_P4_light").SetActive (false);
+					instructions [2].DOFade (0, 0);
+					instructions [3].DOFade (0, 0);
+					instructions [3].DOFade (1, 1);
+				}
 			}
 
 			m_state = value;
@@ -73,7 +80,7 @@ public class BunnyManager : MonoBehaviour {
 
 
 	void Awake(){
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < 4; i++) {
 			instructions [i].DOFade (0, 0);
 		}
 		sound = GameObject.Find ("SoundManager").GetComponent<SoundManager> ();
@@ -110,9 +117,10 @@ public class BunnyManager : MonoBehaviour {
 			}
 			yield return new WaitForSeconds (timeInterval);
 
-			SpawnBunny ( duration - count*0.1f);
 
 			count++;
+
+			SpawnBunny ( duration - count*0.1f);
 		}
 	}
 
@@ -124,17 +132,28 @@ public class BunnyManager : MonoBehaviour {
 			GameObject brownBunnyClone = (GameObject)Instantiate (brownBunny, brownBunny.transform.position, brownBunny.transform.rotation);
 			brownBunnyClone.transform.parent = gameObject.transform;
 			brownBunnyClone.GetComponent<BunnyMov> ().duration = duration;
+			if (count == totalBunnyNum) {
+				lastBunny = brownBunnyClone;
+			}
 		}
 		if (bunnyType >= 1 && bunnyType < 3) {
 			GameObject whiteBunnyClone = (GameObject)Instantiate (whiteBunny, whiteBunny.transform.position, whiteBunny.transform.rotation);
 			whiteBunnyClone.transform.parent = gameObject.transform;
 			whiteBunnyClone.GetComponent<BunnyMov> ().duration = duration;
+			if (count == totalBunnyNum) {
+				lastBunny = whiteBunnyClone;
+			}
 		}
 		if (bunnyType >= 3) {
 			GameObject whiteBunnyRedClone = (GameObject)Instantiate (whiteBunnyRed, whiteBunnyRed.transform.position, whiteBunnyRed.transform.rotation);
 			whiteBunnyRedClone.transform.parent = gameObject.transform;
 			whiteBunnyRedClone.GetComponent<BunnyMov> ().duration = duration;
+			if (count == totalBunnyNum) {
+				lastBunny = whiteBunnyRedClone;
+			}
 		}
+
+
 			
 	}
 

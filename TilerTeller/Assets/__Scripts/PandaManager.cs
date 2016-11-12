@@ -45,6 +45,9 @@ public class PandaManager : MonoBehaviour {
 		set{
 
 			if (value == State.InstructionOne) {
+				showPandaDialogue (-1, pandaDialogues);
+				showPandaDialogue (-1, pandaDialoguesTwo);
+				showEggyDialogue (-1);
 				instructions [1].DOFade (0, 0);
 				instructions [0].DOFade (1, 1f).SetDelay (0.5f);
 				nextIcon.DOFade (1, 0.5f).SetDelay (2f);
@@ -93,6 +96,11 @@ public class PandaManager : MonoBehaviour {
 	}
 
 	void showPandaDialogue(int m, GameObject[] dialogues){
+		if (m == -1) {
+			foreach (GameObject dialogue in dialogues) {
+				dialogue.SetActive (false);
+			}
+		}
 		for (int i = 0; i < 4; i++) {
 			if (i == pandaOrder [m]) {
 				dialogues [i].SetActive (true);
@@ -103,6 +111,11 @@ public class PandaManager : MonoBehaviour {
 	}
 
 	void showEggyDialogue(int m){
+		if (m == -1) {
+			foreach (GameObject dialogue in eggyDialogues) {
+				dialogue.SetActive (false);
+			}
+		}
 		for (int i = 0; i < 4; i++) {
 			if (i == m) {
 				eggyDialogues [i].SetActive (true);

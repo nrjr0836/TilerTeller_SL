@@ -59,8 +59,11 @@ public class StarLighter : MonoBehaviour {
 
 			}
 			if (value == State.Completed) {
+				instructions [2].DOFade (0, 1f);
+				instructions [3].DOFade (0, 0);
+				instructions [3].DOFade (0, 1f).SetDelay (1.5f);
 				sound.PlaySound ("EV_Story2_Firefly_LevelComplete");
-				Debug.Log ("Level Complete!");
+				gameObject.GetComponent<Animator> ().SetTrigger ("P3end");
 			}
 
 			m_state = value;
@@ -69,7 +72,7 @@ public class StarLighter : MonoBehaviour {
 	}
 
 	void Awake(){
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < 4; i++) {
 			instructions [i].DOFade (0, 0);
 		}
 	}
