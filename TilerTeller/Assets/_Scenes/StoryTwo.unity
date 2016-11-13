@@ -763,10 +763,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.13, y: -1.61, z: -0.9}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 15}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 579547578}
-  m_RootOrder: 9
+  m_RootOrder: 10
 --- !u!212 &85278669
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1631,7 +1631,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 579547578}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!212 &221156228
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2333,7 +2333,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 579547578}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!95 &306734830
 Animator:
   serializedVersion: 3
@@ -3071,7 +3071,7 @@ Transform:
   - {fileID: 1795364887}
   - {fileID: 1564194839}
   m_Father: {fileID: 579547578}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!95 &419401527
 Animator:
   serializedVersion: 3
@@ -3471,7 +3471,7 @@ RectTransform:
   - {fileID: 329515145}
   - {fileID: 1286426592}
   m_Father: {fileID: 579547578}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -3742,6 +3742,7 @@ Transform:
   - {fileID: 1208327334}
   - {fileID: 930392374}
   - {fileID: 2048843270}
+  - {fileID: 1516067785}
   - {fileID: 306734829}
   - {fileID: 1982515516}
   - {fileID: 85278668}
@@ -4942,7 +4943,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.47, y: 1.1001151, z: -0.6561971}
   m_LocalScale: {x: 0.71428573, y: 0.71428573, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1982515516}
   m_RootOrder: 0
@@ -5720,9 +5721,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: "Remember the order shown here!\n\nPlease press the coloured pandas on the
-    tile in this order to call the pandas in to dye their fur. You will do it without
-    the book\u2019s help, and press start when you are ready."
+  m_Text: "This is pandas\u2019 wish list! Help them dye the colors they want by pressing
+    the colored pandas on the tile. Ready? Then press start!"
 --- !u!222 &1225274127
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5918,10 +5918,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: "The Panda Barber is hiring a hair dyer for fur. Eggy Land\u2019s last human
-    visitors brought a photo of pandas and found that our pandas are coloured different
-    from theirs. It started a trend in Eggy Land of pandas dyeing themselves black
-    and white!"
+  m_Text: "The Panda Barber is hiring a hair dyer for fur. Eggy Land\u2019s pandas
+    are tired of being black and white and want to be different."
 --- !u!222 &1234607385
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7375,6 +7373,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
+--- !u!1 &1516067784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1516067785}
+  - 212: {fileID: 1516067786}
+  m_Layer: 0
+  m_Name: Story2_Page3BgEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1516067785
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1516067784}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 579547578}
+  m_RootOrder: 7
+--- !u!212 &1516067786
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1516067784}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 1
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 87528ad94f4ae466aae63c4a9b41c14c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &1519972799
 GameObject:
   m_ObjectHideFlags: 0
@@ -9105,7 +9165,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.026960678, w: 0.99963653}
   m_LocalPosition: {x: 1.3499886, y: 0.36427087, z: -0.6561971}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -7.8656807}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1982515516}
   m_RootOrder: 1
@@ -9939,10 +9999,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The bunnies will open their eyes when they arrive below the flashlight.
+  m_Text: The bunnies will open their eyes when they arrive below the flashing light.
     If you notice that their eyes are red, press the biggest carrot on the tile to
-    give them carrot medicine. It only works if you do it when their eyes are open.
-    Bunnies with black eyes don't need medicine, so don't give them any!
+    give them carrot medicine. Bunnies with black eyes don't need medicine, so don't
+    give them any!
 --- !u!222 &1924494255
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10240,7 +10300,7 @@ Transform:
   - {fileID: 1014967122}
   - {fileID: 1755935121}
   m_Father: {fileID: 579547578}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!212 &1982515517
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10470,7 +10530,7 @@ Transform:
   - {fileID: 508789062}
   - {fileID: 2026104551}
   m_Father: {fileID: 579547578}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!95 &2020182028
 Animator:
   serializedVersion: 3
@@ -10991,7 +11051,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: Some bunnies from Bunny Kindergarten have recently gotten red eyes. This
     comes from not eating their vegetables and not taking their vitamins. The principal
-    needs a helper to count the number of red eyes bunnies, and give them carrot medicine.
+    wants to hire a helper to give the red-eyed bunnies carrot medicine.
 --- !u!222 &2081721046
 CanvasRenderer:
   m_ObjectHideFlags: 0

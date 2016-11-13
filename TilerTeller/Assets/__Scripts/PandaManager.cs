@@ -116,12 +116,13 @@ public class PandaManager : MonoBehaviour {
 			foreach (GameObject dialogue in eggyDialogues) {
 				dialogue.SetActive (false);
 			}
-		}
+		}else{
 		for (int i = 0; i < 4; i++) {
 			if (i == m) {
 				eggyDialogues [i].SetActive (true);
 			} else {
 				eggyDialogues [i].SetActive (false);
+			}
 			}
 		}
 	}
