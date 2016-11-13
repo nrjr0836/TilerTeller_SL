@@ -100,12 +100,13 @@ public class PandaManager : MonoBehaviour {
 			foreach (GameObject dialogue in dialogues) {
 				dialogue.SetActive (false);
 			}
-		}
-		for (int i = 0; i < 4; i++) {
-			if (i == pandaOrder [m]) {
-				dialogues [i].SetActive (true);
-			} else {
-				dialogues [i].SetActive (false);
+		} else {
+			for (int i = 0; i < 4; i++) {
+				if (i == pandaOrder [m]) {
+					dialogues [i].SetActive (true);
+				} else {
+					dialogues [i].SetActive (false);
+				}
 			}
 		}
 	}

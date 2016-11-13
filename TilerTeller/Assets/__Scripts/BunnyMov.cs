@@ -97,26 +97,13 @@ public class BunnyMov : MonoBehaviour {
 				}
 			 else if (Input.GetMouseButtonDown (0)) {
 					
-//					medicine.GetComponent<Animator> ().SetTrigger ("start");
-//					eggy.GetComponent<Animator> ().SetTrigger ("drop");
-//					sound.PlaySound ("EV_Story2_Rabbit_Squeeze");
-
 					isClicked = true;
 
 					if (isRed) {
-//						sound.PlaySound ("EV_Story2_Rabbit_Correct");
-//						StartCoroutine (LightControl (1));
-//						bunnyBlackEye.SetActive (true);
 						StartCoroutine (isRedClicked());
 					} else {
-//						sound.PlaySound ("EV_Story2_Rabbit_Wrong");
-//						StartCoroutine (LightControl (2));
-//						bunnyCry.SetActive (true);
 						StartCoroutine (isWhiteClicked ());
 					}
-
-
-
 				}
 
 		}
@@ -165,7 +152,6 @@ public class BunnyMov : MonoBehaviour {
 			Light.GetComponent<SpriteRenderer> ().sprite = lights[2]; }
 		eggy.GetComponent<Animator> ().SetTrigger ("drop");
 
-		yield return new WaitForSeconds (0.5f);
 		Light.GetComponent<SpriteRenderer> ().sprite = lights[0];
 		medicine.GetComponent<Animator> ().SetTrigger ("start");
 		sound.PlaySound ("EV_Story2_Rabbit_Squeeze");
