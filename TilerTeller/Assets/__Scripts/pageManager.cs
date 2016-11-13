@@ -263,7 +263,7 @@ public class pageManager : MonoBehaviour {
 	void showHintPage(){
 		hintPageCount++;
 		if (hintPageCount > 1) {
-			hintText.text = "aaaaaa you can reuse those wooden blocks!";
+			hintText.text = "Good job! Let’s go to another amazing place with Robin! You can reuse the blocks you placed.";
 		}
 
 		if (GameObject.Find ("BluetoothManager") != null) {

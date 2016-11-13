@@ -1,13 +1,13 @@
 fileFormatVersion: 2
 guid: a62f8c32b74244bda99cd48a4583ee5f
-timeCreated: 1478237821
+timeCreated: 1479031774
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: S2_P4_tube
-    21300002: S2_P4_atlas1_1
-    21300004: S2_P4_atlas1_2
-    21300006: S2_P4_atlas1_3
+    21300002: S2_P4_goldcarrot
+    21300004: S2_P4_graycarrot
+    21300006: S2_P4_bunnybar
     21300008: S2_P4_atlas1_4
     21300010: S2_P4_atlas1_5
     21300012: S2_P4_atlas1_6
@@ -19,6 +19,9 @@ TextureImporter:
     21300024: S2_P4_greenLight
     21300026: S2_P4_medicine
     21300028: S2_P4_carrots
+    21300030: S2_P4_atlas1_0
+    21300032: S2_P4_carrotbar
+    21300034: S2_P4_progressbar
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -71,49 +74,49 @@ TextureImporter:
       name: S2_P4_tube
       rect:
         serializedVersion: 2
-        x: 0
-        y: 988
-        width: 1920
-        height: 275
+        x: 725
+        y: 998
+        width: 392
+        height: 270
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: S2_P4_atlas1_1
+      name: S2_P4_goldcarrot
       rect:
         serializedVersion: 2
-        x: 74
-        y: 702
-        width: 200
-        height: 271
+        x: 193
+        y: 800
+        width: 79
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5446212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_graycarrot
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 800
+        width: 79
+        height: 91
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: S2_P4_atlas1_2
+      name: S2_P4_bunnybar
       rect:
         serializedVersion: 2
-        x: 353
-        y: 702
-        width: 201
-        height: 271
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: S2_P4_atlas1_3
-      rect:
-        serializedVersion: 2
-        x: 609
-        y: 702
-        width: 201
-        height: 271
+        x: 1237
+        y: 947
+        width: 504
+        height: 260
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,10 +139,10 @@ TextureImporter:
       name: S2_P4_atlas1_5
       rect:
         serializedVersion: 2
-        x: 1244
-        y: 702
-        width: 201
-        height: 271
+        x: 999
+        y: 732
+        width: 61
+        height: 157
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,8 +152,8 @@ TextureImporter:
       name: S2_P4_atlas1_6
       rect:
         serializedVersion: 2
-        x: 1559
-        y: 702
+        x: 1426
+        y: 566
         width: 201
         height: 271
       alignment: 0
@@ -253,10 +256,49 @@ TextureImporter:
       name: S2_P4_carrots
       rect:
         serializedVersion: 2
-        x: 53
-        y: 705
-        width: 1884
-        height: 278
+        x: 465
+        y: 756
+        width: 640
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_atlas1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 786
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_carrotbar
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 956
+        width: 446
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P4_progressbar
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 856
+        width: 367
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
