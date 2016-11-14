@@ -89,7 +89,9 @@ public class PandaManager : MonoBehaviour {
 				showPandaDialogue (3,pandaDialogues);
 			}
 			if (value == State.End) {
-				
+				anim.SetTrigger ("complete");
+				instructions [1].DOFade (0, 0);
+				instructions [2].DOFade (1, 0).SetDelay (0.5f);
 			}
 			m_state = value;
 		}
@@ -131,7 +133,7 @@ public class PandaManager : MonoBehaviour {
 
 
 	void Awake(){
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i <3; i++) {
 			instructions [i].DOFade (0, 0);
 		}
 		anim = gameObject.GetComponent<Animator> ();
@@ -155,6 +157,8 @@ public class PandaManager : MonoBehaviour {
 
 
 		if ((int)state > 2 && (int) state< 7) {
+
+
 			
 				if (Input.GetKeyDown ((pandaOrder [(int)state - 3] + 1).ToString ())) {
 //				Debug.Log (pandaOrder [(int)state - 2]);
@@ -197,7 +201,7 @@ public class PandaManager : MonoBehaviour {
 		}
 
 		if (state == State.End) {
-			Debug.Log ("Complete!");
+
 		}
 
 

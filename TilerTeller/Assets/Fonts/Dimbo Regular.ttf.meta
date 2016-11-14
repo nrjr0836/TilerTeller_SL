@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: bcf6741eef01b433f873f119d01899ff
-timeCreated: 1475558756
+guid: d87d3a18e5f434216b597f8224ccfb11
+timeCreated: 1479089433
 licenseType: Free
 TrueTypeFontImporter:
   serializedVersion: 4
@@ -10,7 +10,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Droid Serif
+  - Dimbo
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
