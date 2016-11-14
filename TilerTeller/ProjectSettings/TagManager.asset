@@ -10,6 +10,7 @@ TagManager:
   - UI
   - background
   - firefly
+  - bunny
   layers:
   - Default
   - TransparentFX

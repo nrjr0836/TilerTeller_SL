@@ -2513,7 +2513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &329515145
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3466,7 +3466,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1872711536}
-  - {fileID: 699725128}
+  - {fileID: 1323574061}
   - {fileID: 703515955}
   - {fileID: 329515145}
   - {fileID: 1286426592}
@@ -3765,7 +3765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instructions:
   - {fileID: 1872711537}
-  - {fileID: 699725129}
+  - {fileID: 1323574063}
   - {fileID: 703515956}
   - {fileID: 329515147}
   nextIcon: {fileID: 455636793}
@@ -3778,6 +3778,13 @@ MonoBehaviour:
   sound: {fileID: 499782274}
   start: 0
   leave: 0
+  textList:
+  - Behind every shining star in the night sky are the hardworking fireflies. Each
+    night, fireflies shoot into the sky to light up the night.
+  - But the stars are so far away.  Someone needs to release the basket of fireflies
+    into the night sky to make their journey shorter.
+  - 'On the tile, there is a number on each firefly''s body. These numbers represent
+    how many fireflies are needed to light up a star of that size. '
 --- !u!95 &579547580
 Animator:
   serializedVersion: 3
@@ -4217,83 +4224,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca,
     type: 2}
   m_PrefabInternal: {fileID: 687109377}
---- !u!1 &699725127
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 224: {fileID: 699725128}
-  - 222: {fileID: 699725130}
-  - 114: {fileID: 699725129}
-  m_Layer: 5
-  m_Name: Instruction2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &699725128
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 699725127}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 514597743}
-  m_RootOrder: 1
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: -187}
-  m_SizeDelta: {x: 380, y: 250}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &699725129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 699725127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 9306f211bb7294a51b6803837fb7a876, type: 3}
-    m_FontSize: 21
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 0.8
-  m_Text: 'On the tile, there is a number on each firefly''s body. These numbers represent
-    how many fireflies are needed to light up a star of that size. With these numbers,
-    press down on that firefly the correct number of times. Each press will release
-    a firefly into the night sky on the screen. '
---- !u!222 &699725130
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 699725127}
 --- !u!1 &703515954
 GameObject:
   m_ObjectHideFlags: 0
@@ -4310,7 +4240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &703515955
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4693,7 +4623,7 @@ GameObject:
   - 4: {fileID: 841063983}
   - 212: {fileID: 841063984}
   m_Layer: 0
-  m_Name: S2_P4_goldcarrot
+  m_Name: S2_P4_goldcarrot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4780,7 +4710,7 @@ RectTransform:
   - {fileID: 74159200}
   - {fileID: 1589344966}
   m_Father: {fileID: 1380620751}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -6510,6 +6440,81 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &1323574060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1323574061}
+  - 222: {fileID: 1323574062}
+  - 114: {fileID: 1323574063}
+  m_Layer: 5
+  m_Name: Instruction2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1323574061
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323574060}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 514597743}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 255.99998, y: 126.99999}
+  m_SizeDelta: {x: 400, y: 250}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1323574062
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323574060}
+--- !u!114 &1323574063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323574060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 9306f211bb7294a51b6803837fb7a876, type: 3}
+    m_FontSize: 21
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 0.8
+  m_Text: 'With these numbers, press down on that firefly the correct number of times.
+    Each press will release a firefly into the night sky on the screen. '
 --- !u!1001 &1363449584
 Prefab:
   m_ObjectHideFlags: 0
@@ -6642,10 +6647,10 @@ Transform:
   - {fileID: 1564116532}
   - {fileID: 165101515}
   - {fileID: 2085760464}
+  - {fileID: 878686842}
   - {fileID: 45034600}
   - {fileID: 2051693063}
   - {fileID: 1764657571}
-  - {fileID: 878686842}
   - {fileID: 1425925724}
   - {fileID: 1955458694}
   - {fileID: 1434659076}
@@ -6667,16 +6672,30 @@ MonoBehaviour:
     type: 2}
   brownBunny: {fileID: 1000014101887096, guid: 7f9f055a955124e21982999b82b74d04, type: 2}
   duration: 6
-  totalBunnyNum: 5
+  totalBunnyNum: 16
   timeInterval: 6
+  mylight: {fileID: 1595151533}
   start: 0
   leave: 0
+  goldCarrot:
+  - {fileID: 841063982}
+  - {fileID: 1836796148}
+  - {fileID: 1713309240}
+  grayCarrot:
+  - {fileID: 1685285836}
+  - {fileID: 1400419775}
+  - {fileID: 1296585960}
+  progressBar: {fileID: 1511872898}
   instructions:
   - {fileID: 2081721045}
   - {fileID: 1924494254}
   - {fileID: 377459062}
   - {fileID: 74159201}
   nextIcon: {fileID: 1299389955}
+  textList:
+  - 'Some bunnies from Bunny Kindergarten have recently gotten red eyes! This comes
+    from not eating their vegetables and not taking their vitamins. '
+  - The principal wants to hire a helper to give the those bunnies carrot medicine.
 --- !u!95 &1380620753
 Animator:
   serializedVersion: 3
@@ -7007,7 +7026,7 @@ Transform:
   m_GameObject: {fileID: 1425925723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.36844602, y: 0.100101486, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8083772, y: 0.8083772, z: 0.8083772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1051917738}
@@ -7623,7 +7642,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1511872898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.35, y: -0.54, z: 0}
+  m_LocalPosition: {x: 2.105, y: -0.491, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -8647,7 +8666,7 @@ GameObject:
   - 212: {fileID: 1595151535}
   - 95: {fileID: 1595151536}
   m_Layer: 0
-  m_Name: S2_P4_light
+  m_Name: mlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9195,7 +9214,7 @@ GameObject:
   - 4: {fileID: 1713309241}
   - 212: {fileID: 1713309242}
   m_Layer: 0
-  m_Name: S2_P4_goldcarrot (2)
+  m_Name: S2_P4_goldcarrot3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9879,7 +9898,7 @@ GameObject:
   - 4: {fileID: 1836796149}
   - 212: {fileID: 1836796150}
   m_Layer: 0
-  m_Name: S2_P4_goldcarrot (1)
+  m_Name: S2_P4_goldcarrot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10226,10 +10245,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: "Behind every shining star in the night sky are the hardworking fireflies.
-    Each night, fireflies shoot into the sky to light up the night. But the stars
-    are so far away. \nSomeone needs to release the basket of fireflies into the night
-    sky to make their journey shorter."
+  m_Text: Behind every shining star in the night sky are the hardworking fireflies.
+    Each night, fireflies shoot into the sky to light up the night.
 --- !u!222 &1872711538
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10442,8 +10459,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: The bunnies will open their eyes when they arrive below the flashing light.
     If you notice that their eyes are red, press the biggest carrot on the tile to
-    give them carrot medicine. Bunnies with black eyes don't need medicine, so don't
-    give them any!
+    give them carrot medicine. Bunnies with black eyes don't need medicine!
 --- !u!222 &1924494255
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11553,9 +11569,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Some bunnies from Bunny Kindergarten have recently gotten red eyes. This
+  m_Text: Some bunnies from Bunny Kindergarten have recently gotten red eyes! This
     comes from not eating their vegetables and not taking their vitamins. The principal
-    wants to hire a helper to give the red-eyed bunnies carrot medicine.
+    wants to hire a helper to give the those bunnies carrot medicine.
 --- !u!222 &2081721046
 CanvasRenderer:
   m_ObjectHideFlags: 0

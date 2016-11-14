@@ -10,6 +10,7 @@ public class BunnyMov : MonoBehaviour {
 	public float duration = 1.0f;
 	public Sprite[] lights;
 
+	public static int correctNum = 0;
 
 
 	private Sequence bunnyMov;
@@ -33,8 +34,8 @@ public class BunnyMov : MonoBehaviour {
 
 		sound = GameObject.Find ("SoundManager").GetComponent<SoundManager>();
 
-		Light = GameObject.Find ("Light");
-		eggy = GameObject.Find ("S2_P4_eggy");
+		Light = GameObject.Find ("Page4/Light");
+		eggy = GameObject.Find ("Page4/S2_P4_eggy");
 	
 		openEyePos = (float)(1.5 - Random.Range (0, 0.5f));
 
@@ -87,7 +88,7 @@ public class BunnyMov : MonoBehaviour {
 
 					isClicked = true;
 					if (isRed) {
-						
+
 					StartCoroutine (isRedClicked());
 	
 					} else {
@@ -101,6 +102,7 @@ public class BunnyMov : MonoBehaviour {
 
 					if (isRed) {
 						StartCoroutine (isRedClicked());
+
 					} else {
 						StartCoroutine (isWhiteClicked ());
 					}
@@ -117,7 +119,10 @@ public class BunnyMov : MonoBehaviour {
 			}
 		}
 
-		if (transform.position.x < -8.5f) {
+		if (transform.position.x < -8.35f) {
+			if (!bunnyCry.activeSelf) {
+				correctNum++;
+			}
 			Destroy (gameObject);
 		}
 	}
@@ -137,13 +142,16 @@ public class BunnyMov : MonoBehaviour {
 			Light.GetComponent<SpriteRenderer> ().sprite = lights[1]; }
 		eggy.GetComponent<Animator> ().SetTrigger ("drop");
 
-		Light.GetComponent<SpriteRenderer> ().sprite = lights[0];
+
 		medicine.GetComponent<Animator> ().SetTrigger ("start");
 		sound.PlaySound ("EV_Story2_Rabbit_Squeeze");
 
 		yield return new WaitForSeconds (1f);
 		sound.PlaySound ("EV_Story2_Rabbit_Correct");
 		bunnyBlackEye.SetActive (true);
+
+		yield return new WaitForSeconds (1f);
+		Light.GetComponent<SpriteRenderer> ().sprite = lights[0];
 	}
 
 	IEnumerator isWhiteClicked( ){
@@ -152,13 +160,16 @@ public class BunnyMov : MonoBehaviour {
 			Light.GetComponent<SpriteRenderer> ().sprite = lights[2]; }
 		eggy.GetComponent<Animator> ().SetTrigger ("drop");
 
-		Light.GetComponent<SpriteRenderer> ().sprite = lights[0];
+
 		medicine.GetComponent<Animator> ().SetTrigger ("start");
 		sound.PlaySound ("EV_Story2_Rabbit_Squeeze");
 
 		yield return new WaitForSeconds (1f);
 		sound.PlaySound ("EV_Story2_Rabbit_Wrong");
 		bunnyCry.SetActive (true);
+
+		yield return new WaitForSeconds (1f);
+		Light.GetComponent<SpriteRenderer> ().sprite = lights[0];
 	}
 
 }

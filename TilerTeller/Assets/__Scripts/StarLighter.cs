@@ -22,9 +22,10 @@ public class StarLighter : MonoBehaviour {
 
 	public enum State{
 		InstructionOne = 0,
-		InstructionTwo = 1,
-		Start = 2,
-		Completed = 3,
+		InstructionTwo = 3,
+		Start = 4,
+		Completed = 5,
+		Reset = 6,
 	}
 
 	private State m_state = State.InstructionOne;
@@ -39,11 +40,12 @@ public class StarLighter : MonoBehaviour {
 			}
 			if (value == State.InstructionTwo) {
 				sound.PlaySound ("EV_GUI_ButtonClick");
-				nextIcon.DOFade (0, 1f);
-				instructions [0].DOFade (0, 1f);
+				nextIcon.DOFade (0, 0);
+				nextIcon.DOFade (1, 0.5f).SetDelay(1);
+				instructions [0].DOFade (0, 0);
 				instructions [1].DOFade (0, 0);
-				instructions [1].DOFade (1, 1f).SetDelay (1.5f);
-				nextIcon.DOFade (1, 0.5f).SetDelay (2f);
+				instructions [1].DOFade (1, 0);
+				nextIcon.DOFade (1, 0.5f).SetDelay (0.5f);
 				gameObject.GetComponent<Animator>().SetTrigger("P3start");
 
 			}
@@ -55,21 +57,34 @@ public class StarLighter : MonoBehaviour {
 				nextIcon.DOFade (0, 1f);
 				instructions [1].DOFade (0, 1f);
 				instructions [2].DOFade (0, 0);
-				instructions [2].DOFade (1, 1f).SetDelay (1.5f);
+				instructions [2].DOFade (1, 1f);
 
 			}
 			if (value == State.Completed) {
 				instructions [2].DOFade (0, 1f);
 				instructions [3].DOFade (0, 0);
-				instructions [3].DOFade (0, 1f).SetDelay (1.5f);
+				instructions [4].DOFade (1, 1f);
 				sound.PlaySound ("EV_Story2_Firefly_LevelComplete");
 				gameObject.GetComponent<Animator> ().SetTrigger ("P3end");
+			}
+			if (value == State.Reset) {
+				gameObject.GetComponent<Animator> ().SetTrigger ("restart");
+			}
+
+			int textIndex = (int)value;
+			if (textIndex < textList.Length) {
+				sound.PlaySound ("EV_GUI_ButtonClick");
+				instructions[0].text = textList [textIndex];
+				nextIcon.DOFade (0, 0f);
+				nextIcon.DOFade (1, 0.5f).SetDelay(1);
 			}
 
 			m_state = value;
 
 		}
 	}
+
+	[SerializeField] string[] textList;
 
 	void Awake(){
 		for (int i = 0; i < 4; i++) {
@@ -87,7 +102,7 @@ public class StarLighter : MonoBehaviour {
 			start = false;
 		}
 
-		if (Input.GetMouseButtonDown (0)&&(int)m_state<2) {
+		if (Input.GetMouseButtonDown (0)&&(int)m_state<4) {
 			state++;
 		}
 
@@ -133,7 +148,7 @@ public class StarLighter : MonoBehaviour {
 
 		}
 
-
+		Debug.Log (state);
 
 //		Debug.Log(buttonCounter[0]+","+buttonCounter[1]+","+buttonCounter[2]+","+buttonCounter[3]);
 	}
@@ -145,4 +160,7 @@ public class StarLighter : MonoBehaviour {
 		stars [star].lightStar (num);
 	}
 
+	public void reset(){
+		state = State.Reset;
+	}
 }

@@ -111,10 +111,12 @@ public class S2PageManager : MonoBehaviour {
 		}
 		if (currentPage == 3 && isStarted [1]) {
 			GameObject.Find ("Page4").GetComponent<BunnyManager> ().leave = true;
+			GameObject.Find ("Page4").GetComponent<BunnyManager> ().reset (); 
 			isStarted [1] = false;
 		}
 		if (currentPage == 2 && isStarted [0]) {
 			GameObject.Find ("Page3").GetComponent<StarLighter> ().leave = true;
+			GameObject.Find ("Page3").GetComponent<BunnyManager> ().reset (); 
 			isStarted [0] = false;
 		}
 
