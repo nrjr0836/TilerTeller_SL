@@ -26,14 +26,25 @@ public class notebookGenerator : MonoBehaviour {
 		mask.DOFade (0, 1f);
 		gameObject.GetComponent<CanvasGroup> ().DOFade (0, 1).SetDelay (0.5f);
 
+		gameObject.SetActive (false);
 
 	}
 
 	public void popupPandas(){
+		StartCoroutine (playBubbleSound ());
 		pandasCreated [0].GetComponent<RectTransform> ().DOScale (0.68f, 0.5f).SetDelay(0.8f);
 		pandasCreated [1].GetComponent<RectTransform> ().DOScale (0.68f, 0.5f).SetDelay(1.6f);
 		pandasCreated [2].GetComponent<RectTransform> ().DOScale (0.68f, 0.5f).SetDelay(2.4f);
 		pandasCreated [3].GetComponent<RectTransform> ().DOScale (0.68f, 0.5f).SetDelay(3.2f);
+	}
+
+	IEnumerator playBubbleSound(){
+		int i = 0;
+		while (i < 4) {
+			yield return new WaitForSeconds (0.8f);
+			AkSoundEngine.PostEvent ("EV_Story2_Panda_SpeechBubble_02",gameObject);
+			i++;
+		}
 	}
 
 

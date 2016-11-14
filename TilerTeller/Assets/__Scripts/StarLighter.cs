@@ -72,6 +72,13 @@ public class StarLighter : MonoBehaviour {
 				gameObject.GetComponent<Animator> ().SetTrigger ("P3end");
 			}
 			if (value == State.Reset) {
+				for(int i=0; i<4;i++){
+					buttonCounter[i] = 0;
+					lastButtonCounter[i] = 0;
+				}
+				if (GameObject.Find ("BluetoothManager") != null) {
+					bluetoothManager.Instance.datamanager.setButtonCounter ();
+				}
 				gameObject.GetComponent<Animator> ().SetTrigger ("restart");
 			}
 

@@ -69,11 +69,16 @@ public class PandaManager : MonoBehaviour {
 				instructions [2].DOFade (0, 0);
 				instructions [0].DOFade (0, 0);
 				instructions [1].DOFade (0, 0);
+				notebook.gameObject.SetActive (true);
 				notebook.GetComponent<CanvasGroup> ().DOFade (1, 0.5f);
 				notebook.createPandas ();
+
 			}
 
 			if (value == State.Start) {
+				if (GameObject.Find ("BluetoothManager") != null) {
+					bluetoothManager.Instance.datamanager.setPandaPressed ();
+				}
 				sound.PlaySound("EV_Story2_Panda_Instruct_DLG_Stop");
 				pandaOrder = (int[])notebook.getPandaOrder ().Clone();
 				Debug.Log (pandaOrder[0]+" "+pandaOrder[1]+" "+pandaOrder[2]+" "+pandaOrder[3]+" ");
@@ -123,7 +128,9 @@ public class PandaManager : MonoBehaviour {
 	}
 
 	IEnumerator playPandaDialogues(int num){
-		yield return new WaitForSeconds (2);
+		yield return new WaitForSeconds (1f);
+		sound.PlaySound ("EV_Story2_Panda_Walk");
+		yield return new WaitForSeconds (0.5f);
 		sound.PlaySound(soundEvents [num]);
 	}
 
@@ -175,10 +182,17 @@ public class PandaManager : MonoBehaviour {
 
 	IEnumerator playPandaWrong(int num){
 		sound.PlaySound (soundEvents [num + 4]);
-		yield return new WaitForSeconds (2f);
+		yield return new WaitForSeconds (1.5f);
 		sound.PlaySound ("EV_Story2_Panda_UhOh_DLG");
 	}
 
+	IEnumerator playPandaRight(){
+		sound.PlaySound ("EV_Story2_Panda_ThankYou_DLG");
+		yield return new WaitForSeconds (0.3f);
+		sound.PlaySound ("EV_Story2_Panda_Jump");
+		yield return new WaitForSeconds (0.8f);
+		sound.PlaySound ("EV_Story2_Panda_Perm");
+	}
 
 	void Update(){
 		
@@ -212,7 +226,7 @@ public class PandaManager : MonoBehaviour {
 					anim.SetTrigger ("jump");
 					anim.SetTrigger (triggers [pandaOrder [(int)state - 3]]);
 					isCorrect = true;
-					sound.PlaySound ("EV_Story2_Panda_ThankYou_DLG");
+					StartCoroutine (playPandaRight ());
 				} else if (panda_pressed == 0) {
 					StartCoroutine (playPandaWrong (0));
 					anim.SetBool ("wrong", true);
@@ -244,7 +258,7 @@ public class PandaManager : MonoBehaviour {
 					anim.SetTrigger ("jump");
 					anim.SetTrigger (triggers [pandaOrder [(int)state - 3]]);
 					isCorrect = true;
-				sound.PlaySound ("EV_Story2_Panda_ThankYou_DLG");
+					StartCoroutine (playPandaRight ());
 				} 
 
 

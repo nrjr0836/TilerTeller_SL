@@ -67,11 +67,11 @@ public class dataManager : MonoBehaviour {
 						valueNum [i] = int.Parse (values [i + 1]);
 					}
 				
-					if ((valueNum [0]-threshold) < 3 && (valueNum [1]-threshold) < 3 && (valueNum [2]-threshold) < 3 && (valueNum [3]-threshold) < 3) {
+					if (valueNum [0] < 6 && valueNum [1] < 6 && valueNum [2] < 6 && valueNum [3] < 6) {
 						puzzleSolved = 3;
-					} else if ((valueNum [4]-threshold) < 3 && (valueNum [5]-threshold) < 3 && (valueNum [6]-threshold) < 3 && (valueNum [7]-threshold) < 3) {
+					} else if (valueNum [4]< 6 && valueNum [5]< 3 && valueNum [6] < 6 && valueNum [7]< 3) {
 						puzzleSolved = 1;
-					} else if ((valueNum [8]-threshold) < 3 && (valueNum [9]-threshold) < 3 && (valueNum [10]-threshold) < 3 && valueNum [11] < 3) {
+					} else if (valueNum [8]< 6 && valueNum [9] < 6 && valueNum [10] < 6 && valueNum [11] < 6) {
 						puzzleSolved = 2;
 					} else
 						puzzleSolved = 0;

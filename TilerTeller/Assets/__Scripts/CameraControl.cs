@@ -151,7 +151,9 @@ public class CameraControl : MonoBehaviour {
 			last_start_time = Time.time;
 			state++;
 
-			StartCoroutine (playVoiceOver ((int)state + 2));
+			if ((int)state <= 7) {
+				StartCoroutine (playVoiceOver ((int)state + 2));
+			}
 
 			
 		}

@@ -10,6 +10,9 @@ public class storySelector : MonoBehaviour {
 		
 	}
 	public void selectStory(int story){
+		if (GameObject.Find ("BluetoothManager") != null) {
+			bluetoothManager.Instance.ble.sendBluetooth("1");
+		}
 		Application.LoadLevel (story);
 	}
 

@@ -93,6 +93,7 @@ public class BunnyManager : MonoBehaviour {
 					carrot.SetActive(false);
 				}
 				progressBar.transform.localScale = new Vector3(progressBarLength,1,1);
+				mylight.SetActive (true);
 			}
 
 			int textIndex = (int)value;

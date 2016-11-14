@@ -35,6 +35,8 @@
 				<Event Id="2727636172" Name="EV_Story1_End_DLG_03_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_End_DLG_03_Stop"/>
 				<Event Id="2987436791" Name="EV_Story1_End_DLG_04_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_End_DLG_04_Start"/>
 				<Event Id="1379278685" Name="EV_Story1_End_DLG_04_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_End_DLG_04_Stop"/>
+				<Event Id="1349708978" Name="EV_Story1_End_DLG_All_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_End_DLG_All_Start"/>
+				<Event Id="2434927082" Name="EV_Story1_End_DLG_All_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_End_DLG_All_Stop"/>
 				<Event Id="2105567173" Name="EV_Story1_Hint_AMB_Start" ObjectPath="\Events\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Hint_AMB_Start"/>
 				<Event Id="4146453607" Name="EV_Story1_Hint_AMB_Stop" ObjectPath="\Events\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Hint_AMB_Stop"/>
 				<Event Id="242817718" Name="EV_Story1_Hint_DLG_01_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_Hint_DLG_01_Start"/>
@@ -61,10 +63,12 @@
 				<Event Id="3029665981" Name="EV_Story2_Firefly_Intro_DLG_02_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Firefly Level Dialogue\EV_Story2_Firefly_Intro_DLG_02_Start"/>
 				<Event Id="3725438015" Name="EV_Story2_Firefly_Intro_DLG_02_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Firefly Level Dialogue\EV_Story2_Firefly_Intro_DLG_02_Stop"/>
 				<Event Id="1845310600" Name="EV_Story2_Firefly_LevelComplete" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Firefly_LevelComplete"/>
-				<Event Id="937719993" Name="EV_Story2_Firefly_MoonLightUp" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Firefly_MoonLightUp"/>
+				<Event Id="937719993" Name="EV_Story2_Firefly_MoonLightUp" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\Firefly SFX\EV_Story2_Firefly_MoonLightUp"/>
 				<Event Id="3486779827" Name="EV_Story2_Firefly_Music_Start" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Firefly_Music_Start"/>
 				<Event Id="1446957297" Name="EV_Story2_Firefly_Music_Stop" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Firefly_Music_Stop"/>
-				<Event Id="343313736" Name="EV_Story2_Firefly_Release" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Firefly_Release"/>
+				<Event Id="343313736" Name="EV_Story2_Firefly_Release" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\Firefly SFX\EV_Story2_Firefly_Release"/>
+				<Event Id="4092783964" Name="EV_Story2_Intro_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\EV_Story2_Intro_DLG_Start"/>
+				<Event Id="4185137456" Name="EV_Story2_Intro_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\EV_Story2_Intro_DLG_Stop"/>
 				<Event Id="193624520" Name="EV_Story2_Opening_Music_Start" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Opening_Music_Start"/>
 				<Event Id="3921523732" Name="EV_Story2_Opening_Music_Stop" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Opening_Music_Stop"/>
 				<Event Id="230092132" Name="EV_Story2_Panda_BluePlease_DLG" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_BluePlease_DLG"/>
@@ -77,38 +81,45 @@
 				<Event Id="3329150471" Name="EV_Story2_Panda_Instruct_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_Instruct_DLG_Stop"/>
 				<Event Id="3599273801" Name="EV_Story2_Panda_Intro_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_Intro_DLG_Start"/>
 				<Event Id="115791843" Name="EV_Story2_Panda_Intro_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_Intro_DLG_Stop"/>
+				<Event Id="554804560" Name="EV_Story2_Panda_Jump" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\Panda SFX\EV_Story2_Panda_Jump"/>
+				<Event Id="989767860" Name="EV_Story2_Panda_Music_Start" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Panda_Music_Start"/>
+				<Event Id="4093849384" Name="EV_Story2_Panda_Music_Stop" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Panda_Music_Stop"/>
 				<Event Id="3726360518" Name="EV_Story2_Panda_NextReady_DLG" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_NextReady_DLG"/>
 				<Event Id="140860319" Name="EV_Story2_Panda_Nonono_DLG" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_Nonono_DLG"/>
+				<Event Id="3319513926" Name="EV_Story2_Panda_Perm" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\Panda SFX\EV_Story2_Panda_Perm"/>
 				<Event Id="1299911977" Name="EV_Story2_Panda_RedPlease_DLG" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_RedPlease_DLG"/>
+				<Event Id="429832986" Name="EV_Story2_Panda_SpeechBubble_01" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\Panda SFX\EV_Story2_Panda_SpeechBubble_01"/>
+				<Event Id="429832985" Name="EV_Story2_Panda_SpeechBubble_02" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\Panda SFX\EV_Story2_Panda_SpeechBubble_02"/>
 				<Event Id="3143780455" Name="EV_Story2_Panda_ThankYou_DLG" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_ThankYou_DLG"/>
 				<Event Id="4145574756" Name="EV_Story2_Panda_UhOh_DLG" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_UhOh_DLG"/>
+				<Event Id="1627055191" Name="EV_Story2_Panda_Walk" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\Panda SFX\EV_Story2_Panda_Walk"/>
 				<Event Id="3331718640" Name="EV_Story2_Panda_YellowPlease_DLG" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_YellowPlease_DLG"/>
 				<Event Id="650563639" Name="EV_Story2_Posts_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\EV_Story2_Posts_DLG_Start"/>
 				<Event Id="528874141" Name="EV_Story2_Posts_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\EV_Story2_Posts_DLG_Stop"/>
-				<Event Id="175901804" Name="EV_Story2_Rabbit_Correct" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_Correct"/>
+				<Event Id="175901804" Name="EV_Story2_Rabbit_Correct" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\Rabbit SFX\EV_Story2_Rabbit_Correct"/>
 				<Event Id="4094061535" Name="EV_Story2_Rabbit_Instruct_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Rabbit Level Dialogue\EV_Story2_Rabbit_Instruct_DLG_Start"/>
 				<Event Id="1974507941" Name="EV_Story2_Rabbit_Instruct_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Rabbit Level Dialogue\EV_Story2_Rabbit_Instruct_DLG_Stop"/>
 				<Event Id="120744477" Name="EV_Story2_Rabbit_Intro_DLG_01_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Rabbit Level Dialogue\EV_Story2_Rabbit_Intro_DLG_01_Start"/>
 				<Event Id="1321617439" Name="EV_Story2_Rabbit_Intro_DLG_01_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Rabbit Level Dialogue\EV_Story2_Rabbit_Intro_DLG_01_Stop"/>
 				<Event Id="4142707966" Name="EV_Story2_Rabbit_Intro_DLG_02_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Rabbit Level Dialogue\EV_Story2_Rabbit_Intro_DLG_02_Start"/>
 				<Event Id="4250796318" Name="EV_Story2_Rabbit_Intro_DLG_02_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Rabbit Level Dialogue\EV_Story2_Rabbit_Intro_DLG_02_Stop"/>
-				<Event Id="1517039550" Name="EV_Story2_Rabbit_LightFlicker" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_LightFlicker"/>
+				<Event Id="1517039550" Name="EV_Story2_Rabbit_LightFlicker" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\Rabbit SFX\EV_Story2_Rabbit_LightFlicker"/>
 				<Event Id="1741920882" Name="EV_Story2_Rabbit_Music_Start" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Rabbit_Music_Start"/>
 				<Event Id="967831466" Name="EV_Story2_Rabbit_Music_Stop" ObjectPath="\Events\Default Work Unit\Music (MX)\Story 2\EV_Story2_Rabbit_Music_Stop"/>
-				<Event Id="3858242" Name="EV_Story2_Rabbit_Squeeze" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_Squeeze"/>
-				<Event Id="3419626217" Name="EV_Story2_Rabbit_Wrong" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_Wrong"/>
+				<Event Id="3858242" Name="EV_Story2_Rabbit_Squeeze" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\Rabbit SFX\EV_Story2_Rabbit_Squeeze"/>
+				<Event Id="3419626217" Name="EV_Story2_Rabbit_Wrong" ObjectPath="\Events\Default Work Unit\Sound Effects (SFX)\Story 2\Rabbit SFX\EV_Story2_Rabbit_Wrong"/>
 				<Event Id="1372191702" Name="EV_Title_Music_Start" ObjectPath="\Events\Default Work Unit\Music (MX)\Intro\EV_Title_Music_Start"/>
 				<Event Id="47862742" Name="EV_Title_Music_Stop" ObjectPath="\Events\Default Work Unit\Music (MX)\Intro\EV_Title_Music_Stop"/>
 				<Event Id="2518550613" Name="EV_TUT_Activated_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Activated_DLG_Start"/>
 				<Event Id="2977152823" Name="EV_TUT_Activated_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Activated_DLG_Stop"/>
 				<Event Id="3222097808" Name="EV_TUT_ComeWithMe_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_ComeWithMe_DLG_Start"/>
 				<Event Id="2922899068" Name="EV_TUT_ComeWithMe_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_ComeWithMe_DLG_Stop"/>
+				<Event Id="1360455595" Name="EV_TUT_Different_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Different_DLG_Start"/>
+				<Event Id="2606338249" Name="EV_TUT_Different_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Different_DLG_Stop"/>
 				<Event Id="1820281607" Name="EV_TUT_EggyPeople_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_EggyPeople_DLG_Start"/>
 				<Event Id="1479626925" Name="EV_TUT_EggyPeople_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_EggyPeople_DLG_Stop"/>
 				<Event Id="4187166768" Name="EV_TUT_Hello_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Hello_DLG_Start"/>
 				<Event Id="99727260" Name="EV_TUT_Hello_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Hello_DLG_Stop"/>
-				<Event Id="4259914695" Name="EV_TUT_ShiningLights_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_ShiningLights_DLG_Start"/>
-				<Event Id="2276999021" Name="EV_TUT_ShiningLights_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_ShiningLights_DLG_Stop"/>
 				<Event Id="1806202159" Name="EV_TUT_Sing_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Sing_DLG_Start"/>
 				<Event Id="1184839477" Name="EV_TUT_Sing_DLG_Stop" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Sing_DLG_Stop"/>
 				<Event Id="2542055389" Name="EV_TUT_Visit_DLG_Start" ObjectPath="\Events\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Visit_DLG_Start"/>
@@ -152,6 +163,10 @@
 					<ShortName>Story1_AusWithKoala.wav</ShortName>
 					<Path>SFX/Story1_AusWithKoala_40F9DE44.wem</Path>
 				</File>
+				<File Id="171036774" Language="SFX">
+					<ShortName>SFX_Story2_Panda_Perm.wav</ShortName>
+					<Path>SFX/SFX_Story2_Panda_Perm_BD8333EB.wem</Path>
+				</File>
 				<File Id="176557960" Language="SFX">
 					<ShortName>DLG_Story1_Intro.wav</ShortName>
 					<Path>SFX/DLG_Story1_Intro_40F9DE44.wem</Path>
@@ -168,6 +183,10 @@
 					<ShortName>DLG_Story2_Rabbit_Instruct.wav</ShortName>
 					<Path>SFX/DLG_Story2_Rabbit_Instruct_40F9DE44.wem</Path>
 				</File>
+				<File Id="193866191" Language="SFX">
+					<ShortName>SFX_Story2_Panda_Walk.wav</ShortName>
+					<Path>SFX/SFX_Story2_Panda_Walk_BD8333EB.wem</Path>
+				</File>
 				<File Id="215069219" Language="SFX">
 					<ShortName>DLG_Story1_Arc.wav</ShortName>
 					<Path>SFX/DLG_Story1_Arc_40F9DE44.wem</Path>
@@ -180,6 +199,10 @@
 					<ShortName>DLG_Story2_Rabbit_Intro_02.wav</ShortName>
 					<Path>SFX/DLG_Story2_Rabbit_Intro_02_9E69E797.wem</Path>
 				</File>
+				<File Id="268478511" Language="SFX">
+					<ShortName>SFX_Story2_Panda_SpeechBubble_01.wav</ShortName>
+					<Path>SFX/SFX_Story2_Panda_SpeechBubble_01_BD8333EB.wem</Path>
+				</File>
 				<File Id="269145492" Language="SFX">
 					<ShortName>OpenYardDoor.wav</ShortName>
 					<Path>SFX/OpenYardDoor_BD8333EB.wem</Path>
@@ -187,10 +210,6 @@
 				<File Id="291531378" Language="SFX">
 					<ShortName>DLG_Story1_Hint_01.wav</ShortName>
 					<Path>SFX/DLG_Story1_Hint_01_40F9DE44.wem</Path>
-				</File>
-				<File Id="301059122" Language="SFX">
-					<ShortName>DLG_TUT_Activated.wav</ShortName>
-					<Path>SFX/DLG_TUT_Activated_40F9DE44.wem</Path>
 				</File>
 				<File Id="307940031" Language="SFX">
 					<ShortName>DLG_Story2_Panda_EYellow.wav</ShortName>
@@ -252,13 +271,13 @@
 					<ShortName>DLG_TUT_EggyPeople.wav</ShortName>
 					<Path>SFX/DLG_TUT_EggyPeople_40F9DE44.wem</Path>
 				</File>
-				<File Id="574168464" Language="SFX">
-					<ShortName>DLG_TUT_ShiningLights.wav</ShortName>
-					<Path>SFX/DLG_TUT_ShiningLights_40F9DE44.wem</Path>
-				</File>
 				<File Id="578677956" Language="SFX">
 					<ShortName>DLG_Story2_Rabbit_Intro_01.wav</ShortName>
 					<Path>SFX/DLG_Story2_Rabbit_Intro_01_40F9DE44.wem</Path>
+				</File>
+				<File Id="605722737" Language="SFX">
+					<ShortName>MX_Panda_TEMP.wav</ShortName>
+					<Path>SFX/MX_Panda_TEMP_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="606297051" Language="SFX">
 					<ShortName>DLG_Story1_End_02.wav</ShortName>
@@ -271,6 +290,14 @@
 				<File Id="622718793" Language="SFX">
 					<ShortName>DLG_Story2_Panda_EBlue.wav</ShortName>
 					<Path>SFX/DLG_Story2_Panda_EBlue_BD8333EB.wem</Path>
+				</File>
+				<File Id="632926953" Language="SFX">
+					<ShortName>DLG_Story1_End.wav</ShortName>
+					<Path>SFX/DLG_Story1_End_40F9DE44.wem</Path>
+				</File>
+				<File Id="641561782" Language="SFX">
+					<ShortName>SFX_Story2_Panda_SpeechBubble_02.wav</ShortName>
+					<Path>SFX/SFX_Story2_Panda_SpeechBubble_02_BD8333EB.wem</Path>
 				</File>
 				<File Id="645706647" Language="SFX">
 					<ShortName>DLG_Story2_Posts.wav</ShortName>
@@ -312,6 +339,10 @@
 					<ShortName>SelectionBG.wav</ShortName>
 					<Path>SFX/SelectionBG_019844EE.wem</Path>
 				</File>
+				<File Id="738487916" Language="SFX">
+					<ShortName>TUT_ComeWithMe.wav</ShortName>
+					<Path>SFX/TUT_ComeWithMe_40F9DE44.wem</Path>
+				</File>
 				<File Id="761245173" Language="SFX">
 					<ShortName>Story1_Start.wav</ShortName>
 					<Path>SFX/Story1_Start_019844EE.wem</Path>
@@ -344,17 +375,21 @@
 					<ShortName>DLG_Story1_Aus.wav</ShortName>
 					<Path>SFX/DLG_Story1_Aus_40F9DE44.wem</Path>
 				</File>
+				<File Id="926964068" Language="SFX">
+					<ShortName>TUT_Activated.wav</ShortName>
+					<Path>SFX/TUT_Activated_40F9DE44.wem</Path>
+				</File>
 				<File Id="957718195" Language="SFX">
 					<ShortName>DLG_TUT_Hello.wav</ShortName>
 					<Path>SFX/DLG_TUT_Hello_40F9DE44.wem</Path>
 				</File>
+				<File Id="959061623" Language="SFX">
+					<ShortName>SFX_Story2_Panda_Jump.wav</ShortName>
+					<Path>SFX/SFX_Story2_Panda_Jump_BD8333EB.wem</Path>
+				</File>
 				<File Id="961334195" Language="SFX">
 					<ShortName>Select.wav</ShortName>
 					<Path>SFX/Select_9E69E797.wem</Path>
-				</File>
-				<File Id="1003696400" Language="SFX">
-					<ShortName>DLG_TUT_ComeWithMe.wav</ShortName>
-					<Path>SFX/DLG_TUT_ComeWithMe_40F9DE44.wem</Path>
 				</File>
 				<File Id="1010880781" Language="SFX">
 					<ShortName>DLG_Story2_Panda_Instruct.wav</ShortName>
@@ -364,9 +399,17 @@
 					<ShortName>Rabbit_LightFlicker.wav</ShortName>
 					<Path>SFX/Rabbit_LightFlicker_BD8333EB.wem</Path>
 				</File>
+				<File Id="1026982972" Language="SFX">
+					<ShortName>DLG_Story2_Intro.wav</ShortName>
+					<Path>SFX/DLG_Story2_Intro_40F9DE44.wem</Path>
+				</File>
 				<File Id="1036723991" Language="SFX">
 					<ShortName>DLG_Story2_Panda_Nonono.wav</ShortName>
 					<Path>SFX/DLG_Story2_Panda_Nonono_BD8333EB.wem</Path>
+				</File>
+				<File Id="1062112167" Language="SFX">
+					<ShortName>TUT_Different.wav</ShortName>
+					<Path>SFX/TUT_Different_40F9DE44.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

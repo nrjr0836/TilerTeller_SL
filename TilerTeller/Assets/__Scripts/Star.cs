@@ -60,6 +60,8 @@ public class Star : MonoBehaviour {
 					myfirefly.DOFade (1, 1).SetDelay (2.5f);
 				} else if (starNum == 1) {
 					myfirefly.DOFade (1, 1).SetDelay (2f);
+				}else if (starNum == 2) {
+					myfirefly.DOFade (1, 1).SetDelay (1.5f);
 				}
 				else{
 				myfirefly.DOFade (1, 1).SetDelay (1f);

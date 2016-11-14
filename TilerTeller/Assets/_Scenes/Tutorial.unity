@@ -1362,6 +1362,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012168403134, guid: 13ca269ce8753429581b633f0f66cb2f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13ca269ce8753429581b633f0f66cb2f, type: 2}
   m_IsPrefabParent: 0
@@ -1476,10 +1480,9 @@ MonoBehaviour:
   - EV_TUT_Visit_DLG_
   - EV_TUT_EggyPeople_DLG_
   - EV_TUT_Sing_DLG_
-  - EV_TUT_ComeWithMe_DLG_
+  - EV_TUT_Different_DLG_
   - EV_TUT_ComeWithMe_DLG_
   - EV_TUT_Activated_DLG_
-  - EV_TUT_ShiningLights_DLG_
   sound: {fileID: 1601340769}
   squares:
   - {fileID: 255034757}
@@ -1494,16 +1497,16 @@ MonoBehaviour:
   - {fileID: 1147411215}
   - {fileID: 200364244}
   textList:
-  - '"There is a whirlpool in the centre of the South Pacific Ocean. "'
-  - "\"Lucky children will be invited to enter this whirlpool and visit our home \u2014
-    Eggy Land.  \""
-  - '"We speak the same language, and live in the same world as you, but we are not
-    human; we are the friendly and lovely Eggy people!  "'
-  - '"We go to school, work, travel, draw, sing and live our busy lives just like
-    you.  "'
-  - '"But Eggys are also different in many ways. Do you want to be one of our lucky
-    visitors?   "'
-  - '"Then grab the magic cube and come with me!"'
+  - "\u201CThere is a whirlpool in the centre of the South Pacific Ocean. \""
+  - "\u201CLucky children will be invited to enter this whirlpool and visit our home
+    \u2014 Eggy Land.  \""
+  - "\u201CWe speak the same language, and live in the same world as you, but we are
+    not human; we are the friendly and lovely Eggy people!  \""
+  - "\u201CWe go to school, work, travel, draw, sing and live our busy lives just
+    like you.  \""
+  - "\u201CBut Eggys are also different in many ways. Do you want to be one of our
+    lucky visitors?   \""
+  - "\u201CThen grab the magic cube and come with me!\""
 --- !u!1 &1367795631
 GameObject:
   m_ObjectHideFlags: 0

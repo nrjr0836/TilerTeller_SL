@@ -188,7 +188,7 @@ public class pageManager : MonoBehaviour {
 			pageRead [bookLength - 1] = currentPage;
 
 			sound.PlaySound ("EV_Story1_Opening_Music_Start");
-			sound.PlaySound ("EV_Story1_End_DLG_01_Start");
+			sound.PlaySound ("EV_Story1_End_DLG_ALL_Start");
 
 		} else if (pageRead [pageCount + 1] != 0) {
 			currentPage = pageRead [pageCount + 1];
@@ -207,6 +207,8 @@ public class pageManager : MonoBehaviour {
 			}
 			return;
 		}
+
+
 
 		else {
 			showHintPage ();
