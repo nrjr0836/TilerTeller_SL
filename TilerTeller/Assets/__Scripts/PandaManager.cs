@@ -17,6 +17,9 @@ public class PandaManager : MonoBehaviour {
 
 	public bool start = false;
 
+	public string[] soundEvents;
+
+
 	private int[] buttonCounter = { 0, 0, 0, 0 };
 	private int[] lastButtonCounter = { 0, 0, 0, 0 };
 
@@ -36,6 +39,7 @@ public class PandaManager : MonoBehaviour {
 		PandaThree = 5,
 		PandaFour = 6,
 		End = 7,
+		Reset = 8,
 	}
 
 	private State m_state = State.InstructionOne;
@@ -45,9 +49,12 @@ public class PandaManager : MonoBehaviour {
 		set{
 
 			if (value == State.InstructionOne) {
+				
+				sound.PlaySound ("EV_Story2_Panda_Intro_DLG_Start");
 				showPandaDialogue (-1, pandaDialogues);
 				showPandaDialogue (-1, pandaDialoguesTwo);
 				showEggyDialogue (-1);
+				instructions [2].DOFade (0, 0);
 				instructions [1].DOFade (0, 0);
 				instructions [0].DOFade (1, 1f).SetDelay (0.5f);
 				nextIcon.DOFade (1, 0.5f).SetDelay (2f);
@@ -55,8 +62,11 @@ public class PandaManager : MonoBehaviour {
 
 			if (value == State.Notebook) {
 				sound.PlaySound ("EV_GUI_ButtonClick");
+				sound.PlaySound ("EV_Story2_Panda_Intro_DLG_Stop");
+				sound.PlaySound ("EV_Story2_Panda_Instruct_DLG_Start");
 				count = 0;
 				nextIcon.DOFade (0, 0);
+				instructions [2].DOFade (0, 0);
 				instructions [0].DOFade (0, 0);
 				instructions [1].DOFade (0, 0);
 				notebook.GetComponent<CanvasGroup> ().DOFade (1, 0.5f);
@@ -64,6 +74,7 @@ public class PandaManager : MonoBehaviour {
 			}
 
 			if (value == State.Start) {
+				sound.PlaySound("EV_Story2_Panda_Instruct_DLG_Stop");
 				pandaOrder = (int[])notebook.getPandaOrder ().Clone();
 				Debug.Log (pandaOrder[0]+" "+pandaOrder[1]+" "+pandaOrder[2]+" "+pandaOrder[3]+" ");
 				nextIcon.DOFade (0, 0);
@@ -72,31 +83,48 @@ public class PandaManager : MonoBehaviour {
 				value++;
 			}
 			if (value == State.PandaOne) {
-				
+	
 				anim.SetTrigger ("enter");
 				showPandaDialogue (0,pandaDialogues);
+				StartCoroutine (playPandaDialogues (pandaOrder [0]));
+
 			}
 			if (value == State.PandaTwo) {
 				anim.SetTrigger ("enter");
 				showPandaDialogue (1,pandaDialogues);
+				StartCoroutine (playPandaDialogues (pandaOrder [1]));
 			}
 			if (value == State.PandaThree) {
 				anim.SetTrigger ("enter");
 				showPandaDialogue (2,pandaDialogues);
+				StartCoroutine (playPandaDialogues (pandaOrder [2]));
 			}
 			if (value == State.PandaFour) {
 				anim.SetTrigger ("enter");
 				showPandaDialogue (3,pandaDialogues);
+				StartCoroutine (playPandaDialogues (pandaOrder [3]));
 			}
 			if (value == State.End) {
+				sound.PlaySound ("EV_Story2_Panda_NextReady_DLG");
 				anim.SetTrigger ("complete");
 				instructions [1].DOFade (0, 0);
 				instructions [2].DOFade (1, 0).SetDelay (0.5f);
 				nextIcon.DOFade (0, 0);
 				nextIcon.DOFade (1, 0.5f).SetDelay (1f);
 			}
+			if (value == State.Reset) {
+				for (int i = 0; i < 4; i++) {
+					pandaOrder [i] = 0;
+				}
+			}
+
 			m_state = value;
 		}
+	}
+
+	IEnumerator playPandaDialogues(int num){
+		yield return new WaitForSeconds (2);
+		sound.PlaySound(soundEvents [num]);
 	}
 
 	void showPandaDialogue(int m, GameObject[] dialogues){
@@ -145,6 +173,13 @@ public class PandaManager : MonoBehaviour {
 	bool isCorrect = false;
 
 
+	IEnumerator playPandaWrong(int num){
+		sound.PlaySound (soundEvents [num + 4]);
+		yield return new WaitForSeconds (2f);
+		sound.PlaySound ("EV_Story2_Panda_UhOh_DLG");
+	}
+
+
 	void Update(){
 		
 		if (start) {
@@ -157,7 +192,9 @@ public class PandaManager : MonoBehaviour {
 		}
 		
 		if(Input.GetMouseButtonDown (0) && (int)m_state == 7){
+			notebook.destroyPandas ();
 			state = State.Notebook;	
+			reset ();
 		}
 
 
@@ -175,19 +212,24 @@ public class PandaManager : MonoBehaviour {
 					anim.SetTrigger ("jump");
 					anim.SetTrigger (triggers [pandaOrder [(int)state - 3]]);
 					isCorrect = true;
+					sound.PlaySound ("EV_Story2_Panda_ThankYou_DLG");
 				} else if (panda_pressed == 0) {
+					StartCoroutine (playPandaWrong (0));
 					anim.SetBool ("wrong", true);
 					showEggyDialogue (0);
 					showPandaDialogue ((int)state - 3, pandaDialoguesTwo);
 				} else if (panda_pressed == 1) {
+					StartCoroutine (playPandaWrong (1));
 					anim.SetBool ("wrong", true);	
 					showEggyDialogue (1);
 					showPandaDialogue ((int)state - 3, pandaDialoguesTwo);
 				} else if (panda_pressed == 2) {
+					StartCoroutine (playPandaWrong (2));
 					anim.SetBool ("wrong", true);
 					showEggyDialogue (2);
 					showPandaDialogue ((int)state - 3, pandaDialoguesTwo);
 				} else if (panda_pressed == 3) {
+					StartCoroutine (playPandaWrong (3));
 					anim.SetBool ("wrong",true);
 					showEggyDialogue (3);
 					showPandaDialogue ((int)state-3,pandaDialoguesTwo);
@@ -202,25 +244,30 @@ public class PandaManager : MonoBehaviour {
 					anim.SetTrigger ("jump");
 					anim.SetTrigger (triggers [pandaOrder [(int)state - 3]]);
 					isCorrect = true;
+				sound.PlaySound ("EV_Story2_Panda_ThankYou_DLG");
 				} 
 
 
 				else if (Input.GetKeyDown (KeyCode.Alpha1)) {
+					StartCoroutine (playPandaWrong (0));
 					anim.SetBool ("wrong",true);
 					showEggyDialogue (0);
 					showPandaDialogue ((int)state-3,pandaDialoguesTwo);
 				}
 				else if (Input.GetKeyDown (KeyCode.Alpha2)) {
+				StartCoroutine (playPandaWrong (1));
 					anim.SetBool ("wrong",true);	
 					showEggyDialogue (1);
 					showPandaDialogue ((int)state-3,pandaDialoguesTwo);
 				}
 				else if (Input.GetKeyDown (KeyCode.Alpha3)) {
+				StartCoroutine (playPandaWrong (2));
 					anim.SetBool ("wrong",true);
 					showEggyDialogue (2);
 					showPandaDialogue ((int)state-3,pandaDialoguesTwo);
 				}
 				else if (Input.GetKeyDown (KeyCode.Alpha4)) {
+				StartCoroutine (playPandaWrong (3));
 					anim.SetBool ("wrong",true);
 					showEggyDialogue (3);
 					showPandaDialogue ((int)state-3,pandaDialoguesTwo);
@@ -234,113 +281,13 @@ public class PandaManager : MonoBehaviour {
 		}
 
 
+		Debug.Log (state);
 
-//		if (state == State.Start) {
-//
-//			if (GameObject.Find ("BluetoothManager") != null) {
-//				int pandaNum;
-//				pandaNum = bluetoothManager.Instance.datamanager.getPandaPressed ();
-//				Debug.Log (pandaNum);
-//				if (pandaNum != -1) {
-//					switch (pandaNum) {
-//					case 0: //red
-//						if (pandaOrder [count] == 0) {
-//							sound.PlaySound ("EV_Story2_Rabbit_Correct");
-//							gameObject.GetComponent<Animator> ().SetTrigger ("red");
-//							count++;
-//						} else {
-//							sound.PlaySound ("EV_Story2_Rabbit_Wrong");
-//							notebook.destroyPandas ();
-//							state = State.Notebook;
-//						}
-//						break;
-//					case 1: //yellow
-//						if (pandaOrder [count] == 2) {
-//							sound.PlaySound ("EV_Story2_Rabbit_Correct");
-//							gameObject.GetComponent<Animator> ().SetTrigger ("yellow");
-//							count++;
-//						} else {
-//							sound.PlaySound ("EV_Story2_Rabbit_Wrong");
-//							notebook.destroyPandas ();
-//							state = State.Notebook;
-//						}
-//						break;
-//					case 2: //blue
-//						if (pandaOrder [count] == 1) {
-//							sound.PlaySound ("EV_Story2_Rabbit_Correct");
-//							gameObject.GetComponent<Animator> ().SetTrigger ("blue");
-//							count++;
-//						} else {
-//							sound.PlaySound ("EV_Story2_Rabbit_Wrong");
-//							notebook.destroyPandas ();
-//							state = State.Notebook;
-//						}
-//						break;
-//					case 3:
-//						if (pandaOrder [count] == 3) {
-//							sound.PlaySound ("EV_Story2_Rabbit_Correct");
-//							gameObject.GetComponent<Animator> ().SetTrigger ("green");
-//							count++;
-//						} else {
-//							sound.PlaySound ("EV_Story2_Rabbit_Wrong");
-//							notebook.destroyPandas ();
-//							state = State.Notebook;
-//						}
-//						break;
-//					}
-//					bluetoothManager.Instance.datamanager.setPandaPressed ();
-//				}
-//			}
-//
-//			//1:red, 2:blue, 3:yellow, 4:green
-//			if (Input.GetKeyDown (KeyCode.Alpha1)) {
-//				if (pandaOrder [count] == 0) {
-//					gameObject.GetComponent<Animator> ().SetTrigger ("red");
-//					count++;
-//				} else {
-//					notebook.destroyPandas ();
-//					state = State.Notebook;
-//				}
-//
-//			}
-//			if (Input.GetKeyDown (KeyCode.Alpha2)) {
-//				if (pandaOrder [count] == 1) {
-//					gameObject.GetComponent<Animator> ().SetTrigger ("blue");
-//					count++;
-//				} else {
-//					notebook.destroyPandas ();
-//					state = State.Notebook;
-//				}
-//			}
-//			if (Input.GetKeyDown (KeyCode.Alpha3)) {
-//				if (pandaOrder [count] == 2) {
-//					gameObject.GetComponent<Animator> ().SetTrigger ("yellow");
-//					count++;
-//				} else {
-//					notebook.destroyPandas ();
-//					state = State.Notebook;
-//				}
-//			}
-//			if (Input.GetKeyDown (KeyCode.Alpha4)) {
-//				if (pandaOrder [count] == 3) {
-//					gameObject.GetComponent<Animator> ().SetTrigger ("green");
-//					count++;
-//				} else {
-//					notebook.destroyPandas ();
-//					state = State.Notebook;
-//				}
-//			}
-//			if (count == 4) {
-//				state = State.End;
-//			}
-//
-//		}
+	}
 
-
-
-
-
-
+	public void reset(){
+		anim.SetTrigger ("restart");
+		state = State.Reset;
 	}
 
 	public void startGame(){

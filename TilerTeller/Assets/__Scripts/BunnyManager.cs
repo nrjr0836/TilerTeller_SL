@@ -29,6 +29,7 @@ public class BunnyManager : MonoBehaviour {
 	private float progressBarLength;
 	private float originalTimeInterval;
 
+	public string[] soundevents;
 
 	public enum State
 	{
@@ -46,6 +47,7 @@ public class BunnyManager : MonoBehaviour {
 		get{ return m_state;}
 		set{
 			if (value == State.InstructionOne) {
+				sound.PlaySound (soundevents [0] + "Start");
 				instructions [3].DOFade (0, 0);
 				instructions [0].DOFade (1, 1f);
 				nextIcon.DOFade (1, 0.5f).SetDelay (0.5f);
@@ -99,6 +101,12 @@ public class BunnyManager : MonoBehaviour {
 				instructions[0].text = textList [textIndex];
 				nextIcon.DOFade (0, 0f);
 				nextIcon.DOFade (1, 0.5f).SetDelay(1);
+			}
+
+			if ((int)value > 0 && (int)value<3) {
+				sound.PlaySound (soundevents [(int)value - 1] + "Stop");
+				sound.PlaySound (soundevents [(int)value] + "Start");
+				Debug.Log ((int)value + "is playing");
 			}
 
 			m_state = value;

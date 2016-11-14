@@ -1507,6 +1507,7 @@ GameObject:
   - 4: {fileID: 1798435243}
   - 114: {fileID: 1798435242}
   - 114: {fileID: 1798435241}
+  - 114: {fileID: 1798435244}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -1552,6 +1553,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!114 &1798435244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1798435240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60a5543ca9fb542fb87a6b2800fd55a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wwiseEvent: EV_SelectStory_DLG_Start
+  gameObj: {fileID: 1798435240}
 --- !u!1 &1880367494
 GameObject:
   m_ObjectHideFlags: 0

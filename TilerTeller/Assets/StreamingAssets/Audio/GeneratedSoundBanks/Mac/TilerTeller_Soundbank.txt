@@ -1,0 +1,168 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3858242	EV_Story2_Rabbit_Squeeze			\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_Squeeze	
+	47862742	EV_Title_Music_Stop			\Default Work Unit\Music (MX)\Intro\EV_Title_Music_Stop	
+	97638773	EV_Story1_Intro_DLG_Stop			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_Intro_DLG_Stop	
+	99727260	EV_TUT_Hello_DLG_Stop			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Hello_DLG_Stop	
+	115791843	EV_Story2_Panda_Intro_DLG_Stop			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_Intro_DLG_Stop	
+	120744477	EV_Story2_Rabbit_Intro_DLG_01_Start			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Rabbit Level Dialogue\EV_Story2_Rabbit_Intro_DLG_01_Start	
+	140860319	EV_Story2_Panda_Nonono_DLG			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_Nonono_DLG	
+	167455096	EV_Story1_Aus_DLG_Start			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_Aus_DLG_Start	
+	175901804	EV_Story2_Rabbit_Correct			\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_Correct	
+	193624520	EV_Story2_Opening_Music_Start			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Opening_Music_Start	
+	230092132	EV_Story2_Panda_BluePlease_DLG			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_BluePlease_DLG	
+	242817718	EV_Story1_Hint_DLG_01_Start			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_Hint_DLG_01_Start	
+	343313736	EV_Story2_Firefly_Release			\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Firefly_Release	
+	385701143	EV_Story1_Hint_DLG_02_Stop			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_Hint_DLG_02_Stop	
+	404589697	EV_Story1_Aus_AMB_Stop			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Aus_AMB_Stop	Make sure that all ambient STOP events are global in scope.
+	528874141	EV_Story2_Posts_DLG_Stop			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\EV_Story2_Posts_DLG_Stop	
+	650563639	EV_Story2_Posts_DLG_Start			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\EV_Story2_Posts_DLG_Start	
+	757796452	EV_Story1_Sahara_AMB_Stop			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Sahara_AMB_Stop	Make sure that all ambient STOP events are global in scope.
+	861277617	EV_Story1_Opening_Music_Stop			\Default Work Unit\Music (MX)\Story 1\EV_Story1_Opening_Music_Stop	
+	905600829	EV_SelectStory_DLG_Start			\Default Work Unit\Dialogue (DLG)\EV_SelectStory_DLG_Start	
+	937719993	EV_Story2_Firefly_MoonLightUp			\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Firefly_MoonLightUp	
+	967831466	EV_Story2_Rabbit_Music_Stop			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Rabbit_Music_Stop	
+	988302889	EV_Story1_Sahara_DLG_Stop			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_Sahara_DLG_Stop	
+	1027291345	EV_Story2_Firefly_Instruct_DLG_02_Stop			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Firefly Level Dialogue\EV_Story2_Firefly_Instruct_DLG_02_Stop	
+	1184839477	EV_TUT_Sing_DLG_Stop			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Sing_DLG_Stop	
+	1240332567	EV_Story1_Ice_AMB_Start			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Ice_AMB_Start	
+	1263081860	EV_Story1_Aus_DLG_Stop			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_Aus_DLG_Stop	Make sure STOP Events are Global in Scope.
+	1294570133	EV_Story1_End_DLG_02_Start			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_End_DLG_02_Start	
+	1299911977	EV_Story2_Panda_RedPlease_DLG			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_RedPlease_DLG	
+	1303705525	EV_Story1_Hint_DLG_02_Start			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_Hint_DLG_02_Start	
+	1321617439	EV_Story2_Rabbit_Intro_DLG_01_Stop			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Rabbit Level Dialogue\EV_Story2_Rabbit_Intro_DLG_01_Stop	
+	1328254739	EV_Story2_Firefly_Instruct_DLG_02_Start			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Firefly Level Dialogue\EV_Story2_Firefly_Instruct_DLG_02_Start	
+	1372191702	EV_Title_Music_Start			\Default Work Unit\Music (MX)\Intro\EV_Title_Music_Start	
+	1379278685	EV_Story1_End_DLG_04_Stop			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_End_DLG_04_Stop	
+	1446957297	EV_Story2_Firefly_Music_Stop			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Firefly_Music_Stop	
+	1466108863	EV_SelectStory_DLG_Stop			\Default Work Unit\Dialogue (DLG)\EV_SelectStory_DLG_Stop	
+	1479626925	EV_TUT_EggyPeople_DLG_Stop			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_EggyPeople_DLG_Stop	
+	1493480965	EV_Story2_Panda_GreenPlease_DLG			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_GreenPlease_DLG	
+	1517039550	EV_Story2_Rabbit_LightFlicker			\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_LightFlicker	
+	1554426678	EV_Story1_Hint_DLG_01_Stop			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_Hint_DLG_01_Stop	
+	1658895678	EV_Story2_Firefly_Intro_DLG_01_Stop			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Firefly Level Dialogue\EV_Story2_Firefly_Intro_DLG_01_Stop	
+	1741920882	EV_Story2_Rabbit_Music_Start			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Rabbit_Music_Start	
+	1759933129	EV_Story1_Arc_DLG_Start			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_Arc_DLG_Start	
+	1806202159	EV_TUT_Sing_DLG_Start			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Sing_DLG_Start	
+	1820281607	EV_TUT_EggyPeople_DLG_Start			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_EggyPeople_DLG_Start	
+	1834375653	EV_Story2_Panda_Instruct_DLG_Start			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_Instruct_DLG_Start	
+	1845310600	EV_Story2_Firefly_LevelComplete			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Firefly_LevelComplete	
+	1901536607	EV_Story2_Panda_EYellow_DLG			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_EYellow_DLG	
+	1974507941	EV_Story2_Rabbit_Instruct_DLG_Stop			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Rabbit Level Dialogue\EV_Story2_Rabbit_Instruct_DLG_Stop	
+	2019641183	EV_Story2_Panda_EBlue_DLG			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_EBlue_DLG	
+	2105567173	EV_Story1_Hint_AMB_Start			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Hint_AMB_Start	
+	2124964093	EV_Story1_Ice_AMB_Stop			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Ice_AMB_Stop	Make sure that all ambient STOP events are global in scope. 
+	2149010682	EV_Selection_Music_Start			\Default Work Unit\Music (MX)\Intro\EV_Selection_Music_Start	
+	2158891736	EV_Story1_Sahara_AMB_Start			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Sahara_AMB_Start	
+	2276999021	EV_TUT_ShiningLights_DLG_Stop			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_ShiningLights_DLG_Stop	
+	2358626099	EV_Tutorial_Whoof			\Default Work Unit\Sound Effects (SFX)\Intro\EV_Tutorial_Whoof	
+	2440383747	EV_Story1_Aus_AMB_Start			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Aus_AMB_Start	Make sure that all ambient STOP events are global in scope 
+	2447571430	EV_TUT_Whirlpool_DLG_Start			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Whirlpool_DLG_Start	
+	2464482198	EV_Story1_End_DLG_01_Start			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_End_DLG_01_Start	
+	2518550613	EV_TUT_Activated_DLG_Start			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Activated_DLG_Start	
+	2526705288	EV_Tutorial_Music_Start			\Default Work Unit\Music (MX)\Intro\EV_Tutorial_Music_Start	
+	2542055389	EV_TUT_Visit_DLG_Start			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Visit_DLG_Start	
+	2607328371	EV_Story1_Opening_Music_Start			\Default Work Unit\Music (MX)\Story 1\EV_Story1_Opening_Music_Start	
+	2727636172	EV_Story1_End_DLG_03_Stop			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_End_DLG_03_Stop	
+	2824724591	EV_Story1_Intro_DLG_Start			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_Intro_DLG_Start	
+	2922899068	EV_TUT_ComeWithMe_DLG_Stop			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_ComeWithMe_DLG_Stop	
+	2977152823	EV_TUT_Activated_DLG_Stop			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Activated_DLG_Stop	
+	2987436791	EV_Story1_End_DLG_04_Start			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_End_DLG_04_Start	
+	3029665981	EV_Story2_Firefly_Intro_DLG_02_Start			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Firefly Level Dialogue\EV_Story2_Firefly_Intro_DLG_02_Start	
+	3080744912	EV_Story1_Hint_YardDoor			\Default Work Unit\Sound Effects (SFX)\Story 1\EV_Story1_Hint_YardDoor	
+	3089995363	EV_Story1_Arc_DLG_Stop			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_Arc_DLG_Stop	
+	3109713601	EV_GUI_ButtonClick			\Default Work Unit\Sound Effects (SFX)\GUI\EV_GUI_ButtonClick	
+	3143780455	EV_Story2_Panda_ThankYou_DLG			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_ThankYou_DLG	
+	3182842528	EV_Story1_End_DLG_03_Start			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_End_DLG_03_Start	
+	3222097808	EV_TUT_ComeWithMe_DLG_Start			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_ComeWithMe_DLG_Start	
+	3329150471	EV_Story2_Panda_Instruct_DLG_Stop			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_Instruct_DLG_Stop	
+	3331718640	EV_Story2_Panda_YellowPlease_DLG			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_YellowPlease_DLG	
+	3371765266	EV_Selection_Music_Stop			\Default Work Unit\Music (MX)\Intro\EV_Selection_Music_Stop	
+	3419626217	EV_Story2_Rabbit_Wrong			\Default Work Unit\Sound Effects (SFX)\Story 2\EV_Story2_Rabbit_Wrong	
+	3486779827	EV_Story2_Firefly_Music_Start			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Firefly_Music_Start	
+	3599273801	EV_Story2_Panda_Intro_DLG_Start			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_Intro_DLG_Start	
+	3725438015	EV_Story2_Firefly_Intro_DLG_02_Stop			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Firefly Level Dialogue\EV_Story2_Firefly_Intro_DLG_02_Stop	
+	3726360518	EV_Story2_Panda_NextReady_DLG			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_NextReady_DLG	
+	3737950347	EV_Story1_Sahara_DLG_Start			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_Sahara_DLG_Start	
+	3765923732	EV_Story2_Firefly_Instruct_DLG_01_Stop			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Firefly Level Dialogue\EV_Story2_Firefly_Instruct_DLG_01_Stop	
+	3813393015	EV_Story1_End_DLG_02_Stop			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_End_DLG_02_Stop	
+	3815330198	EV_Story1_End_DLG_01_Stop			\Default Work Unit\Dialogue (DLG)\01 Story 1 Dialogue\EV_Story1_End_DLG_01_Stop	
+	3819950886	EV_TUT_Whirlpool_DLG_Stop			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Whirlpool_DLG_Stop	
+	3820673694	EV_Story2_Firefly_Intro_DLG_01_Start			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Firefly Level Dialogue\EV_Story2_Firefly_Intro_DLG_01_Start	
+	3921523732	EV_Story2_Opening_Music_Stop			\Default Work Unit\Music (MX)\Story 2\EV_Story2_Opening_Music_Stop	
+	3926527032	EV_Story2_Panda_EGreen_DLG			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_EGreen_DLG	
+	4004580052	EV_Tutorial_Music_Stop			\Default Work Unit\Music (MX)\Intro\EV_Tutorial_Music_Stop	
+	4058817608	EV_Story2_Firefly_Instruct_DLG_01_Start			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Firefly Level Dialogue\EV_Story2_Firefly_Instruct_DLG_01_Start	
+	4094061535	EV_Story2_Rabbit_Instruct_DLG_Start			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Rabbit Level Dialogue\EV_Story2_Rabbit_Instruct_DLG_Start	
+	4142707966	EV_Story2_Rabbit_Intro_DLG_02_Start			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Rabbit Level Dialogue\EV_Story2_Rabbit_Intro_DLG_02_Start	
+	4145574756	EV_Story2_Panda_UhOh_DLG			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_UhOh_DLG	
+	4146453607	EV_Story1_Hint_AMB_Stop			\Default Work Unit\Ambience (AMB)\Story 1\EV_Story1_Hint_AMB_Stop	Make sure that all ambient STOP events are global in scope. 
+	4187166768	EV_TUT_Hello_DLG_Start			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Hello_DLG_Start	
+	4250796318	EV_Story2_Rabbit_Intro_DLG_02_Stop			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Rabbit Level Dialogue\EV_Story2_Rabbit_Intro_DLG_02_Stop	
+	4251612920	EV_Story2_Panda_ERed_DLG			\Default Work Unit\Dialogue (DLG)\02 Story 2 Dialogue\Panda Level Dialogue\EV_Story2_Panda_ERed_DLG	
+	4259914695	EV_TUT_ShiningLights_DLG_Start			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_ShiningLights_DLG_Start	
+	4261098975	EV_TUT_Visit_DLG_Stop			\Default Work Unit\Dialogue (DLG)\00 Tutorial Dialogue\EV_TUT_Visit_DLG_Stop	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	3056137	DLG_Story2_Panda_UhOh	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_UhOh_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_UhOh_Container\DLG_Story2_Panda_UhOh		354036
+	22539775	DLG_Story2_Panda_ThankYou	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_ThankYou_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_ThankYou_Container\DLG_Story2_Panda_ThankYou		81360
+	48184115	DLG_Story1_End_04	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story1_End_04_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\01 Story 1 Dialogue\DLG_Story1_End_04_Container\DLG_Story1_End_04		37271
+	59199648	AMB_Story1Hint_TEMP	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Birdv2_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Story 1\AMB_Hint_Container\AMB_Story1Hint_TEMP		2497747
+	66423453	DLG_Story2_Panda_YellowPlease	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_YellowPlease_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_YellowPlease_Container\DLG_Story2_Panda_YellowPlease		91522
+	83705368	SFX_Tutorial_Whoof_TEMP	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Tutorialwhoof_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Intro\SFX_Tutorial_Whoof_Container\SFX_Tutorial_Whoof_TEMP		32952
+	113159009	SFX_Rabbit_Wrong_TEMP	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\SFX_Rabbit_Wrong_TEMP_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 2\SFX_Rabbit_Wrong_Container\SFX_Rabbit_Wrong_TEMP		95580
+	160288976	AMB_Aus_TEMP	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Story1_AusWithKoala_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Story 1\AMB_Aus_Container\AMB_Aus_TEMP		2083519
+	176557960	DLG_Story1_Intro	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story1_Intro_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\01 Story 1 Dialogue\DLG_Story1_Intro_Container\DLG_Story1_Intro		121101
+	183291983	MX_Firefly_IPv2	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\StarryNightv2_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Firefly_Container\MX_Firefly_IPv2\MX_Firefly_IPv2		1178872
+	188131204	MX_Rabbit_IPv1	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\MX_Rabbit_IPv1_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Rabbit_Container\MX_Rabbit_IPv1\MX_Rabbit_IPv1		2688064
+	189915095	DLG_Story2_Rabbit_Instruct	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Rabbit_Instruct_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Rabbit Dialogue\DLG_Story2_Rabbit_Instruct_Container\DLG_Story2_Rabbit_Instruct		101408
+	215069219	DLG_Story1_Arc	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story1_Arc_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\01 Story 1 Dialogue\DLG_Story1_Arc_Container\DLG_Story1_Arc		72437
+	249352192	MX_Firefly_LevelComplete_v1	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\MX_Firefly_LevelComplete_v1_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Firefly_LevelComplete_Container\MX_Firefly_LevelComplete_v1\MX_Firefly_LevelComplete_v1		55402
+	262970403	DLG_Story2_Rabbit_Intro_02	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Rabbit_Intro_02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Rabbit Dialogue\DLG_Story2_Rabbit_Intro_02_Container\DLG_Story2_Rabbit_Intro_02		421596
+	269145492	SFX_Story1Hint_YardDoor_TEMP	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\OpenYardDoor_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 1\SFX_Story1Hint_YardDoor_Container\SFX_Story1Hint_YardDoor_TEMP		474028
+	291531378	DLG_Story1_Hint_01	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story1_Hint_01_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\01 Story 1 Dialogue\DLG_Story1_Hint_01_Container\DLG_Story1_Hint_01		87974
+	301059122	DLG_TUT_Activated	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_TUT_Activated_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\00 Tutorial Dialogue\DLG_TUT_Activated_Container\DLG_TUT_Activated		63702
+	307940031	DLG_Story2_Panda_EYellow	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_EYellow_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_EYellow_Container\DLG_Story2_Panda_EYellow		45792
+	308199626	AMB_Ice_TEMP	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Story1_Ice_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Story 1\AMB_Ice_Container\AMB_Ice_TEMP		1738632
+	333199856	SFX_Firefly_MoonLightUp_IPv1	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\SFX_Firefly_MoonLightUp_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 2\SFX_Firefly_MoonLightUp_Container\SFX_Firefly_MoonLightUp_IPv1		114748
+	380894042	DLG_Story2_Panda_Intro	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_Intro_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_Intro_Container\DLG_Story2_Panda_Intro		723254
+	395924541	DLG_Story2_Firefly_Intro_01	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Firefly_Intro_01_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Firefly Dialogue\DLG_Story2_Firefly_Intro_01_Container\DLG_Story2_Firefly_Intro_01		90355
+	425422552	DLG_Story2_Firefly_Instruct_02	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Firefly_Instruct_02_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Firefly Dialogue\DLG_Story2_Firefly_Instruct_02_Container\DLG_Story2_Firefly_Instruct_02		94430
+	437283235	DLG_Story2_Panda_NextReady	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_NextReady_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_NextReady_Container\DLG_Story2_Panda_NextReady		267662
+	451901463	DLG_Story2_Panda_ERed	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_ERed_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_ERed_Container\DLG_Story2_Panda_ERed		47062
+	458212035	DLG_Story2_Firefly_Intro_02	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Firefly_Intro_02_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Firefly Dialogue\DLG_Story2_Firefly_Intro_02_Container\DLG_Story2_Firefly_Intro_02		80623
+	477752052	DLG_Story2_Firefly_Instruct_01	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Firefly_Instruct_01_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Firefly Dialogue\DLG_Story2_Firefly_Instruct_01_Container\DLG_Story2_Firefly_Instruct_01		81562
+	537012552	SFX_Rabbit_Correct_TEMP	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\SFX_Rabbit_Correct_TEMP_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 2\SFX_Rabbit_Correct_Container\SFX_Rabbit_Correct_TEMP		75300
+	541136293	DLG_Story2_Panda_RedPlease	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_RedPlease_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_RedPlease_Container\DLG_Story2_Panda_RedPlease		89828
+	554224927	DLG_TUT_Whirlpool	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_TUT_Whirpole_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\00 Tutorial Dialogue\DLG_TUT_Whirlpool_Container\DLG_TUT_Whirlpool		35689
+	570750478	DLG_TUT_Sing	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_TUT_Sing_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\00 Tutorial Dialogue\DLG_TUT_Sing_Container\DLG_TUT_Sing		61951
+	573016845	DLG_TUT_EggyPeople	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_TUT_EggyPeople_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\00 Tutorial Dialogue\DLG_TUT_EggyPeople_Container\DLG_TUT_EggyPeople		73833
+	574168464	DLG_TUT_ShiningLights	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_TUT_ShiningLights_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\00 Tutorial Dialogue\DLG_TUT_ShiningLights_Container\DLG_TUT_ShiningLights		82647
+	578677956	DLG_Story2_Rabbit_Intro_01	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Rabbit_Intro_01_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Rabbit Dialogue\DLG_Story2_Rabbit_Intro_01_Container\DLG_Story2_Rabbit_Intro_01		88344
+	606297051	DLG_Story1_End_02	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story1_End_02_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\01 Story 1 Dialogue\DLG_Story1_End_02_Container\DLG_Story1_End_02		42508
+	620288605	DLG_Story2_Panda_GreenPlease	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_GreenPlease_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_GreenPlease_Container\DLG_Story2_Panda_GreenPlease		105072
+	622718793	DLG_Story2_Panda_EBlue	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_EBlue_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_EBlue_Container\DLG_Story2_Panda_EBlue		49180
+	645706647	DLG_Story2_Posts	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Posts_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\DLG_Story2_Posts_Container\DLG_Story2_Posts		82780
+	646284223	Title_bgm	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Title_bgm_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_TitleMusic_Container\MX_TitleMusic\Title_bgm		2851552
+	651798343	DLG_Story2_Panda_EGreen	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_EGreen_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_EGreen_Container\DLG_Story2_Panda_EGreen		67810
+	654161795	SFX_Rabbit_Squeeze_TEMP	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\SFX_Rabbit_Squeeze_TEMP_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 2\SFX_Rabbit_Squeeze_Container\SFX_Rabbit_Squeeze_TEMP		35684
+	655640431	DLG_Story1_Sahara	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story1_Sahara_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\01 Story 1 Dialogue\DLG_Story1_Sahara_Container\DLG_Story1_Sahara		121133
+	696349566	DLG_Story2_Panda_BluePlease	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_BluePlease_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_BluePlease_Container\DLG_Story2_Panda_BluePlease		93214
+	702936653	DLG_TUT_Visit	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_TUT_Visit_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\00 Tutorial Dialogue\DLG_TUT_Visit_Container\DLG_TUT_Visit		49408
+	720039146	DLG_Story1_End_03	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story1_End_03_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\01 Story 1 Dialogue\DLG_Story1_End_03_Container\DLG_Story1_End_03		28566
+	725276048	SFX_GUI_ButtonClick_TEMP	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\ButtonClick_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\GUI\SFX_GUI_ButtonClick_Container\SFX_GUI_ButtonClick_TEMP		9784
+	731264569	SelectionBG	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\SelectionBG_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Selection_Container\MX_Selection_TEMP\SelectionBG		2175779
+	761245173	Story1_Start	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Story1_Start_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Story1Opening_Container\MX_Story1Opening\Story1_Start		3337702
+	804311581	AMB_Sahara_TEMP	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Story1_SaharaWater_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Story 1\AMB_Sahara_Container\AMB_Sahara_TEMP		1787199
+	833529867	DLG_Story1_End_01	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story1_End_01_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\01 Story 1 Dialogue\DLG_Story1_End_01_Container\DLG_Story1_End_01		57460
+	840779500	SFX_Firefly_Release_TEMP	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\SFX_Firefly_Release_TEMP_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 2\SFX_Firefly_Release_Container\SFX_Firefly_Release_TEMP		329600
+	863220673	Story2_Start_TEMP	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Story2_Start_TEMP_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Story2Opening_Container\MX_Story2Opening_TEMP\Story2_Start_TEMP		814454
+	874495257	DLG_Story1_Hint_02	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story1_Hint_02_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\01 Story 1 Dialogue\DLG_Story1_Hint_02_Container\DLG_Story1_Hint_02		61379
+	874789274	TutorialBG2	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\TutorialBG2_019844EE.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MX_Tutorial_Container\MX_Tutorial_v1\TutorialBG2		1013523
+	879387563	DLG_Story1_Aus	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story1_Aus_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\01 Story 1 Dialogue\DLG_Story1_Aus_Container\DLG_Story1_Aus		93606
+	957718195	DLG_TUT_Hello	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_TUT_Hello_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\00 Tutorial Dialogue\DLG_TUT_Hello_Container\DLG_TUT_Hello		34820
+	961334195	DLG_SelectStory	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Select_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\DLG_SelectStory_Container\DLG_SelectStory		155880
+	1003696400	DLG_TUT_ComeWithMe	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_TUT_ComeWithMe_40F9DE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\00 Tutorial Dialogue\DLG_TUT_ComeWithMe_Container\DLG_TUT_ComeWithMe		70751
+	1010880781	DLG_Story2_Panda_Instruct	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_Instruct_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_Instruct_Container\DLG_Story2_Panda_Instruct		757126
+	1015307716	SFX_Rabbit_LightFlicker_TEMP	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\Rabbit_LightFlicker_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Effects\Story 2\SFX_Rabbit_LightFlicker_Container\SFX_Rabbit_LightFlicker_TEMP		322488
+	1036723991	DLG_Story2_Panda_Nonono	Y:\TilerTeller_SL\TilerTeller\TilerTellerWwise\.cache\Mac\SFX\DLG_Story2_Panda_Nonono_BD8333EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\02 Story 2 Dialogue\Panda Dialogue\DLG_Story2_Panda_Nonono_Container\DLG_Story2_Panda_Nonono		89826
+

@@ -14,6 +14,7 @@ public class CameraControl : MonoBehaviour {
 	
 	public MetricManager metric;
 	public string[] wwiseEvent;
+	public SoundManager sound;
 
 
 	public enum State
@@ -131,6 +132,7 @@ public class CameraControl : MonoBehaviour {
 		}
 		nextIcon.DOFade (1, 0.5f).SetDelay(2);
 		last_start_time = Time.time;
+		StartCoroutine (playVoiceOver (2));
 	}
 
 	void Update()
@@ -138,23 +140,31 @@ public class CameraControl : MonoBehaviour {
 		
 		if (Input.GetMouseButtonDown(0) ) {
 			if (((int)m_state) < 5) {
-				AkSoundEngine.PostEvent (wwiseEvent[0],gameObject);
+				sound.PlaySound (wwiseEvent [0]);
 			}
 			if (((int)m_state) > 4 && ((int)m_state) < 7) {
-				AkSoundEngine.PostEvent (wwiseEvent[1],gameObject);
+				sound.PlaySound (wwiseEvent [1]);
 			}
+
 			string levelName = "Tutorial-Dialogue" + state;
 			metric.AddToLevelAndTimeMetric (levelName, (Time.time - last_start_time));
 			last_start_time = Time.time;
 			state++;
+
+			StartCoroutine (playVoiceOver ((int)state + 2));
+
 			
 		}
 
-		if (state == State.Cube) {
-//			if (GameObject.Find ("BluetoothManager") != null) {
-//				bluetoothManager.Instance.datamanager.setThreshold();
-//			}
-		}
+
 
 	}
+
+	IEnumerator playVoiceOver(int num){
+		sound.PlaySound (wwiseEvent [num - 1] + "Stop");
+		yield return new WaitForSeconds (1f);
+		sound.PlaySound (wwiseEvent [num]+"Start");
+	}
+
+
 }

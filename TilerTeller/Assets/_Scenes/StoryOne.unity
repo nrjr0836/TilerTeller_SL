@@ -9518,7 +9518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a5543ca9fb542fb87a6b2800fd55a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wwiseEvent: EV_Story1_Opening_DLG_Start
+  wwiseEvent: EV_Story1_Intro_DLG_Start
   gameObj: {fileID: 1423124940}
 --- !u!1 &1436203785
 GameObject:

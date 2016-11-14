@@ -46,9 +46,6 @@ public class S2PageManager : MonoBehaviour {
 		for (int i = 0; i < bookLength; i++) {
 			if (i == currentPage && pages [i] != null) {
 				pages [i].SetActive (true);
-				if (pages [i].GetComponent<AudioSource> () != null && pages [i].GetComponent<AudioSource> ().isPlaying != true) {
-					pages [i].GetComponent<AudioSource> ().Play ();
-				}
 			} else {
 				pages [i].SetActive (false);
 			}
@@ -89,7 +86,10 @@ public class S2PageManager : MonoBehaviour {
 		}
 		last_start_time = Time.time;
 
-		gameObject.GetComponent<AudioSource> ().Play ();
+		if (currentPage == 0) {
+			sound.PlaySound ("Ev_Story2_Intro_DLG_Stop");
+			sound.PlaySound ("Ev_Story2_Posts_DLG_Start");
+		}
 
 		currentPage++;
 
@@ -105,7 +105,11 @@ public class S2PageManager : MonoBehaviour {
 		last_start_time = Time.time;
 
 		sound.StopPlaying ();
+
+
+
 		if (currentPage == 4 && isStarted[2]) {
+			GameObject.Find ("Page5").GetComponent<PandaManager> ().reset (); 
 			notebook.destroyPandas ();
 			isStarted[2] = false;
 		}
@@ -116,23 +120,30 @@ public class S2PageManager : MonoBehaviour {
 		}
 		if (currentPage == 2 && isStarted [0]) {
 			GameObject.Find ("Page3").GetComponent<StarLighter> ().leave = true;
-			GameObject.Find ("Page3").GetComponent<BunnyManager> ().reset (); 
+			GameObject.Find ("Page3").GetComponent<StarLighter> ().reset (); 
 			isStarted [0] = false;
 		}
 
 		sound.PlaySound ("EV_Story2_Opening_Music_Start");
+
+
+
 		if (currentPage > 1) {
 			if (GameObject.Find ("BluetoothManager") != null) {
 				bluetoothManager.Instance.ble.sendBluetooth("1");
 			}
 			currentPage = 1;
+			sound.PlaySound ("Ev_Story2_Posts_DLG_Start");
 		} else {
 			currentPage--;
+			sound.PlaySound ("Ev_Story2_Intro_DLG_Start");
 		}
 
 	}
 
 	public void showJobDetail(int jobNum){
+
+		sound.PlaySound ("Ev_Story2_Posts_DLG_Stop");
 
 		string levelName = "Story2-Page" + currentPage;
 		if (GameObject.Find ("MetricManager") != null) {
@@ -154,7 +165,7 @@ public class S2PageManager : MonoBehaviour {
 			sound.PlaySound ("EV_Story2_Rabbit_Music_Start");
 			break;
 		case 4:
-			sound.PlaySound ("EV_Tutorial_Music_Start");
+			sound.PlaySound ("EV_Story2_Panda_Music_Start");
 			break;
 		}
 		last_start_time = Time.time;

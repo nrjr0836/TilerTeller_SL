@@ -16,6 +16,8 @@ public class StarLighter : MonoBehaviour {
 	public bool start;
 	public bool leave = false;
 
+	public string[] soundevents;
+
 
 	private  int[] buttonCounter = { 0, 0, 0, 0 };
 	private int[] lastButtonCounter = { 0, 0, 0, 0 };
@@ -35,6 +37,8 @@ public class StarLighter : MonoBehaviour {
 		set{
 
 			if (value == State.InstructionOne) {
+				instructions [3].DOFade (0, 0);
+				sound.PlaySound (soundevents [0] + "Start");
 				instructions [0].DOFade (1, 1f).SetDelay(0.5f);
 				nextIcon.DOFade (1, 0.5f).SetDelay (1f);
 			}
@@ -63,7 +67,7 @@ public class StarLighter : MonoBehaviour {
 			if (value == State.Completed) {
 				instructions [2].DOFade (0, 1f);
 				instructions [3].DOFade (0, 0);
-				instructions [4].DOFade (1, 1f);
+				instructions [3].DOFade (1, 1f);
 				sound.PlaySound ("EV_Story2_Firefly_LevelComplete");
 				gameObject.GetComponent<Animator> ().SetTrigger ("P3end");
 			}
@@ -79,6 +83,11 @@ public class StarLighter : MonoBehaviour {
 				nextIcon.DOFade (1, 0.5f).SetDelay(1);
 			}
 
+
+			if ((int)value > 0 && (int)value<4) {
+				sound.PlaySound (soundevents [(int)value - 1] + "Stop");
+				sound.PlaySound (soundevents [(int)value] + "Start");
+			}
 			m_state = value;
 
 		}
@@ -95,7 +104,6 @@ public class StarLighter : MonoBehaviour {
 
 	void Update () {
 
-		Debug.Log (state);
 
 		if (start) {
 			state = State.InstructionOne;

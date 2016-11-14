@@ -1626,7 +1626,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 221156226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.71, y: -3.12, z: -1.6561971}
+  m_LocalPosition: {x: 0, y: -3.12, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -3388,6 +3388,7 @@ GameObject:
   - 4: {fileID: 499782273}
   - 114: {fileID: 499782272}
   - 114: {fileID: 499782274}
+  - 114: {fileID: 499782275}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -3433,6 +3434,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaying: 0
+--- !u!114 &499782275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499782271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60a5543ca9fb542fb87a6b2800fd55a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wwiseEvent: EV_Story2_Intro_DLG_Start
+  gameObj: {fileID: 499782271}
 --- !u!1 &508789061
 GameObject:
   m_ObjectHideFlags: 0
@@ -3847,7 +3861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &579547578
 Transform:
   m_ObjectHideFlags: 0
@@ -3902,13 +3916,18 @@ MonoBehaviour:
   sound: {fileID: 499782274}
   start: 0
   leave: 0
+  soundevents:
+  - EV_Story2_Firefly_Intro_DLG_01_
+  - EV_Story2_Firefly_Intro_DLG_02_
+  - EV_Story2_Firefly_Instruct_DLG_01_
+  - EV_Story2_Firefly_Instruct_DLG_02_
   textList:
   - Behind every shining star in the night sky are the hardworking fireflies. Each
     night, fireflies shoot into the sky to light up the night.
   - But the stars are so far away.  Someone needs to release the basket of fireflies
     into the night sky to make their journey shorter.
   - 'On the tile, there is a number on each firefly''s body. These numbers represent
-    how many fireflies are needed to light up a star of that size. '
+    how many fireflies are needed to light up a star. '
 --- !u!95 &579547580
 Animator:
   serializedVersion: 3
@@ -6108,7 +6127,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1208327333}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.52, y: -4.71, z: -1}
+  m_LocalPosition: {x: 0, y: -4.71, z: 0}
   m_LocalScale: {x: 0.75, y: 0.3, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -6360,7 +6379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1234607383
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7118,6 +7137,10 @@ MonoBehaviour:
   - {fileID: 377459062}
   - {fileID: 74159201}
   nextIcon: {fileID: 1299389955}
+  soundevents:
+  - EV_Story2_Rabbit_Intro_DLG_01_
+  - EV_Story2_Rabbit_Intro_DLG_02_
+  - EV_Story2_Rabbit_Instruct_DLG_
   textList:
   - 'Some bunnies from Bunny Kindergarten have recently gotten red eyes! This comes
     from not eating their vegetables and not taking their vitamins. '
@@ -7371,7 +7394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1422462370
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10656,7 +10679,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1844485312
 Transform:
   m_ObjectHideFlags: 0
@@ -10741,6 +10764,15 @@ MonoBehaviour:
   - {fileID: 1098097928}
   - {fileID: 2145556371}
   start: 0
+  soundEvents:
+  - EV_Story2_Panda_RedPlease_DLG
+  - EV_Story2_Panda_BluePlease_DLG
+  - EV_Story2_Panda_YellowPlease_DLG
+  - EV_Story2_Panda_GreenPlease_DLG
+  - EV_Story2_Panda_ERed_DLG
+  - EV_Story2_Panda_EBlue_DLG
+  - EV_Story2_Panda_EYellow_DLG
+  - EV_Story2_Panda_EGreen_DLG
 --- !u!212 &1844485315
 SpriteRenderer:
   m_ObjectHideFlags: 0

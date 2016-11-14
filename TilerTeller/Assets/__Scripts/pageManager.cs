@@ -172,9 +172,9 @@ public class pageManager : MonoBehaviour {
 	public void turnNextPage(){
 
 		string levelName = "Story1-Page" + currentPage;
-		if (GameObject.Find ("MetricManager") != null) {
-			MetricManager.Instance.AddToLevelAndTimeMetric (levelName, (Time.time - last_start_time));
-		}
+//		if (GameObject.Find ("MetricManager") != null) {
+//			MetricManager.Instance.AddToLevelAndTimeMetric (levelName, (Time.time - last_start_time));
+//		}
 //		metric.AddToLevelAndTimeMetric (levelName, (Time.time - last_start_time));
 
 		sound.StopPlaying ();
@@ -188,6 +188,7 @@ public class pageManager : MonoBehaviour {
 			pageRead [bookLength - 1] = currentPage;
 
 			sound.PlaySound ("EV_Story1_Opening_Music_Start");
+			sound.PlaySound ("EV_Story1_End_DLG_01_Start");
 
 		} else if (pageRead [pageCount + 1] != 0) {
 			currentPage = pageRead [pageCount + 1];
@@ -198,9 +199,11 @@ public class pageManager : MonoBehaviour {
 			}
 			if (currentPage == 2) {
 				sound.PlaySound ("EV_Story1_Sahara_AMB_Start");
+				sound.PlaySound ("EV_Story1_Sahara_DLG_Start");
 			}
 			if (currentPage == 3) {
 				sound.PlaySound ("EV_Story1_Ice_AMB_Start");
+				sound.PlaySound ("EV_Story1_Arc_DLG_Start");
 			}
 			return;
 		}
@@ -238,7 +241,7 @@ public class pageManager : MonoBehaviour {
 			switch (currentPage) {
 			case 0:
 				sound.PlaySound ("EV_Story1_Opening_Music_Start");
-				sound.PlaySound ("EV_Story1_Opening_DLG_Start");
+				sound.PlaySound ("EV_Story1_Intro_DLG_Start");
 				break;
 			case 1:
 				sound.PlaySound ("EV_Story1_Aus_AMB_Start");
@@ -246,9 +249,11 @@ public class pageManager : MonoBehaviour {
 				break;
 			case 2:
 				sound.PlaySound ("EV_Story1_Sahara_AMB_Start");
+				sound.PlaySound ("EV_Story1_Sahara_DLG_Start");
 				break;
 			case 3:
 				sound.PlaySound ("EV_Story1_Ice_AMB_Start");
+				sound.PlaySound ("EV_Story1_Arc_AMB_Start");
 				break;
 			}
 
@@ -263,7 +268,10 @@ public class pageManager : MonoBehaviour {
 	void showHintPage(){
 		hintPageCount++;
 		if (hintPageCount > 1) {
+			sound.PlaySound ("EV_Story1_Hint_DLG_02_Start");
 			hintText.text = "Good job! Let’s go to another amazing place with Robin! You can reuse the blocks you placed.";
+		} else {
+			sound.PlaySound ("EV_Story1_Hint_DLG_01_Start");
 		}
 
 		if (GameObject.Find ("BluetoothManager") != null) {
@@ -282,6 +290,8 @@ public class pageManager : MonoBehaviour {
 
 	void hideHintPage(){
 		sound.PlaySound ("EV_Story1_Hint_AMB_Stop");
+		sound.PlaySound("EV_Story1_Hint_DLG_01_Stop");
+		sound.PlaySound("EV_Story1_Hint_DLG_02_Stop");
 		hintPage.SetActive (false);
 	}
 
@@ -300,9 +310,11 @@ public class pageManager : MonoBehaviour {
 			break;
 		case 2:
 			sound.PlaySound ("EV_Story1_Sahara_AMB_Start");
+			sound.PlaySound ("EV_Story1_Sahara_DLG_Start");
 			break;
 		case 3:
 			sound.PlaySound ("EV_Story1_Ice_AMB_Start");
+			sound.PlaySound ("EV_Story1_Arc_DLG_Start");
 			break;
 		}
 	}
