@@ -92,6 +92,8 @@ public class PandaManager : MonoBehaviour {
 				anim.SetTrigger ("complete");
 				instructions [1].DOFade (0, 0);
 				instructions [2].DOFade (1, 0).SetDelay (0.5f);
+				nextIcon.DOFade (0, 0);
+				nextIcon.DOFade (1, 0.5f).SetDelay (1f);
 			}
 			m_state = value;
 		}
@@ -153,6 +155,10 @@ public class PandaManager : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)&&(int)m_state<1) {
 			state++;
 		}
+		
+		if(Input.GetMouseButtonDown (0) && (int)m_state == 7){
+			state = State.Notebook;	
+		}
 
 
 
@@ -161,6 +167,8 @@ public class PandaManager : MonoBehaviour {
 			if (GameObject.Find ("BluetoothManager") != null) {
 				int panda_pressed;
 				panda_pressed = bluetoothManager.Instance.datamanager.getPandaPressed ();
+				bluetoothManager.Instance.datamanager.setPandaPressed ();
+				Debug.Log (panda_pressed);
 
 				if (panda_pressed == pandaOrder [(int)state - 3]) {
 					anim.SetBool ("wrong", false);
@@ -217,19 +225,12 @@ public class PandaManager : MonoBehaviour {
 					showEggyDialogue (3);
 					showPandaDialogue ((int)state-3,pandaDialoguesTwo);
 				}
-
-					
-
 				
-
 				if (isCorrect && anim.GetCurrentAnimatorStateInfo (0).IsName ("S2_P5_Start")) {
 					state++;
 					isCorrect = false;
+					
 				}
-		}
-
-		if (state == State.End) {
-
 		}
 
 
@@ -337,7 +338,7 @@ public class PandaManager : MonoBehaviour {
 
 
 
-		Debug.Log (state);
+
 
 
 	}
