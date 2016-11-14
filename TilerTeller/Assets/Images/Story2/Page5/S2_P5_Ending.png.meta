@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 21e5a4d3093f0490fb60c6667afbeffd
+timeCreated: 1479091172
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: S2_P5_Ending_0
+    21300002: S2_P5_Ending_1
+    21300004: S2_P5_Ending_2
+    21300006: S2_P5_Ending_3
+    21300008: S2_P5_Ending_4
+    21300010: S2_P5_Ending_5
+    21300012: S2_P5_Ending_6
+    21300014: S2_P5_Ending_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: S2_P5_Ending_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 322
+        width: 432
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 9, y: 6, z: 5, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_Ending_1
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 288
+        width: 205
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_Ending_2
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 287
+        width: 212
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_Ending_3
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 287
+        width: 218
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_Ending_4
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 19
+        width: 397
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 6, z: 4, w: 7}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_Ending_5
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 2
+        width: 176
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_Ending_6
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1
+        width: 176
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: S2_P5_Ending_7
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 3
+        width: 203
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
