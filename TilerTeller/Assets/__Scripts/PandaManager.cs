@@ -158,7 +158,35 @@ public class PandaManager : MonoBehaviour {
 
 		if ((int)state > 2 && (int) state< 7) {
 
+			if (GameObject.Find ("BluetoothManager") != null) {
+				int panda_pressed;
+				panda_pressed = bluetoothManager.Instance.datamanager.getPandaPressed ();
 
+				if (panda_pressed == pandaOrder [(int)state - 3]) {
+					anim.SetBool ("wrong", false);
+					anim.SetTrigger ("jump");
+					anim.SetTrigger (triggers [pandaOrder [(int)state - 3]]);
+					isCorrect = true;
+				} else if (panda_pressed == 0) {
+					anim.SetBool ("wrong", true);
+					showEggyDialogue (0);
+					showPandaDialogue ((int)state - 3, pandaDialoguesTwo);
+				} else if (panda_pressed == 1) {
+					anim.SetBool ("wrong", true);	
+					showEggyDialogue (1);
+					showPandaDialogue ((int)state - 3, pandaDialoguesTwo);
+				} else if (panda_pressed == 2) {
+					anim.SetBool ("wrong", true);
+					showEggyDialogue (2);
+					showPandaDialogue ((int)state - 3, pandaDialoguesTwo);
+				} else if (panda_pressed == 3) {
+					anim.SetBool ("wrong",true);
+					showEggyDialogue (3);
+					showPandaDialogue ((int)state-3,pandaDialoguesTwo);
+				}
+
+
+			}
 			
 				if (Input.GetKeyDown ((pandaOrder [(int)state - 3] + 1).ToString ())) {
 //				Debug.Log (pandaOrder [(int)state - 2]);
