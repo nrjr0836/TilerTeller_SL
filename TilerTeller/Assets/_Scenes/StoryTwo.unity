@@ -11569,9 +11569,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Some bunnies from Bunny Kindergarten have recently gotten red eyes! This
-    comes from not eating their vegetables and not taking their vitamins. The principal
-    wants to hire a helper to give the those bunnies carrot medicine.
+  m_Text: 'Some bunnies from Bunny Kindergarten have recently gotten red eyes! This
+    comes from not eating their vegetables and not taking their vitamins. '
 --- !u!222 &2081721046
 CanvasRenderer:
   m_ObjectHideFlags: 0
