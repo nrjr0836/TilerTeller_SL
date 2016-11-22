@@ -8,6 +8,7 @@ public class StarLighter : MonoBehaviour {
 
 	public Text[] instructions;
 	public Image nextIcon;
+	public Image startBtn;
 
 	public Star[] stars;
 	public Animator Eggy;
@@ -45,11 +46,10 @@ public class StarLighter : MonoBehaviour {
 			if (value == State.InstructionTwo) {
 				sound.PlaySound ("EV_GUI_ButtonClick");
 				nextIcon.DOFade (0, 0);
-				nextIcon.DOFade (1, 0.5f).SetDelay(1);
+				startBtn.DOFade(1, 0.5f).SetDelay(1f);
 				instructions [0].DOFade (0, 0);
 				instructions [1].DOFade (0, 0);
 				instructions [1].DOFade (1, 0);
-				nextIcon.DOFade (1, 0.5f).SetDelay (0.5f);
 				gameObject.GetComponent<Animator>().SetTrigger("P3start");
 
 			}
@@ -58,7 +58,7 @@ public class StarLighter : MonoBehaviour {
 					bluetoothManager.Instance.datamanager.setButtonCounter ();
 				}
 				sound.PlaySound ("EV_GUI_ButtonClick");
-				nextIcon.DOFade (0, 1f);
+				startBtn.DOFade (0, 1f);
 				instructions [1].DOFade (0, 1f);
 				instructions [2].DOFade (0, 0);
 				instructions [2].DOFade (1, 1f);
@@ -80,6 +80,11 @@ public class StarLighter : MonoBehaviour {
 					bluetoothManager.Instance.datamanager.setButtonCounter ();
 				}
 				gameObject.GetComponent<Animator> ().SetTrigger ("restart");
+
+				for (int i = 0; i < 4; i++) {
+					stars [i].fadeout ();
+					stars [i].isCompleted = false;
+				}
 			}
 
 			int textIndex = (int)value;
@@ -96,6 +101,7 @@ public class StarLighter : MonoBehaviour {
 				sound.PlaySound (soundevents [(int)value] + "Start");
 			}
 			m_state = value;
+
 
 		}
 	}
@@ -117,7 +123,7 @@ public class StarLighter : MonoBehaviour {
 			start = false;
 		}
 
-		if (Input.GetMouseButtonDown (0)&&(int)m_state<4) {
+		if (Input.GetMouseButtonDown (0)&&(int)m_state<3) {
 			state++;
 		}
 
@@ -177,5 +183,9 @@ public class StarLighter : MonoBehaviour {
 
 	public void reset(){
 		state = State.Reset;
+	}
+
+	public void startGame(){
+		state = State.Start;
 	}
 }

@@ -121,6 +121,7 @@ public class PandaManager : MonoBehaviour {
 				for (int i = 0; i < 4; i++) {
 					pandaOrder [i] = 0;
 				}
+				anim.SetBool ("wrong", false);
 			}
 
 			m_state = value;
@@ -254,7 +255,7 @@ public class PandaManager : MonoBehaviour {
 			
 				if (Input.GetKeyDown ((pandaOrder [(int)state - 3] + 1).ToString ())) {
 //				Debug.Log (pandaOrder [(int)state - 2]);
-				anim.SetBool("wrong",false);
+					anim.SetBool("wrong",false);
 					anim.SetTrigger ("jump");
 					anim.SetTrigger (triggers [pandaOrder [(int)state - 3]]);
 					isCorrect = true;

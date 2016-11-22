@@ -17,6 +17,7 @@ public class CameraControl : MonoBehaviour {
 	public SoundManager sound;
 
 
+
 	public enum State
 	{
 		None = 0,
@@ -61,8 +62,11 @@ public class CameraControl : MonoBehaviour {
 				}
 			}
 
-			if (value == State.Cube) 
+			if (value == State.Cube)
 			{
+				if (GameObject.Find ("BluetoothManager") != null) {
+					bluetoothManager.Instance.ble.sendBluetooth("5");
+				}
 					for (int i = 0; i < squares.Length; i++) {
 						squares [i].GetComponent<SpriteRenderer> ().DOFade (0, 0.5f);
 					}

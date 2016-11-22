@@ -29,6 +29,7 @@ public class Star : MonoBehaviour {
 
 	private ArrayList fireflys;
 	private	Dictionary<string,Sprite> dictSprites = new Dictionary<string,Sprite> ();
+	private Sprite starSprite;
 		
 	void Awake(){
 		fireflys = new ArrayList(4);
@@ -43,7 +44,8 @@ public class Star : MonoBehaviour {
 		foreach (Sprite sprite in sprites) {
 			dictSprites.Add (sprite.name, sprite);
 		}
-		
+
+		starSprite = gameObject.GetComponent<SpriteRenderer> ().sprite;
 	}
 
 
@@ -94,6 +96,15 @@ public class Star : MonoBehaviour {
 				}
 
 			}
+	}
+
+	public void fadeout(){
+		for (int i=1;i< starNum+1;i++){
+			SpriteRenderer myfirefly = (SpriteRenderer)fireflys [i];
+			myfirefly.DOFade (0, 0);
+		}
+		gameObject.GetComponent<SpriteRenderer> ().sprite = starSprite;
+		Debug.Log (starSprite);
 	}
 
 

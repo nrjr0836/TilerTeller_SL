@@ -7,8 +7,13 @@ public class storySelector : MonoBehaviour {
 
 
 	void Start(){
+		if (GameObject.Find ("BluetoothManager") != null) {
+			bluetoothManager.Instance.ble.sendBluetooth("1");
+		}
 		
 	}
+
+
 	public void selectStory(int story){
 		if (GameObject.Find ("BluetoothManager") != null) {
 			bluetoothManager.Instance.ble.sendBluetooth("1");

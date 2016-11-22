@@ -22,6 +22,7 @@ public class BunnyManager : MonoBehaviour {
 
 	public Text[] instructions;
 	public Image nextIcon;
+	public Image startBtn;
 
 	private int count = 0;
 	private SoundManager sound;
@@ -55,14 +56,13 @@ public class BunnyManager : MonoBehaviour {
 			if (value == State.InstructionTwo) {
 				sound.PlaySound ("EV_GUI_ButtonClick");
 				nextIcon.DOFade (0, 0f);
-				nextIcon.DOFade (1, 0.5f).SetDelay(1);
+				startBtn.DOFade (1, 0.5f).SetDelay(1);
 				instructions [0].DOFade (0, 0);
 				instructions [1].DOFade (1, 0);
-				nextIcon.DOFade (1, 0.5f).SetDelay (0.5f);
 			}
 			if (value == State.Start) {
 				sound.PlaySound ("EV_GUI_ButtonClick");
-				nextIcon.DOFade (0, 1f);
+				startBtn.DOFade (0, 1f);
 				instructions [1].DOFade (0, 1f);
 				instructions [2].DOFade (0, 0);
 				instructions [2].DOFade (1, 1f);
@@ -139,7 +139,7 @@ public class BunnyManager : MonoBehaviour {
 			start = false;
 		}
 
-		if (Input.GetMouseButtonDown (0)&&(int)m_state<3) {
+		if (Input.GetMouseButtonDown (0)&&(int)m_state<2) {
 			state++;
 		}
 
@@ -220,5 +220,7 @@ public class BunnyManager : MonoBehaviour {
 	public void reset(){
 		state = State.Reset;
 	}
-
+	public void startGame(){
+		state = State.Start;
+	}
 }	

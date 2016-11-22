@@ -81,10 +81,6 @@ public class pageManager : MonoBehaviour {
 		homeBtn_2.SetActive (false);
 
 
-
-
-	
-//		puzzleNum = datamanager.getPuzzleNum ();
 		
 		if (GameObject.Find ("BluetoothManager") != null) {
 			puzzleNum = bluetoothManager.Instance.datamanager.getPuzzleNum();
@@ -126,7 +122,7 @@ public class pageManager : MonoBehaviour {
 
 			if (startAnim) {
 
-				Debug.Log (puzzleNum);
+//				Debug.Log (puzzleNum);
 				
 				if (hintDoor.GetCurrentAnimatorStateInfo (0).IsName ("Finished")) {
 
@@ -144,15 +140,12 @@ public class pageManager : MonoBehaviour {
 				}
 			}
 
-
 		}
 
 		/* Display the current page */
 		for (int i = 0; i < bookLength; i++) {
 			if (i == currentPage && pages [i] != null && isWaiting != true) {
 				pages [i].SetActive (true);
-//				if (pages [i].GetComponent<AudioSource> () != null && pages [i].GetComponent<AudioSource> ().isPlaying != true) {
-//					pages [i].GetComponent<AudioSource> ().Play ();}
 			} else {
 				pages[i].SetActive(false);
 			}
@@ -164,6 +157,14 @@ public class pageManager : MonoBehaviour {
 		if (currentPage == bookLength - 1) {
 			homeBtn_2.SetActive (true);
 			nextBtn.SetActive (false);
+		}
+
+		if (Input.GetMouseButtonDown (0)) {
+			if (currentPage == 0 && !isWaiting) {
+				Vector3 clickedPosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+				Debug.Log (clickedPosition);
+				sound.PlaySound ("EV_Story2_Panda_ThankYou_DLG");
+			}
 		}
 
 	}
@@ -282,7 +283,6 @@ public class pageManager : MonoBehaviour {
 		
 		if (hintPage != null) {
 			hintPage.SetActive (true);
-			Debug.Log ("next page");
 			isWaiting = true;
 		}
 
@@ -299,7 +299,16 @@ public class pageManager : MonoBehaviour {
 
 	/* Go to certain page */
 	void gotoPage(int page){
-		sound.StopPlaying ();
+			sound.StopPlaying ();
+		for(int i=0;i<pageCount;i++){
+			if (pageRead [i] == page) {
+				for (int j = i; j < pageCount-1; j++) {
+					pageRead [j] = pageRead [j + 1];
+				}
+				pageCount--;
+				break;
+			}
+		}
 			pageRead [pageCount] = page;
 			currentPage = page;
 			hideHintPage ();
