@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0AFF62D7-5904-4DD8-B201-07992B5D68AD}" SchemaVersion="72">
 	<DynamicDialogue>
-		<WorkUnit Name="Default Work Unit" ID="{0AFF62D7-5904-4DD8-B201-07992B5D68AD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0AFF62D7-5904-4DD8-B201-07992B5D68AD}" PersistMode="Standalone">
+			<ChildrenList>
+				<DialogueEvent Name="EV_Story1_End" ID="{8BD10FC8-D688-41C8-85FF-F1CDFAF629D0}">
+					<ArgumentList>
+						<ArgumentRef Name="SWGP_RabbitScene_Dialogue" ID="{437FBF3B-19CB-4E37-92E3-2150457D2D19}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="SW_Rabbit_01" ID="{DA158CC1-4010-4A35-8889-337FF01EA9EF}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="ADR_NicoleDemo" ID="{6A6930DF-4F51-42BC-AD79-B34B42133CCA}" WorkUnitID="{A75CB8F1-4E9F-4C3A-9CBA-BDABA0611ED8}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
+				</DialogueEvent>
+			</ChildrenList>
+		</WorkUnit>
 	</DynamicDialogue>
 </WwiseDocument>

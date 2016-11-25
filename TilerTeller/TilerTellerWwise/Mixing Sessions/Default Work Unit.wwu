@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D9CD4A5A-2011-41DC-B85E-672390503633}" SchemaVersion="72">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{D9CD4A5A-2011-41DC-B85E-672390503633}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D9CD4A5A-2011-41DC-B85E-672390503633}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="TilerTeller_Main" ID="{66DD98DB-549D-4777-8D5E-15568D9110B4}">
+					<ObjectList>
+						<ObjectRef Name="Ambience Bus" ID="{418EBE3C-1A1F-4587-AD10-E4907AC61DD7}" WorkUnitID="{0D6E8AC3-2970-4CD4-9476-159A26C81C4F}"/>
+						<ObjectRef Name="Dialogue Bus" ID="{6AA85B3F-BB78-453F-AB63-AD6E84A9A896}" WorkUnitID="{0D6E8AC3-2970-4CD4-9476-159A26C81C4F}"/>
+						<ObjectRef Name="Music Bus" ID="{582271EE-D0A2-48BA-9BDD-6D7D443CE90A}" WorkUnitID="{0D6E8AC3-2970-4CD4-9476-159A26C81C4F}"/>
+						<ObjectRef Name="SFX Bus" ID="{B30633A9-2CC7-4F5F-A8A4-50F76BDEC476}" WorkUnitID="{0D6E8AC3-2970-4CD4-9476-159A26C81C4F}"/>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0D6E8AC3-2970-4CD4-9476-159A26C81C4F}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

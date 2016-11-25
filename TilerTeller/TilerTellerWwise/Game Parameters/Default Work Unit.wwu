@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{36CF2D3F-39C4-48B7-8246-7FD189CF5E66}" SchemaVersion="72">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{36CF2D3F-39C4-48B7-8246-7FD189CF5E66}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{36CF2D3F-39C4-48B7-8246-7FD189CF5E66}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_RabbitADR" ID="{F601B3EB-418D-4FE6-8E55-47BAC398AFDB}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

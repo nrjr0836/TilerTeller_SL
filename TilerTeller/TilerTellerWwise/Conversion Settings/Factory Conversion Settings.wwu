@@ -169,10 +169,18 @@
 							</PropertyList>
 							<ConversionPluginInfoList>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{4893A54D-ECF1-4FD9-BB2A-C530B0EAF735}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
+									<ConversionPlugin Name="" ID="{4893A54D-ECF1-4FD9-BB2A-C530B0EAF735}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+										<PropertyList>
+											<Property Name="SeekTableGranularity" Type="int32" Value="3"/>
+										</PropertyList>
+									</ConversionPlugin>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="iOS">
-									<ConversionPlugin Name="" ID="{89B47816-D727-4E7F-88A2-4DDDE7C29F26}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
+									<ConversionPlugin Name="" ID="{89B47816-D727-4E7F-88A2-4DDDE7C29F26}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+										<PropertyList>
+											<Property Name="SeekTableGranularity" Type="int32" Value="3"/>
+										</PropertyList>
+									</ConversionPlugin>
 								</ConversionPluginInfo>
 							</ConversionPluginInfoList>
 						</Conversion>
